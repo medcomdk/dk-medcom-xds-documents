@@ -14,8 +14,8 @@ HomeCommunityId is not included in the mapping, why the [extension MedCom XDS Ho
 |identifier | DocumentEntry.entryUUID |  |
 |status | DocumentEntry.availabilityStatus |  |
 |docStatus |  |  |
-|type | DocumentEntry.type | [TypeCode](./ValueSet-MedCom-ihe-core-typecode-VS.html) |
-|category | DocumentEntry.class | [ClassCode](./CodeSystem-MedCom-ihe-classcode-CS.html) |
+|type | DocumentEntry.type | [TypeCode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-core-typecode-VS.html) |
+|category | DocumentEntry.class | [ClassCode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/CodeSystem-MedCom-ihe-classcode-CS.html) |
 |subject | DocumentEntry.patientId |  |
 |date |  |  |
 |author | DocumentEntry.author |  |
@@ -27,19 +27,19 @@ HomeCommunityId is not included in the mapping, why the [extension MedCom XDS Ho
 |description | DocumentEntry.comments |  |
 |securityLabel | DocumentEntry.confidentialityCode |  |
 |content |  |  |
-|- attachment.contentType | DocumentEntry.mimeType | [ContentType](./CodeSystem-MedCom-ihe-mimeType-CS.html) |
-|- attachment.language | DocumentEntry.languageCode | [Language](./CodeSystem-MedCom-ihe-LanguageCode-CS.html) |
+|- attachment.contentType | DocumentEntry.mimeType | [ContentType](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/CodeSystem-MedCom-ihe-mimeType-CS.html) |
+|- attachment.language | DocumentEntry.languageCode | [Language](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/CodeSystem-MedCom-ihe-LanguageCode-CS.html) |
 |- attachment.url | DocumentEntry.URI |  |
 |- attachment.size | DocumentEntry.size |  |
 |- attachment.hash | DocumentEntry.hash |  |
 |- attachment.title | DocumentEntry.title |  |
 |- attachment.creation | DocumentEntry.creationTime |  |
-|- format | DocumentEntry.formatCode | [FormatCode](./CodeSystem-MedCom-ihe-formatcode-CS.html) |
+|- format | DocumentEntry.formatCode | [FormatCode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/CodeSystem-MedCom-ihe-formatcode-CS.html) |
 |context |  |  |
 |- encounter |  |  |
-|- event | DocumentEntry.eventCodeList | [EventCode](./ValueSet-MedCom-ihe-core-eventcodelist-VS.html) |
+|- event | DocumentEntry.eventCodeList | [EventCode](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-core-eventcodelist-VS.html) |
 |- period | DocumentEntry.serviceStartTime, DocumentEntry.serviceStopTime |  |
-|- facilityType | DocumentEntry.healthcareFacilityTypeCode | [FacilityType](./ValueSet-MedCom-ihe-core-HealthcareFacilityTypeCode-VS.html) |
-|- practiceSetting | DocumentEntry.practiceSettingCode | [PracticeSetting](./ValueSet-MedCom-ihe-core-PracticeSettingCode-VS.html) |
+|- facilityType | DocumentEntry.healthcareFacilityTypeCode | [FacilityType](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-core-HealthcareFacilityTypeCode-VS.html) |
+|- practiceSetting | DocumentEntry.practiceSettingCode | [PracticeSetting](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/ValueSet-MedCom-ihe-core-PracticeSettingCode-VS.html) |
 |- sourcePatientInfo | DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId |  |
 |- related | DocumentEntry.referenceIdList |  |

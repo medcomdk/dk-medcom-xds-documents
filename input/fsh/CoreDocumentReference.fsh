@@ -9,8 +9,8 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 //* type.coding.system from $TypeCode //(required) 
 * type.coding.code 1.. MS
 // ClassCode
-* category 1..1 MS
-* category.coding.system from $ClassCode (extensible)
+* category 1..1 MS 
+* category from $ClassCode (extensible)
 * category.coding.code 1.. MS
 * category.coding.system 1.. MS
 //* category.coding.display 1.. MS - 
