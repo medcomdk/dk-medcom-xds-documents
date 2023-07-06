@@ -3,14 +3,14 @@ Parent: CoreDocumentReference
 Id: apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
 * ^version = "9.0.0"
-* type from $TypeCode (required) 
+* type from $ApdTypeCode (required) 
 //* category.coding.system from $ClassCode (required)
 //* content.attachment.contentType from $ContentType (required)
 //* content.attachment.language from $Language (required)
 //* content.format from $FormatCode (required)
-* context.event from $EventCode (required)
-* context.facilityType from $FacilityType (required)
-* context.practiceSetting from $PracticeSetting (required)
+* context.event from $ApdEventCode (required)
+* context.facilityType from $ApdFacilityType (required)
+* context.practiceSetting from $ApdPracticeSetting (required)
 //* extension[homeCommunityid].valueCoding.system from $HomeCommunityID 
 
 

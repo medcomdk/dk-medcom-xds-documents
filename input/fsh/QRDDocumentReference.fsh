@@ -3,14 +3,14 @@ Parent: CoreDocumentReference
 Id: qrd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Questionnaire Response Document (QRD-DK)."
 * ^version = "0.8.6"
-* type.coding.system from $TypeCode (required) 
+* type.coding.system from $QrdTypeCode (required) 
 //* category.coding.system from $ClassCode (required)
 //* content.attachment.contentType from $ContentType (required)
 //* content.attachment.language from $Language (required)
 //* content.format from $FormatCode (required)
-* context.event.coding.system from $EventCode (required)
-* context.facilityType.coding.system from $FacilityType (required)
-* context.practiceSetting.coding.system from $PracticeSetting (required)
+* context.event.coding.system from $QrdEventCode (required)
+* context.facilityType.coding.system from $QrdFacilityType (required)
+* context.practiceSetting.coding.system from $QrdPracticeSetting (required)
 //* extension[homeCommunityid].valueCoding.system from $HomeCommunityID (required)
 
 
