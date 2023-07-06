@@ -7,11 +7,11 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * type 1.. MS
 //* type ^short = "TypeCode for..."
 * type.coding.system 1.. MS
-* type.coding.system from $TypeCode //(required) 
+//* type.coding.system from $TypeCode //(required) 
 * type.coding.code 1.. MS
 // ClassCode
 * category 1..1 MS
-* category.coding.system from $ClassCode (required)
+* category.coding.system from $ClassCode (extensible)
 * category.coding.code 1.. MS
 * category.coding.system 1.. MS
 //* category.coding.display 1.. MS - 
@@ -19,24 +19,24 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 //* category ^definition = "HVIS DEFINITION ØNSKES, er dette syntaksen."
 * content MS
 * content.attachment.contentType 1.. MS
-* content.attachment.contentType from $ContentType // (required)
+//* content.attachment.contentType from $ContentType // (required)
 * content.attachment.language 1.. MS
-* content.attachment.language from $Language //(required)
+//* content.attachment.language from $Language //(required)
 * content.format 1.. MS
-* content.format from $FormatCode //(required)
+//* content.format from $FormatCode //(required)
 * context 1.. MS
 * context.event 1..1 MS 
 * context.event.coding.code 1.. MS
 * context.event.coding.system 1.. MS
-* context.event.coding.system from $EventCode (required)
+* context.event.coding.system from $EventCode (extensible)
 * context.facilityType 1.. MS
 * context.facilityType.coding.code 1.. MS
 * context.facilityType.coding.system 1.. MS
-* context.facilityType.coding.system from $FacilityType (required)
+* context.facilityType.coding.system from $FacilityType (extensible)
 * context.practiceSetting 1.. MS
 * context.practiceSetting.coding.code 1.. MS
 * context.practiceSetting.coding.system 1.. MS
-* context.practiceSetting.coding.system from $PracticeSetting (required)
+* context.practiceSetting.coding.system from $PracticeSetting (extensible)
 * extension contains medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS SU
 
 

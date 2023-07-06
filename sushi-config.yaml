@@ -3,13 +3,13 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: medcom.fhir.dk.metadata.core
-canonical: http://medcomfhir.dk/ig/metadatacore
-name: Metadata for a CDA Document
-title: Metadata for a CDA Document
+id: medcom.fhir.dk.ihe.xds.metadata
+canonical: https://medcomfhir.dk/ig/ihexdsmetadata
+name: MedCom IHE XDS Metadata
+# title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 1.0.0
+version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -17,7 +17,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: MedCom
-  url: http://www.medcom.dk
+  url: medcom.dk
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -25,8 +25,6 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 # dependencies:
-dependencies:
-  medcom.fhir.dk.xds.metadata: dev
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -79,8 +77,7 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
-  Downloads: downloads.html
-  
+
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
@@ -199,14 +196,18 @@ menu:
 # The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
 # See the individual option definitions below for more detail.
 #
-# instanceOptions:
-#   Determines for which types of Instances SUSHI will automatically set meta.profile
-#   if InstanceOf references a profile:
-#
-#   setMetaProfile: always # always | never | inline-only | standalone-only
-#
-#
-#   Determines for which types of Instances SUSHI will automatically set id
-#   if InstanceOf references a profile:
-#
-#   setId: always # always | standalone-only
+instanceOptions:
+  # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
+  # in an Instance's assignment rule. All slices appear in the order in which they are specified in FSH rules.
+  # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for new projects.
+  manualSliceOrdering: true # true | false
+  # Determines for which types of Instances SUSHI will automatically set meta.profile
+  # if InstanceOf references a profile:
+  #
+  # setMetaProfile: always # always | never | inline-only | standalone-only
+  #
+  #
+  # Determines for which types of Instances SUSHI will automatically set id
+  # if InstanceOf references a profile:
+  #
+  # setId: always # always | standalone-only
