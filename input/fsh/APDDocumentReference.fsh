@@ -2,7 +2,8 @@ Profile: APDDKDocumentReference
 Parent: CoreDocumentReference
 Id: apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
-* ^version = "9.0.0"
+* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * type from $ApdTypeCode (required) 
 //* category.coding.system from $ClassCode (required)
 //* content.attachment.contentType from $ContentType (required)
@@ -26,6 +27,8 @@ Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: APDDKDocumentReference
 Title: "Instance of APD-DK DocumentReference."
 Description: "Instance of APD-DK DocumentReference, containing relevant metadata"
+* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * status = $StatusCS#current "Current"
 * type = $TypeCodeCS#56446-8 "Appointment Summary Document"
 * category = $ClassCodeCS#001 "Klinisk rapport"
@@ -42,6 +45,8 @@ Instance: 313a2475-3079-4054-b635-a96dea305877
 InstanceOf: APDDKDocumentReference
 Title: "Instance of APD-DK DocumentReference."
 Description: "Invalid: language=#eng. Instance of APD-DK DocumentReference, containing relevant metadata"
+* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * status = $StatusCS#current "Current"
 * type = $TypeCodeCS#56446-8 "Appointment Summary Document"
 * category = $ClassCodeCS#001 "Klinisk rapport"

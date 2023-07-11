@@ -2,6 +2,8 @@ Profile: CoreDocumentReference
 Parent: DocumentReference
 Id: core-documentreference
 Description: "A profile stating the rules, when exchanging a CDA document."
+* masterIdentifier.value 1..1 MS 
+* masterIdentifier.system 1..1 MS 
 * status MS
 // TypeCode
 * type 1.. MS
