@@ -2,47 +2,46 @@ Profile: CoreDocumentReference
 Parent: DocumentReference
 Id: core-documentreference
 Description: "A profile stating the rules, when exchanging a CDA document."
-* masterIdentifier.value 1..1 MS //??
+* masterIdentifier.value 1..1 MS 
 * masterIdentifier.value ^maxLength = 64
-* masterIdentifier.system 1..1 MS //??
-* identifier MS //1..1
+* masterIdentifier.system 1..1 MS 
+* identifier 1.. MS
 * identifier ^short = "The entryUUID for the document" 
 * identifier obeys uuid
 * status MS 
-* status ^short = "Only reference current and superseeded?"
+* status ^short = "Only reference current and superseeded"
 // TypeCode
 * type 1.. MS
 * type.coding.system 1.. MS
-//* type.coding.system from $TypeCode //(required) 
 * type.coding.code 1.. MS
-* authenticator MS //1..
-* authenticator only Reference(Practitioner)
+* authenticator 1.. MS
+* authenticator only Reference(XDSAuthorPerson)
 // ClassCode
 * category 1..1 MS 
 * category from $ClassCode (extensible)
 * category.coding.code 1.. MS
 * category.coding.system 1.. MS
-//* category.coding.display 1.. MS - 
 * category ^short = "The class of the document"
-* author //1.. MS
-* author only Reference(Organization or Practitioner)
-* securityLabel //1.. MS 
+* author 1.. MS 
+* author only Reference(XDSAuthorOrganization or XDSAuthorPerson)
+* securityLabel 1.. MS  
 * securityLabel = #N
-* subject MS //1..
-* subject only Reference(Patient)
+* subject 1.. MS
+* subject only Reference(XDSSourcePatient)
 * content MS
 * content.attachment.contentType 1.. MS
 * content.attachment.contentType from $ContentType
 * content.attachment.language 1.. MS
 * content.attachment.language from $Language (extensible)
-* content.attachment.creation MS //1..
-* content.attachment.hash MS //1..
+* content.attachment.creation 1.. MS
+* content.attachment.hash 1.. MS
 * content.attachment.hash ^short = "Must be of the type sha-1"
 * content.format 1.. MS
-* content.format from $FormatCode (extensible)
-* content.attachment.size MS //1..
-* content.attachment.title MS //1..
-* content.attachment.url MS //1..
+/* * content.format.coding.code 1.. MS
+* content.format.coding.system 1.. MS */
+* content.attachment.size 1.. MS
+* content.attachment.title 1.. MS
+* content.attachment.url 1.. MS
 * context 1.. MS
 * context.event 1..1 MS 
 * context.event.coding.code 1.. MS
@@ -50,16 +49,15 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * context.period MS
 * context.period.start MS
 * context.period.end MS
-//* context.event.coding.system from $EventCode (extensible)
 * context.facilityType 1.. MS
 * context.facilityType.coding.code 1.. MS
 * context.facilityType.coding.system 1.. MS
-//* context.facilityType.coding.system from $FacilityType (extensible)
+* context.facilityType.coding.system from $FacilityType (preferred)
 * context.practiceSetting 1.. MS
 * context.practiceSetting.coding.code 1.. MS
 * context.practiceSetting.coding.system 1.. MS
+* context.practiceSetting.coding.system from $PracticeSetting (preferred)
 * context.related MS
-//* context.practiceSetting.coding.system from $PracticeSetting (extensible)
 * extension contains medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS SU
 
 

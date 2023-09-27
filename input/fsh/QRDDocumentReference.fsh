@@ -22,7 +22,7 @@ Severity: #error
 Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
 */
 
-// Metadata instance
+/* // Metadata instance
 Instance: 50d6fc3c-d95a-4d12-8e61-8d70584c1f4e
 InstanceOf: QRDDKDocumentReference
 Title: "Instance of QRD-DK DocumentReference."
@@ -39,5 +39,6 @@ Description: "Instance of QRD-DK DocumentReference, containing relevant metadata
 * context.event = $EventCodeCS#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 * context.facilityType = $FacilityTypeCS#554871000005105 "psykiatrienhed"
 * context.practiceSetting = $PracticeSettingCS#394588006 "børne- og ungdomspsykiatri"
-* extension[homeCommunityid].valueCoding.system = $HomeCommunityIDCS
-* extension[homeCommunityid].valueCoding.code = #1.2.208.176.43210.8.20 "TEST2"
+* extension.valueCoding.system = $HomeCommunityIDCS
+* extension.valueCoding.code = #1.2.208.176.43210.8.20 "TEST2"
+ */

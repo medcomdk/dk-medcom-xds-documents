@@ -21,10 +21,8 @@ Alias: $StatusCS = http://hl7.org/fhir/document-reference-status
 
 Alias: $ApdTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-apd-typecode-VS
 Alias: $ApdEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-apd-eventcodelist-VS
-Alias: $ApdFacilityType = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-HealthcareFacilityTypeCode-VS
-Alias: $ApdPracticeSetting = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-PracticeSettingCode-VS
-
-
+Alias: $ApdHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-homeCommunityId-VS
+Alias: $ApdFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-formatcode-VS
 /* Example of defining aliases (henviser til et CodeSystem eller ValueSet): 
 Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode 
 Alias: $RequestPriority = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-requestPriority 
@@ -43,3 +41,19 @@ Alias: $FormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-cor
 
 //Alias: $HomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-homeCommunityId-VS
 Alias: $HomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-homeCommunityId-VS
+
+Alias: $PracticeSetting = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-PracticeSettingCode-VS
+
+Alias: $FacilityType = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-HealthcareFacilityTypeCode-VS
+
+Alias: $DanishiheOID = urn:oid:1.2.208.184.100.9
+Alias: $SnomedctOID = urn:oid:2.16.840.1.113883.6.96
+Alias: $LoincOID = urn:oid:2.16.840.1.113883.6.1
+Alias: $MedComOID = urn:oid:1.2.208.184.100.1
+Alias: $SKSOID = urn:oid:1.2.208.176.2.4
+Alias: $NPUOID = urn:oid:1.2.208.176.2.1
+Alias: $PROdkOID = urn:oid:1.2.208.176.7.3.1
+Alias: $MedComFormatOID = urn:oid:1.2.208.184.100.10
+Alias: $DanishxdsOID = urn:oid:1.2.208.176.8.1
+Alias: $IANALanguageOID = urn:oid:2.16.840.1.113883.6.121
+Alias: $IANAMediaOID = urn:oid:2.16.840.1.113883.5.79

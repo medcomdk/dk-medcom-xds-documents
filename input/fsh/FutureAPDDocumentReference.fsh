@@ -1,4 +1,4 @@
-Profile: FutureAPDDKDocumentReference
+/* Profile: FutureAPDDKDocumentReference
 Parent: CoreDocumentReference
 Id: future-apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
@@ -13,7 +13,7 @@ Description: "A profile stating the rules, when exchanging a CDA Appointment (AP
 * context.facilityType from $ApdFacilityType (required)
 * context.practiceSetting from $ApdPracticeSetting (required)
 //* extension[homeCommunityid].valueCoding.system from $HomeCommunityID 
-
+ */
 
 
 /* Invariant: apd-dk-rule-1
@@ -22,7 +22,7 @@ Severity: #error
 Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
 */
 
-// Metadata instance
+/* // Metadata instance
 Instance: f2e1afb5-060e-41bf-859f-410b05b5dba4
 InstanceOf: FutureAPDDKDocumentReference
 Title: "Instance of a future APD-DK DocumentReference."
@@ -38,4 +38,4 @@ Description: "Instance of a future APD-DK DocumentReference, containing relevant
 * context.event = $EventCodeCS#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 * context.facilityType = $FacilityTypeCS#554871000005105 "psykiatrienhed"
 * context.practiceSetting = $PracticeSettingCS#394588006 "børne- og ungdomspsykiatri"
-* extension[homeCommunityid].valueCoding = $HomeCommunityIDCS#1.2.208.176.43210.8.20 "TEST2"
+* extension[homeCommunityid].valueCoding = $HomeCommunityIDCS#1.2.208.176.43210.8.20 "TEST2" */
