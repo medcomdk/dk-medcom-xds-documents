@@ -9,7 +9,7 @@ Description: "A profile stating the rules, when exchanging a CDA Questionnaire R
 //* content.attachment.contentType from $ContentType (required)
 //* content.attachment.language from $Language (required)
 //* content.format from $FormatCode (required)
-* context.event.coding.system from $QrdEventCode (required)
+* context.event.coding.system from $QrdEventCode (extensible)
 * context.facilityType.coding.system from $QrdFacilityType (required)
 * context.practiceSetting.coding.system from $QrdPracticeSetting (required)
 //* extension[homeCommunityid].valueCoding.system from $HomeCommunityID (required)
