@@ -26,7 +26,7 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * author only Reference(XDSAuthorOrganization or XDSAuthorPerson)
 * securityLabel 1.. MS  
 * securityLabel = #N
-* subject 1.. MS
+* subject MS
 * subject only Reference(XDSSourcePatient)
 * content MS
 * content.attachment.contentType 1.. MS

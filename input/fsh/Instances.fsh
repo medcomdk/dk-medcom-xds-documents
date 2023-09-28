@@ -9,7 +9,7 @@ Usage: #example
 Instance: 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 InstanceOf: DkCoreOrganization
 Title: "Author Organization"
-Description: "An example of an author organization"
+Description: "Instance of an author organization"
 Usage: #example
 * identifier[SOR-ID].value = "61741000016007"
 * identifier[SOR-ID].system = "urn:oid:1.2.208.176.1.1"
@@ -18,11 +18,11 @@ Usage: #example
 Instance: 37628912-7816-47a3-acd8-396b610be142
 InstanceOf: XDSSourcePatient
 Title: "Source Patient"
-Description: "Example of a source patient."
+Description: "Instance of a source patient"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201919990"
-* name.use = #official
+* name[official].use = #official
 * name[official].family = "Lauridsen"
 * name[official].given[0] = "Else"
 * name[official].given[+] = "Test"

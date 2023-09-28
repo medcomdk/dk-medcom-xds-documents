@@ -4,8 +4,8 @@ Alias: $RequestPriority = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-ca
 */
 Alias: $QrdTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-qrd-typecode-VS
 Alias: $QrdEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-qrd-eventcodelist-VS
-Alias: $QrdFacilityType = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-qrd-HealthcareFacilityTypeCode-VS
-Alias: $QrdPracticeSetting = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-qrd-PracticeSettingCode-VS
+Alias: $QrdHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-qrd-homeCommunityId-VS
+Alias: $QrdFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-qrd-formatcode-VS
 
 //used for instances
 Alias: $ClassCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-classcode-CS
