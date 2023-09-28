@@ -49,22 +49,6 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
 * extension.url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
 * extension.valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
-/* 
-// Metadata instance
-Instance: 313a2475-3079-4054-b635-a96dea305877
-InstanceOf: APDDKDocumentReference
-Title: "Instance of APD-DK DocumentReference."
-Description: "Invalid: language=#eng. Instance of APD-DK DocumentReference, containing relevant metadata"
-* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
-* masterIdentifier.system = "urn:ietf:rfc:3986"
-* status = $StatusCS#current "Current"
-* type = $TypeCodeCS#56446-8 "Appointment Summary Document"
-* category = $ClassCodeCS#001 "Klinisk rapport"
-* content.attachment.contentType = $ContentTypeCS#text/xml "MimeType-text/xml"
-* content.attachment.language = $LanguageCS#eng "English"
-* content.format = $FormatCodeCS#urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema"
-* context.event = $EventCodeCS#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
-* context.facilityType = $FacilityTypeCS#554871000005105 "psykiatrienhed"
-* context.practiceSetting = $PracticeSettingCS#394588006 "børne- og ungdomspsykiatri"
-* extension.url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
-* extension.valueCoding = $HomeCommunityIDCS#1.2.208.176.43210.8.20 "TEST2" */
+
+
+
