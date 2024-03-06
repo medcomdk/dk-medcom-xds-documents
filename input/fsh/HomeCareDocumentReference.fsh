@@ -8,6 +8,7 @@ Description: "A profile stating the rules, when exchanging a document including 
 * content.format from $ApdFormatCode (required)
 * context.event from $ApdEventCode (required)
 * extension.valueCoding from $ApdHomeCommunityID (required)
+* extension.valueString = "1.1.0"
 * subject 1..
 
 
@@ -36,5 +37,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser" // skal opdateret
 * context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed" // bør opdateret
 * context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri" // bør opdateret
-* extension.url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
-* extension.valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
+* extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
+* extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
+* extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
+* extension[1].valueString = "1.1.0"

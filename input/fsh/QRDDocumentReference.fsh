@@ -14,6 +14,8 @@ Description: "A profile stating the rules, when exchanging a CDA Questionnaire R
 //* context.facilityType.coding.system from $QrdFacilityType (required)
 //* context.practiceSetting.coding.system from $QrdPracticeSetting (required)
 * extension.valueCoding from $QrdHomeCommunityID (required)
+* extension.valueString = "1.0.0"
+
 
 
 
@@ -49,5 +51,7 @@ Description: "Instance of QRD-DK DocumentReference, containing relevant metadata
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 * context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed"
 * context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
-* extension.url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
-* extension.valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
+* extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
+* extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
+* extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
+* extension[1].valueString = "1.0.0"

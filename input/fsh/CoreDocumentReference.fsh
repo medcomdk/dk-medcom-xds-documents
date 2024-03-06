@@ -67,18 +67,20 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * context.facilityType 1.. MS
 * context.facilityType.coding.code 1.. MS
 * context.facilityType.coding.system 1.. MS
-* context.facilityType.coding.system from $FacilityType (preferred)
+* context.facilityType.coding.system from $FacilityType (extensible)
 * context.facilityType ^short = "[DocumentEntry.healthcareFacilityTypeCode] Kind of facility where patient was seen"
 * context.practiceSetting 1.. MS
 * context.practiceSetting.coding.code 1.. MS
 * context.practiceSetting.coding.system 1.. MS
-* context.practiceSetting.coding.system from $PracticeSetting (preferred)
+* context.practiceSetting.coding.system from $PracticeSetting (extensible)
 * context.practiceSetting ^short = "[DocumentEntry.practiceSettingCode] Additional details about where the content was created (e.g. clinical specialty)"
 * context.related MS
 * context.related ^short = "[DocumentEntry.referenceIdList] Related identifiers or resources"
-* extension contains medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS SU
-* extension[homeCommunityid] ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and
-document can be accessed"
+* extension contains 
+    medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS SU and
+    medcom-xds-version-id-extension named versionid 1..1 MS SU
+* extension[homeCommunityid] ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed"
+* extension[versionid] ^short = "Specifies the version of the DocumentReference for a standard."
 
 
 /* Invariant: apd-dk-rule-1
