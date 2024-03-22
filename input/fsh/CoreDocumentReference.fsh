@@ -19,6 +19,7 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * authenticator 1.. MS
 * authenticator ^short = "[DocumentEntry.legalAuthenticator] Who authenticated the document"
 * authenticator only Reference(XDSAuthorPerson)
+* authenticator ^type.aggregation = #contained
 // ClassCode
 * category 1..1 MS 
 * category from $ClassCode (extensible)
@@ -27,12 +28,14 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * category ^short = "[DocumentEntry.class] Categorization of document"
 * author 1.. MS 
 * author only Reference(XDSAuthorOrganization or XDSAuthorPerson)
+* author ^type.aggregation = #contained
 * author ^short = "[DocumentEntry.author] Who and/or what authored the document"
 * securityLabel 1.. MS  
 * securityLabel = #N
 * securityLabel ^short = "[DocumentEntry.confidentialityCode] Document security-tags"
 * subject MS
 * subject only Reference(XDSSourcePatient)
+* subject ^type.aggregation = #contained
 * subject ^short = "[DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId] Who/what is the subject of the document"
 * content MS
 * content.attachment.contentType ^short = "[DocumentEntry.mimeType] Mime type of the content, with charset etc."
