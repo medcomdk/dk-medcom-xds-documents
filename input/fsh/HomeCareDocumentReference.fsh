@@ -7,7 +7,7 @@ Description: "A profile stating the rules, when exchanging a document including 
 * type from $HcoTypeCode (required) 
 * content.format from $HcoFormatCode (required)
 * context.event from $HcoEventCode (required)
-* extension.valueCoding from $ApdHomeCommunityID (required)
+* extension.valueCoding from $HcoHomeCommunityID (required)
 * extension.valueString = "1.1.0"
 * subject 1..
 
