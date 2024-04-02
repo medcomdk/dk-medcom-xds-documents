@@ -4,9 +4,9 @@ Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 * masterIdentifier.value = "urn:uuid:fe27d893-6b9e-4e3d-91b0-72d033ce5c07"
 * masterIdentifier.system = "urn:ietf:rfc:3986"
-* type from $ApdTypeCode (required) 
-* content.format from $ApdFormatCode (required)
-* context.event from $ApdEventCode (required)
+* type from $HcoTypeCode (required) 
+* content.format from $HcoFormatCode (required)
+* context.event from $HcoEventCode (required)
 * extension.valueCoding from $ApdHomeCommunityID (required)
 * extension.valueString = "1.1.0"
 * subject 1..
@@ -24,7 +24,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "12c2deaf-389a-4f7d-8133-60b24c75cd7f"
 * status = #current "Current"
-* type = $LoincOID#56446-8 "Appointment Summary Document" // Skal opdateret
+* type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishiheOID#001 "Klinisk rapport" 
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
@@ -36,10 +36,10 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * content.attachment.size = 3654
 * content.attachment.url = "DOC001.XML"
 * content.attachment.title = "Kommunale prøvesvar for 0201919990"
-* content.format = $MedComFormatOID#urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema" // skal opdateret
-* context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser" // skal opdateret
-* context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed" // bør opdateret
-* context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri" // bør opdateret
+* content.format = $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full "DK PDD document" // Danish XDS typecode must be updated
+* context.event = $SKSOID#ALAL02 "Hjertesygdomme" // Danish XDS typecode must be updated
+* context.facilityType = $SnomedctOID#550621000005101 "hjemmesygeplejeenhed" // Danish XDS typecode must be updated
+* context.practiceSetting = $SnomedctOID#658161000005107 "hjemmesygepleje" // Danish XDS typecode must be updated
 * extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
