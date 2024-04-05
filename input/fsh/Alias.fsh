@@ -24,6 +24,11 @@ Alias: $ApdEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ih
 Alias: $ApdHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-homeCommunityId-VS
 Alias: $ApdFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-apd-formatcode-VS
 
+Alias: $PhadTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-phad-typecode-VS
+Alias: $PhadEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-phad-eventcodelist-VS
+Alias: $PhadHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-phad-homeCommunityId-VS
+Alias: $PhadFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-phad-formatcode-VS
+
 Alias: $HcoTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-hco-typecode-VS
 Alias: $HcoEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-hco-eventcodelist-VS
 Alias: $HcoHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-hco-homeCommunityId-VS

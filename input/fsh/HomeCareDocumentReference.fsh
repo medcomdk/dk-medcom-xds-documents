@@ -2,8 +2,6 @@ Profile: HomeCareObservationDocumentReference
 Parent: CoreDocumentReference
 Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
-* masterIdentifier.value = "urn:uuid:fe27d893-6b9e-4e3d-91b0-72d033ce5c07"
-* masterIdentifier.system = "urn:ietf:rfc:3986"
 * type from $HcoTypeCode (required) 
 * content.format from $HcoFormatCode (required)
 * context.event from $HcoEventCode (required)
@@ -21,8 +19,6 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:fe27d893-6b9e-4e3d-91b0-72d033ce5c07"
-* masterIdentifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "12c2deaf-389a-4f7d-8133-60b24c75cd7f"
 * status = #current "Current"
 * type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)

@@ -2,8 +2,6 @@ Profile: APDDKDocumentReference
 Parent: CoreDocumentReference
 Id: apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
-* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
-* masterIdentifier.system = "urn:ietf:rfc:3986"
 * type from $ApdTypeCode (required) 
 //* category.coding.system from $ClassCode (required)
 //* content.attachment.contentType from $ContentType (required)
@@ -32,8 +30,6 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
-* masterIdentifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "5bcafe6e-dc75-4bfb-bb09-e46f366eb0ee"
 * status = #current "Current"
 * type = $LoincOID#56446-8 "Appointment Summary Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
