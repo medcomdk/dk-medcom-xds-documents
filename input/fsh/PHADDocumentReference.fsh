@@ -43,7 +43,7 @@ Description: "Instance of PHAD-DK DocumentReference, containing relevant metadat
 * content.attachment.size = 3654
 * content.attachment.url = "DOC001.XML"
 * content.attachment.title = "Udskrivningsaftale" //Udskrivningsaftale eller Koordinationsaftale
-* content.format = $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full "Document adheres to HL7 PHAD DK profile ver. 1.0"
+* content.format = $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full "DK CPD schema"
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 * context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed"
 * context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
