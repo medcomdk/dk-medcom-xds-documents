@@ -29,12 +29,13 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
-* masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* masterIdentifier.value = "7366010980022662444.9035766041594609074.1716809438280"
+* identifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
 * status = #current "Current"
-* type = $LoincOID#56446-8 "Appointment Summary Document"
+* type = $LoincOID#39289-4 "Follow-up (referred to) provider /specialist, appointment date CPHS"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishiheOID#001 "Klinisk rapport"
-* author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
+* author[institution] = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
 * content.attachment.language = $IANALanguageOID#da "Danish"
@@ -51,5 +52,6 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
 * extension[1].valueString = "1.0.0"
+* context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
 
 
