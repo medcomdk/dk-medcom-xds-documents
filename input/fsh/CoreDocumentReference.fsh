@@ -29,8 +29,8 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * author 1..2 MS 
 * author ^type.aggregation = #contained
 * author ^short = "[DocumentEntry.author] Who and/or what authored the document"
-* author ^slicing.discriminator.type = #profile
-  * ^slicing.discriminator.path = ".resolve()"
+* author ^slicing.discriminator.type = #type
+  * ^slicing.discriminator.path = "$this.resolve()"
   * ^slicing.rules = #closed
 * author contains
     institution 1..1 and
