@@ -10,9 +10,11 @@ Description: "A profile stating the rules, when exchanging a CDA Appointment (AP
 * context.event from $ApdEventCode (required)
 //* context.facilityType from $ApdFacilityType (required)
 //* context.practiceSetting from $ApdPracticeSetting (required)
-* extension.valueCoding from $ApdHomeCommunityID (required)
-* extension.valueString = "1.0.0"
+//* extension.valueCoding 
+//* extension.valueString = "1.0.0"
 * subject 1..
+* extension[homeCommunityid].value[x] from $ApdHomeCommunityID (required)
+* extension[versionid].valueString = "1.0.0"
 
 
 /* Invariant: apd-dk-rule-1
@@ -48,10 +50,10 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
 * context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed"
 * context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
-* extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
-* extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
-* extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
-* extension[1].valueString = "1.0.0"
+* extension[homeCommunityid].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
+* extension[homeCommunityid].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
+* extension[versionid].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
+* extension[versionid].valueString = "1.0.0"
 * context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
 
 
