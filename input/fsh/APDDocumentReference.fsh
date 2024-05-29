@@ -13,8 +13,8 @@ Description: "A profile stating the rules, when exchanging a CDA Appointment (AP
 //* extension.valueCoding 
 //* extension.valueString = "1.0.0"
 * subject 1..
-* extension[homeCommunityid].value[x] from $ApdHomeCommunityID (required)
-* extension[versionid].valueString = "1.0.0"
+* extension.valueCoding from $ApdHomeCommunityID (required)
+* extension.valueString = "1.0.0"
 
 
 /* Invariant: apd-dk-rule-1
