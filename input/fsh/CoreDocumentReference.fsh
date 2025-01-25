@@ -1,3 +1,4 @@
+/*
 Profile: CoreDocumentReference
 Parent: DocumentReference
 Id: core-documentreference
@@ -46,8 +47,8 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * content.attachment.hash ^short = "[DocumentEntry.hash] Hash of the data (sha-1)"
 * content.format ^short = "[DocumentEntry.formatCode] Format/content rules for the document"
 * content.format 1.. MS
-/* * content.format.coding.code 1.. MS
-* content.format.coding.system 1.. MS */
+* content.format.coding.code 1.. MS
+* content.format.coding.system 1.. MS 
 * content.attachment.size 1.. MS
 * content.attachment.title 1.. MS
 * content.attachment.url 1.. MS
@@ -80,7 +81,7 @@ Description: "A profile stating the rules, when exchanging a CDA document."
     medcom-xds-version-id-extension named versionid 1..1 MS SU
 * extension[homeCommunityid] ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed"
 * extension[versionid] ^short = "Specifies the version of the DocumentReference for a standard."
-
+*/
 
 /* Invariant: apd-dk-rule-1
 Description: "Where formatCode is 'urn:ad:dk:medcom:appointmentsummary:full', the eventCode must be 'ALAL01' (hjertesygdomme)"
@@ -88,8 +89,9 @@ Severity: #error
 Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
 */
 
+/*
 Invariant: uuid
 Description: "General UUID expression"
 Severity: #error
 Expression: "value.matches('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
-
+*/
