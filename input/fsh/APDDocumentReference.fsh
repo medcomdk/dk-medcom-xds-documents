@@ -1,5 +1,5 @@
 Profile: APDDKDocumentReference
-Parent: CoreDocumentReference
+Parent: MedComDocumentReference
 Id: apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
 * type from $ApdTypeCode (required) 
@@ -26,6 +26,7 @@ Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: APDDKDocumentReference
 Title: "Instance of APD-DK DocumentReference."
 Description: "Instance of APD-DK DocumentReference, containing relevant metadata"
+//* identifier = 12c2deaf-389a-4f7d-8133-60b24c75cd7e
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
@@ -36,6 +37,7 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * category = $DanishiheOID#001 "Klinisk rapport"
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
+* securityLabel = #N
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
 * content.attachment.language = $IANALanguageOID#da "Danish"
 * content.attachment.creation = "2023-09-08T13:28:17+01:00"
@@ -45,6 +47,7 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * content.attachment.title = "Aftale for 0201919990"
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema"
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+* context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
 * context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed"
 * context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
 * extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"

@@ -1,5 +1,5 @@
 /* Profile: FutureAPDDKDocumentReference
-Parent: CoreDocumentReference
+Parent: MedComDocumentReference
 Id: future-apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
 * masterIdentifier.value = "urn:uuid:179b817d-9b0b-4265-9450-215e4562835a"

@@ -3,19 +3,20 @@ Parent: MedComMessageDocumentReference
 Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 * type from $HcoTypeCode (required) 
+* category.coding.code = $MessageClassCodeCS#Workflow
 * content.format from $HcoFormatCode (required)
 * context.event from $HcoEventCode (required)
 * extension.valueCoding from $HcoHomeCommunityID (required)
 * extension.valueString = "1.1.0"
 * subject 1..
 
-/*
+
 // Metadata instance
 Instance: 77787891-083a-4d19-9e56-423e7a223e30
 InstanceOf: HomeCareObservationDocumentReference
 Title: "Instance of HomeCareObservation DocumentReference."
 Description: "Instance of HomeCareObservation DocumentReference containing relevant metadata"
-* identifier = 12c2deaf-389a-4f7d-8133-60b24c75cd7f
+//* identifier = 12c2deaf-389a-4f7d-8133-60b24c75cd7f
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
@@ -23,7 +24,8 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * status = #current "Current"
 * type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* category = $DanishiheOID#001 "Klinisk rapport" 
+* category.coding.code = $MessageClassCodeCS#Workflow
+//* category = $DanishiheOID#006 //"Workflow" 
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * securityLabel = #N
@@ -43,4 +45,3 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
 * extension[1].valueString = "1.1.0"
-*/
