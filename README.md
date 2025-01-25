@@ -1,1 +1,1 @@
-dk-medcom-ihe-xds-metadata
+Metadata profiles for MedCom XDS Documents for national sharing
