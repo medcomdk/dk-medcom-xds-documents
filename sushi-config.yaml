@@ -6,7 +6,7 @@
 id: medcom.fhir.dk.xdsdocuments
 canonical: https://medcomfhir.dk/ig/xdsdocuments
 name: Metadata profiles for MedCom XDS Documents for national sharing
-# title: Example Title
+title: MedCom XDS Documents Metadata profiles IG 
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 1.0.0
@@ -29,6 +29,12 @@ dependencies:
   medcom.fhir.dk.core: 2.1.0
   medcom.fhir.dk.coredocument: current #1.0.0
   medcom.fhir.dk.xdsmetadata: 1.0.0
+
+parameters:  
+  apply-version: false
+  default-version: true
+  apply-publisher: false
+  default-publisher: true
 
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
