@@ -1,4 +1,4 @@
-# Metadata for CDA Document
+# Metadata for XDS Documents whether it is CDAs FHIR Documents or MedCom Messages
 
 This implementation guide includes a core profile of the DocumentReference resource. The intension of this IG is to gather all general constraints in regards to CDA-metadata. Therefore several
 
