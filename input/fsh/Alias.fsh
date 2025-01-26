@@ -35,6 +35,11 @@ Alias: $QrdEventCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-x
 Alias: $QrdHomeCommunityID = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/MedCom-ihe-qrd-homeCommunityId-VS
 Alias: $QrdFormatCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/MedCom-ihe-qrd-formatcode-VS
 
+Alias: $PlrTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-ihe-plr-typecode-VS
+Alias: $PlrHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-homeCommunityId-VS
+Alias: $PlrFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-plr-formatcode-VS
+Alias: $PlrContentType = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-mimetype-VS
+
 /* Example of defining aliases (henviser til et CodeSystem eller ValueSet): 
 Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode 
 Alias: $RequestPriority = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-requestPriority 
