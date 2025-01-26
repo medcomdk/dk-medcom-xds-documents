@@ -16,7 +16,7 @@ Description: "Value set for the TypeCode attribute for DK HCO Message. TypeCode 
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* $TypeCodeCS#HCOMsg "HomeCareObservation Message"
+* $MedComOID#HCOMsg "HomeCareObservation Message"
 
 ValueSet: MedComXds_HcoFormatCodeVS
 Id: medcom-dk-xds-hco-formatcode-VS
