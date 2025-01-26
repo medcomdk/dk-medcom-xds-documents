@@ -1,3 +1,4 @@
+/*
 ValueSet: MedComXds_APDDkFormatCode
 Id: medcom-dk-xds-apd-formatcode-VS
 Title: "APD-DK IHE FormatCode"
@@ -15,3 +16,5 @@ Description: "List of operational and in production home communities (XCA) in Da
 * ^status = #active
 * ^date = "2016-11-01"
 * $DanishxdsOID#1.2.208.176.8.1 "Common Danish DK IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* $DanishxdsOID#1.2.208.193.100 "Primary healthcare domain"
+*/
