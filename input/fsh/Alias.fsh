@@ -4,7 +4,7 @@ Alias: $RequestPriority = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-ca
 */
 //used for instances
 Alias: $ClassCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-classcode-CS
-Alias: $TypeCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-LOINC-typecode-CS
+Alias: $TypeCodeCS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-typecode-VS
 Alias: $ContentTypeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-mimeType-CS
 Alias: $LanguageCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-LanguageCode-CS
 Alias: $FormatCodeCS = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-formatcode-CS
@@ -24,11 +24,11 @@ Alias: $PhadEventCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-
 Alias: $PhadHomeCommunityID = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/MedCom-ihe-phad-homeCommunityId-VS
 Alias: $PhadFormatCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/MedCom-ihe-phad-formatcode-VS
 
-Alias: $MsgClassCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-msg-classcode-VS
-Alias: $HcoTypeCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-typecode-VS
-Alias: $HcoEventCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-eventcodelist-VS
-Alias: $HcoHomeCommunityID = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-homeCommunityId-VS
-Alias: $HcoFormatCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-formatcode-VS
+Alias: $HcoClassCodeVs = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-classcode-VS
+Alias: $HcoTypeCodeVS = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-typecode-VS
+Alias: $HcoEventCodeVS = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-eventcodelist-VS
+Alias: $HcoHomeCommunityIDVS = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-homeCommunityId-VS
+Alias: $HcoFormatCodeVS = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-hco-formatcode-VS
 
 Alias: $QrdTypeCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-qrd-typecode-VS
 Alias: $QrdEventCode = http://medcomfhir.dk/ig/xdsdocuments/ValueSet/medcom-dk-xds-qrd-eventcodelist-VS
