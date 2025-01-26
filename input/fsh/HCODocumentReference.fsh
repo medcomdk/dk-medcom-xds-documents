@@ -1,6 +1,7 @@
 Profile: HomeCareObservationDocumentReference
 Parent: MedComMessageDocumentReference
 Id: homecare-observation-documentreference
+Title: "HCODocumentReference."
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 * type from $HcoTypeCode (required) 
 * category.coding.code = $MsgClassCode#Workflow
