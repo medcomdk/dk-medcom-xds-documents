@@ -1,3 +1,4 @@
+/*
 Profile: QRDDKDocumentReference
 Parent: MedComDocumentReference
 Id: qrd-dk-documentreference
@@ -13,6 +14,7 @@ Description: "A profile stating the rules, when exchanging a CDA Questionnaire R
 //* context.practiceSetting.coding.system from $QrdPracticeSetting (required)
 * extension.valueCoding from $QrdHomeCommunityID (required)
 * extension.valueString = "1.0.0"
+*/
 
 /* Invariant: apd-dk-rule-1
 Description: "Where formatCode is 'urn:ad:dk:medcom:appointmentsummary:full', the eventCode must be 'ALAL01' (hjertesygdomme)"
@@ -20,7 +22,8 @@ Severity: #error
 Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
 */
 
- // Metadata instance
+/*
+// Metadata instance
 Instance: 50d6fc3c-d95a-4d12-8e61-8d70584c1f4e
 InstanceOf: QRDDKDocumentReference
 Title: "Instance of QRD-DK DocumentReference."
@@ -53,3 +56,4 @@ Description: "Instance of QRD-DK DocumentReference, containing relevant metadata
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
 * extension[1].valueString = "1.0.0"
+*/
