@@ -7,7 +7,7 @@ Usage: #example
 * name.family = "Andersen"
 
 Instance: 8fa7df76-bec2-4fe2-9a44-750030a0eda0
-InstanceOf: DkCoreOrganization
+InstanceOf: XDSAuthorOrganization
 Title: "XDS document bundled  Author Organization"
 Description: "Instance of a XDS document bundled  author organization"
 Usage: #example
