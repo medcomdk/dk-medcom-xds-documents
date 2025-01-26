@@ -23,7 +23,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:fe27d893-6b9e-4e3d-91b0-72d033ce5c07"
 * status = #current "Current"
-* type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
+* type = $MedComOID#HCOMsg "HomeCareObservation Message"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category.coding.code = $DanishXdsOid#Workflow
 //* category = $DanishXdsOid#006 //"Workflow" 
