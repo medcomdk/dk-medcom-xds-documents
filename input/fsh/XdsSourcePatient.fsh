@@ -1,3 +1,4 @@
+/*
 Profile: XDSSourcePatient
 Parent: MedComCorePatient
 Id: xds-source-patient
@@ -7,3 +8,4 @@ Description: "A profile including requirements for an XDS source patient, repres
 * name[official].given 1.. MS
 * birthDate 1.. MS
 * gender 1.. MS
+*/
