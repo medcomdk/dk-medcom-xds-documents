@@ -16,7 +16,7 @@ Description: "ValueSet containing TypeCode."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* $LoincOID#55188-7 "Patient data Document"
+* $MedComOID#MsgHCO "HomeCareObservationMessage"
 
 ValueSet: MedComXds_HcoFormatCode
 Id: medcom-dk-xds-hco-formatcode-VS
