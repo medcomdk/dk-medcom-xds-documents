@@ -1,0 +1,14 @@
+{
+    "package-id": "medcom.fhir.dk.xdsdocuments",
+    "version": "1.0.0",
+    "path": "http://medcomfhir.dk/ig/xdsdocuments/1.0.0",
+    "status": "release",
+    "sequence": "Release",
+    "first" : true,
+    "ci-build" : "https://build.fhir.org/ig/medcomdk/dk-medcom-xdsdocuments",
+    "milestone" : true,
+    "title": "MedCom XDS Documents Metadata profiles IG",
+    "category": "xdsdocuments",
+    "introduction": "Metadata profiles for MedCom XDS Documents for national sharing, whether it will be MedCom Document Profiles from CDAs and FHIR Documents to Message Documents",
+    "descmd": "@release-notes.md"
+}
