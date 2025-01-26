@@ -17,15 +17,6 @@ Description: "Value set for the TypeCode attribute for DK APD Message. TypeCode 
 * ^date = "2022-01-26"
 * $TypeCodeCS#APDMsg "HomeCareObservation Message"
 
-ValueSet: MedComXds_APDDkFormatCodeVS
-Id: medcom-dk-xds-apd-formatcode-VS
-Title: "DK IHE XDS APD Message FormatCode Valueset"
-Description: "Value set for the FormatCode attribute for DK APD Message. TypeCode used in DK IHE XDS Document sharing"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2025-03-01"
-* $FormatCodeCS#urn:ad:dk:medcom:msg:APD-v1.1:full "DK APD message"
-
 ValueSet: MedComXds_APDDkHomeCommunityIdVS
 Id: medcom-dk-xds-apd-homeCommunityId-VS
 Title: "DK IHE XDS HomeCommunityId"
