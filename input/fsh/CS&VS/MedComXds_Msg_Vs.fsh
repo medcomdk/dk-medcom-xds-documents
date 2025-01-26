@@ -1,3 +1,4 @@
+/*
 ValueSet: MedComXds_MsgClassCode
 Id: medcom-dk-xds-msg-classcode-VS
 Title: "DK IHE XDS Message Valueset"
@@ -17,5 +18,5 @@ Description: "ValueSet containing TypeCode."
 * ^status = #active
 * ^date = "2022-01-26"
 * $TypeCodeCS#HCOMsg "HomeCareObservation Message"
-
+*/
 
