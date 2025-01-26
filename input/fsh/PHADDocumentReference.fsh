@@ -35,7 +35,7 @@ Description: "Instance of PHAD-DK DocumentReference, containing relevant metadat
 * type = $LoincOID#56446-8 "Personal health attachment Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishXdsOid#001 "Klinisk rapport"
-* author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
+* author[institution] = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * securityLabel = #N
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
