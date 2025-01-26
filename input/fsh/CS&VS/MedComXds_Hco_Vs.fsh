@@ -1,7 +1,7 @@
 ValueSet: MedComXds_HcoClassCode
 Id: medcom-dk-xds-hco-classcode-VS
-Title: "DK IHE XDS Message Valueset"
-Description: "Value set for the classCode attribute for DK IHE XDS Message. ClassCode used in DK IHE XDS Document sharing"
+Title: "DK IHE XDS HCO Message ClassCode Valueset"
+Description: "Value set for the ClassCode attribute for DK HCO Message. ClassCode used in DK IHE XDS Document sharing"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
@@ -10,8 +10,8 @@ Description: "Value set for the classCode attribute for DK IHE XDS Message. Clas
 
 ValueSet: MedComXds_HcoTypeCode
 Id: medcom-dk-xds-hco-typecode-VS
-Title: "IHE XDS TypeCode"
-Description: "ValueSet containing TypeCode."
+Title: "DK IHE XDS HCO Message TypeCode Valueset"
+Description: "Value set for the TypeCode attribute for DK HCO Message. TypeCode used in DK IHE XDS Document sharing"
 * ^experimental = true
 * ^version = "1.0.0"
 * ^status = #active
@@ -20,8 +20,8 @@ Description: "ValueSet containing TypeCode."
 
 ValueSet: MedComXds_HcoFormatCode
 Id: medcom-dk-xds-hco-formatcode-VS
-Title: "HCO-msg IHE XDS FormatCode"
-Description: "HCO-msg: Code system for document format code used in national Document sharing. The value set for format code is based on code system DK_IHE_FormatCode."
+Title: "DK IHE XDS HCO Message FormatCode Valueset"
+Description: "Value set for the FormatCode attribute for DK HCO Message. TypeCode used in DK IHE XDS Document sharing"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-03-01"
