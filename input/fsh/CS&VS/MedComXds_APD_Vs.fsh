@@ -15,7 +15,7 @@ Description: "Value set for the TypeCode attribute for DK APD Message. TypeCode 
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* $TypeCodeCS#APDMsg "HomeCareObservation Message"
+* $LoincOID#56446-8 "Appointment Summary Document"
 
 ValueSet: MedComXds_APDDkHomeCommunityIdVS
 Id: medcom-dk-xds-apd-homeCommunityId-VS
