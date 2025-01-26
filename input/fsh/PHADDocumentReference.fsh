@@ -1,4 +1,3 @@
-/*
 Profile: PHADDKDocumentReference
 Parent: MedComDocumentReference
 Id: phad-dk-documentreference
@@ -14,7 +13,6 @@ Description: "A profile stating the rules, when exchanging a CDA Personal Health
 * extension.valueCoding from $PhadHomeCommunityID (required)
 * extension.valueString = "1.0.0"
 * subject 1..
-*/
 
 /* Invariant: apd-dk-rule-1
 Description: "Where formatCode is 'urn:ad:dk:medcom:appointmentsummary:full', the eventCode must be 'ALAL01' (hjertesygdomme)"
@@ -22,7 +20,7 @@ Severity: #error
 Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
 */
 
-/*
+
 // Metadata instance
 Instance: 6339367b-1a7b-4a7b-bd3f-80290750be27
 InstanceOf: PHADDKDocumentReference
@@ -56,5 +54,5 @@ Description: "Instance of PHAD-DK DocumentReference, containing relevant metadat
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
 * extension[1].valueString = "1.0.0"
-*/
+
 
