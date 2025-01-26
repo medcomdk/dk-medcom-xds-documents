@@ -6,7 +6,7 @@ Description: "ValueSet containing TypeCode."
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-26"
-* $MedComOID#MsgHCO "HomeCareObservationMessage"
+* $MedComOID#HCOMsg "HomeCareObservationMessage"
 
 ValueSet: MedComXds_HcoFormatCode
 Id: medcom-dk-xds-hco-formatcode-VS
