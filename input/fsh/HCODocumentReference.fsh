@@ -10,6 +10,7 @@ Description: "A profile stating the rules, when exchanging a document including 
 * extension.valueCoding from $HcoHomeCommunityID (required)
 * extension.valueString = "1.1.0"
 * subject 1..
+* securityLabel = #N
 
 
 // Metadata instance
@@ -29,7 +30,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 //* category = $DanishXdsOid#006 //"Workflow" 
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
-* securityLabel = #N
+//* securityLabel = #N
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
 * content.attachment.language = $IANALanguageOID#da "Danish"
 * content.attachment.creation = "2023-09-08T13:28:17+01:00" 
