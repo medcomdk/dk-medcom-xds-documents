@@ -15,5 +15,5 @@ Description: "HCO-msg: Code system for document format code used in national Doc
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2025-03-01"
-* $MedComFormatOID#urn:ad:dk:medcom:plr-v1.0:full
+* #urn:ad:dk:medcom:msg:hco-v1.1:full "DK HCO message"
 
