@@ -29,6 +29,7 @@ Instance: 50d6fc3c-d95a-4d12-8e61-8d70584c1f4e
 InstanceOf: QRDDKDocumentReference
 Title: "Instance of QRD-DK DocumentReference."
 Description: "Instance of QRD-DK DocumentReference, containing relevant metadata"
+* identifier.value = "urn:uuid:12c2deaf-389a-4f7d-8133-60b24c75cd7g"
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142

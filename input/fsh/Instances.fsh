@@ -1,24 +1,24 @@
 Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
-InstanceOf: XDSAuthorPerson
-Title: "Author Person"
-Description: "Instance of an author person"
+InstanceOf: MedComDocumentPractitioner
+Title: "XDS document bundled Author Person"
+Description: "Instance of a XDS document bundled  author person"
 Usage: #example
 * name.given = "Sidsel"
 * name.family = "Andersen"
 
 Instance: 8fa7df76-bec2-4fe2-9a44-750030a0eda0
-InstanceOf: DkCoreOrganization
-Title: "Author Organization"
-Description: "Instance of an author organization"
+InstanceOf: MedComDocumentOrganization
+Title: "XDS document bundled Author Organization"
+Description: "Instance of a XDS document bundled  author organization"
 Usage: #example
 * identifier[SOR-ID].value = "61741000016007"
 * identifier[SOR-ID].system = "urn:oid:1.2.208.176.1.1"
 * name = "Lægerne Hasseris Bymidte"
 
 Instance: 37628912-7816-47a3-acd8-396b610be142
-InstanceOf: XDSSourcePatient
-Title: "Source Patient"
-Description: "Instance of a source patient"
+InstanceOf: MedComDocumentPatient
+Title: "XDS document bundled Source Patient"
+Description: "Instance of a XDS document bundled  source patient"
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "0201919990"
