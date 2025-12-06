@@ -26,6 +26,7 @@ Instance: 6339367b-1a7b-4a7b-bd3f-80290750be27
 InstanceOf: PHADDKDocumentReference
 Title: "Instance of PHAD-DK DocumentReference."
 Description: "Instance of PHAD-DK DocumentReference, containing relevant metadata"
+* identifier.value = "urn:uuid:12c2deaf-389a-4f7d-8133-60b24c75cd7h"
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142

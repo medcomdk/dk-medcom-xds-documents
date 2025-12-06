@@ -1,7 +1,7 @@
 Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
 InstanceOf: XDSAuthorPerson
-Title: "Author Person"
-Description: "Instance of an author person"
+Title: "XDS document bundled Author Person"
+Description: "Instance of a XDS document bundled  author person"
 Usage: #example
 * name.given = "Sidsel"
 * name.family = "Andersen"

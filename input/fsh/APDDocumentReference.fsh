@@ -22,10 +22,11 @@ Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetada
 */
 
 // Metadata instance
-Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
+Instance: APD-94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: APDDKDocumentReference
 Title: "Instance of APD-DK DocumentReference."
 Description: "Instance of APD-DK DocumentReference, containing relevant metadata"
+* identifier.value = "urn:uuid:12c2deaf-389a-4f7d-8133-60b24c75cd7e"
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
