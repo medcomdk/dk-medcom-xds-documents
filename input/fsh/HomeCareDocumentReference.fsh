@@ -10,7 +10,6 @@ Description: "A profile stating the rules, when exchanging a document including 
 * subject 1..
 
 
-// Metadata instance
 Instance: 77787891-083a-4d19-9e56-423e7a223e30
 InstanceOf: HomeCareObservationDocumentReference
 Title: "Instance of HomeCareObservation DocumentReference."
@@ -18,7 +17,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * contained[+] = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
-* masterIdentifier.value = "urn:uuid:fe27d893-6b9e-4e3d-91b0-72d033ce5c07"
+* masterIdentifier.value = "urn:uuid:add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c"
 * status = #current "Current"
 * type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
