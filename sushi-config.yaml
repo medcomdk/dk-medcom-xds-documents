@@ -27,8 +27,8 @@ publisher:
 dependencies:
   hl7.fhir.dk.core: 3.3.0
   medcom.fhir.dk.core: 2.4.0
-  medcom.fhir.dk.coredocument: dev #1.0.0
-  medcom.fhir.dk.xdsmetadata: dev #1.0.0
+  medcom.fhir.dk.coredocument: current #1.0.0
+  medcom.fhir.dk.xdsmetadata: current #1.0.0
 
 parameters:  
   apply-version: false
