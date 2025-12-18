@@ -31,6 +31,7 @@ Description: "Instance of PHAD-DK DocumentReference, containing relevant metadat
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* identifier.value = "urn:uuid:7c596b9a-112e-4386-ae71-5ecdd3ed7c50" //Identifier fra Bundle.identifier
 * status = #current "Current"
 * type = $LoincOID#56446-8 "Personal health attachment Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)

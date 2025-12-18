@@ -31,6 +31,7 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01"
+* identifier.value = "urn:uuid:0285348e-231b-4235-b5c3-a2452c279e15"
 * status = #current "Current"
 * type = $LoincOID#56446-8 "Appointment Summary Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
