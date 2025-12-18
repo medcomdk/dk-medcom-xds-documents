@@ -23,7 +23,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:5941658d-b927-4641-ac6a-52636497063f"
 * status = #current "Current"
-* type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
+* type = $loinc#55188-7 "Patient data Document" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishiheOID#001 "Klinisk rapport"
 * securityLabel = #N
@@ -38,10 +38,11 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * content.attachment.title = "Kommunale prøvesvar for 0201919990"
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:pdd-v1.0.1:full "DK PDD document" // Danish XDS typecode must be updated
 * context.event = $SKSOID#ALAL02 "Hjertesygdomme" // Danish XDS typecode must be updated
-* context.facilityType = $SnomedctOID#550621000005101 "hjemmesygeplejeenhed" // Danish XDS typecode must be updated
-* context.practiceSetting = $SnomedctOID#658161000005107 "hjemmesygepleje" // Danish XDS typecode must be updated
+* context.facilityType = $sct#550621000005101 "hjemmesygeplejeenhed" // Danish XDS typecode must be updated
+* context.practiceSetting = $sct#658161000005107 "hjemmesygepleje" // Danish XDS typecode must be updated
+* context.sourcePatientInfo.identifier.value = "0201919990"
 * context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
-* extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
-* extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
-* extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
-* extension[1].valueString = "1.1.0"
+* extension[+].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
+* extension[=].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* extension[versionid].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
+* extension[versionid].valueString = "1.1.0"

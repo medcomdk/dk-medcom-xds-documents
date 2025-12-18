@@ -22,7 +22,7 @@ Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetada
 */
 
 // Metadata instance
-Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
+/* Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: APDDKDocumentReference
 Title: "Instance of APD-DK DocumentReference."
 Description: "Instance of APD-DK DocumentReference, containing relevant metadata"
@@ -34,7 +34,7 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * masterIdentifier.value = "urn:uuid:bf1bb63b-d405-4dfe-9810-37b16b333a01" 
 * identifier.value = "urn:uuid:0285348e-231b-4235-b5c3-a2452c279e15"
 * status = #current "Current"
-* type = $LoincOID#56446-8 "Appointment Summary Document"
+* type = $loinc#56446-8 "Appointment Summary Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishiheOID#001 "Klinisk rapport"
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
@@ -48,11 +48,12 @@ Description: "Instance of APD-DK DocumentReference, containing relevant metadata
 * content.attachment.title = "Aftale for 0201919990"
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:apd-v2.0.1:full "DK APD schema"
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
-* context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed"
-* context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
+* context.facilityType = $sct#554871000005105 "psykiatrienhed"
+* context.practiceSetting = $sct#394588006 "børne- og ungdomspsykiatri"
 * extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
 * extension[1].valueString = "1.0.0"
 
 
+ */

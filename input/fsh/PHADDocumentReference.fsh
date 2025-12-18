@@ -22,7 +22,7 @@ Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetada
 */
 
 // Metadata instance
-Instance: 6339367b-1a7b-4a7b-bd3f-80290750be27
+/* Instance: 6339367b-1a7b-4a7b-bd3f-80290750be27
 InstanceOf: PHADDKDocumentReference
 Title: "Instance of PHAD-DK DocumentReference."
 Description: "Instance of PHAD-DK DocumentReference, containing relevant metadata"
@@ -34,7 +34,7 @@ Description: "Instance of PHAD-DK DocumentReference, containing relevant metadat
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:7c596b9a-112e-4386-ae71-5ecdd3ed7c50" //Identifier fra Bundle.identifier
 * status = #current "Current"
-* type = $LoincOID#56446-8 "Personal health attachment Document"
+* type = $loinc#56446-8 "Personal health attachment Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishiheOID#001 "Klinisk rapport"
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
@@ -48,11 +48,11 @@ Description: "Instance of PHAD-DK DocumentReference, containing relevant metadat
 * content.attachment.title = "Udskrivningsaftale" //Udskrivningsaftale eller Koordinationsaftale
 * content.format = $MedComFormatOID#urn:ad:dk:medcom:phad-v1.0:full "DK CPD schema"
 * context.event = $SKSOID#ALAL03 "Psykiske lidelser og adfærdsmæssige forstyrrelser"
-* context.facilityType = $SnomedctOID#554871000005105 "psykiatrienhed"
-* context.practiceSetting = $SnomedctOID#394588006 "børne- og ungdomspsykiatri"
+* context.facilityType = $sct#554871000005105 "psykiatrienhed"
+* context.practiceSetting = $sct#394588006 "børne- og ungdomspsykiatri"
 * extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"
-* extension[1].valueString = "1.0.0"
+* extension[1].valueString = "1.0.0" */
 
 
