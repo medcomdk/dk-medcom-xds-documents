@@ -1,5 +1,5 @@
 Profile: QRDDKDocumentReference
-Parent: CoreDocumentReference
+Parent: MedComMinimalDocumentReference
 Id: qrd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Questionnaire Response Document (QRD-DK)."
 * type.coding from $QrdTypeCode (required) 

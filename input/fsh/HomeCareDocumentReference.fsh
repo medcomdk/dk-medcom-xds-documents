@@ -1,5 +1,5 @@
 Profile: HomeCareObservationDocumentReference
-Parent: MedComDocumentReference
+Parent: MedComMinimalDocumentReference
 Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 * type from $HcoTypeCode (required) 
@@ -27,7 +27,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * category = $DanishiheOID#001 "Klinisk rapport"
 * securityLabel = #N
-* author[institution] = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
+* author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
 * content.attachment.language = $IANALanguageOID#da "Danish"

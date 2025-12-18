@@ -1,4 +1,4 @@
-/* Profile: CoreDocumentReference
+/* Profile: MedComMinimalDocumentReference
 Parent: DocumentReference
 Id: core-documentreference
 Description: "A profile stating the rules, when exchanging a CDA document."
@@ -95,7 +95,7 @@ Expression: "value.matches('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9
 
  */
 
-Profile: CoreDocumentReference // MedComMinimalDocumentReference //OBS: Skal erstattes af afhængighed til DkCore v 3.5.0
+Profile: MedComMinimalDocumentReference // MedComMinimalDocumentReference //OBS: Skal erstattes af afhængighed til DkCore v 3.5.0
 Parent: DkCoreMinimalDocumentReference
 Id: medcom-minimal-documentreference
 Title: "A replication of HL7 Denmark DK Core MinimalDocumentReference Profile"

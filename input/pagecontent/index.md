@@ -6,7 +6,7 @@ This implementation guide includes a core profile of the DocumentReference resou
 
 The following mapping origins from [HL7's mapping between XDS metadata to FHIR DocumentReference resource](https://www.hl7.org/fhir/documentreference-mappings.html#xds). The list of ValueSets is added. These restrictions are also defined in the profile, which can be found under the tab 'Artifacts'. 
 
-HomeCommunityId is not included in the mapping, why the extension MedCom XDS HomeCommunityID is created. The extension can be found under the tab 'Artifacts' and is included in the profile CoreDocumentReference. 
+HomeCommunityId is not included in the mapping, why the extension MedCom XDS HomeCommunityID is created. The extension can be found under the tab 'Artifacts' and is included in the profile MedComMinimalDocumentReference. 
 
 ## CodeSystems and ValueSets
 More information about ValueSets can be found in the [Terminology for XDS Metadata IG](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/).

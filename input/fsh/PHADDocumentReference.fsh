@@ -1,5 +1,5 @@
 Profile: PHADDKDocumentReference
-Parent: CoreDocumentReference
+Parent: MedComMinimalDocumentReference
 Id: phad-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Personal Health Attachment Document (PHAD-DK)."
 * type from $PhadTypeCode (required) 

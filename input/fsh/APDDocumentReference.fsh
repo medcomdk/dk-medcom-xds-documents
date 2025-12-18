@@ -1,5 +1,5 @@
 Profile: APDDKDocumentReference
-Parent: CoreDocumentReference
+Parent: MedComMinimalDocumentReference
 Id: apd-dk-documentreference
 Description: "A profile stating the rules, when exchanging a CDA Appointment (APD-DK) document."
 * type from $ApdTypeCode (required) 
