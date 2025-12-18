@@ -25,10 +25,13 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.dk.core: 3.3.0
+  hl7.fhir.extensions.r5: 4.0.1 
+  hl7.fhir.dk.core: dev
   medcom.fhir.dk.core: 2.4.0
-  medcom.fhir.dk.document: 1.0.1
+  medcom.fhir.dk.document: dev
   medcom.fhir.dk.xdsmetadata: 1.0.1
+  ihe.iti.mhd: 4.2.3
+
 
 parameters:  
   apply-version: false

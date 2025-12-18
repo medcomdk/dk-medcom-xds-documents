@@ -34,6 +34,7 @@ Description: "Instance of QRD-DK DocumentReference, containing relevant metadata
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:c8f1acf0-2e28-11e6-bdf4-0800200c9a66"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * status = #current "Current"
 * identifier.value = "urn:uuid:1c22c131-8dbc-40f4-9419-ce89a52e1a29"
 * type = $LoincOID#74465-6 "Questionnaire Response Document"

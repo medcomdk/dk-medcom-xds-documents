@@ -20,11 +20,13 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * contained[+] = 8fa7df76-bec2-4fe2-9a44-750030a0eda0
 * contained[+] = 37628912-7816-47a3-acd8-396b610be142
 * masterIdentifier.value = "urn:uuid:fe27d893-6b9e-4e3d-91b0-72d033ce5c07"
+* masterIdentifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:5941658d-b927-4641-ac6a-52636497063f"
 * status = #current "Current"
 * type = $LoincOID#55188-7 "Patient data Document" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* category = $DanishXdsOid#001 "Klinisk rapport"
+* category = $DanishiheOID#001 "Klinisk rapport"
+* securityLabel = #N
 * author[institution] = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"
@@ -38,6 +40,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * context.event = $SKSOID#ALAL02 "Hjertesygdomme" // Danish XDS typecode must be updated
 * context.facilityType = $SnomedctOID#550621000005101 "hjemmesygeplejeenhed" // Danish XDS typecode must be updated
 * context.practiceSetting = $SnomedctOID#658161000005107 "hjemmesygepleje" // Danish XDS typecode must be updated
+* context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
 * extension[0].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-homecommunityid-extension"
 * extension[0].valueCoding = $DanishxdsOID#1.2.208.176.43210.8.20 "TEST2"
 * extension[1].url = "https://medcomfhir.dk/ig/ihexdsmetadata/StructureDefinition/medcom-xds-version-id-extension"

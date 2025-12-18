@@ -20,8 +20,8 @@ InstanceOf: MedComDocumentPatient
 Title: "XDS document bundled Source Patient"
 Description: "Instance of a XDS document bundled  source patient"
 Usage: #example
-* identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "0201919990"
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0201919990"
 * name[official].use = #official
 * name[official].family = "Lauridsen"
 * name[official].given[0] = "Else"

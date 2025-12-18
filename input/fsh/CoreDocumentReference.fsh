@@ -1,4 +1,4 @@
-Profile: CoreDocumentReference
+/* Profile: CoreDocumentReference
 Parent: DocumentReference
 Id: core-documentreference
 Description: "A profile stating the rules, when exchanging a CDA document."
@@ -47,7 +47,7 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * content.format ^short = "[DocumentEntry.formatCode] Format/content rules for the document"
 * content.format 1.. MS
 /* * content.format.coding.code 1.. MS
-* content.format.coding.system 1.. MS */
+* content.format.coding.system 1.. MS *//* 
 * content.attachment.size 1.. MS
 * content.attachment.title 1.. MS
 * content.attachment.url 1.. MS
@@ -76,20 +76,36 @@ Description: "A profile stating the rules, when exchanging a CDA document."
 * context.related MS
 * context.related ^short = "[DocumentEntry.referenceIdList] Related identifiers or resources"
 * extension contains 
-    medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS SU and
-    medcom-xds-version-id-extension named versionid 1..1 MS SU
+    medcom-xds-homecommunityid-extension named homeCommunityid 1..1 MS and
+    medcom-xds-version-id-extension named versionid 1..1 MS
 * extension[homeCommunityid] ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed"
 * extension[versionid] ^short = "Specifies the version of the DocumentReference for a standard."
 
-
+ */
 /* Invariant: apd-dk-rule-1
 Description: "Where formatCode is 'urn:ad:dk:medcom:appointmentsummary:full', the eventCode must be 'ALAL01' (hjertesygdomme)"
 Severity: #error
 Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/dk-ihe-typecode-de-regenstrief').code = '56446-8').context.event.coding.code = 'ALAL01'"
 */
-
+/* 
 Invariant: uuid
 Description: "General UUID expression"
 Severity: #error
 Expression: "value.matches('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
 
+ */
+
+Profile: CoreDocumentReference // MedComMinimalDocumentReference //OBS: Skal erstattes af afhængighed til DkCore v 3.5.0
+Parent: DkCoreMinimalDocumentReference
+Id: medcom-minimal-documentreference
+Title: "A replication of HL7 Denmark DK Core MinimalDocumentReference Profile"
+Description: "A replication of DK Core MinimalDocumentReference"
+* context.facilityType from $FacilityType (extensible)
+* context.practiceSetting from $PracticeSetting (extensible)
+* context.event from $v3-ActCode3.0.0 (example)
+* author 1..*
+* author only Reference(DkCorePatient or DkCorePractitioner or DkCorePractitionerRole or DkCoreRelatedPerson or DkCoreOrganization or Device)
+* authenticator only Reference(DkCorePractitioner or DkCorePractitionerRole or DkCoreOrganization)
+* subject 1..1
+* subject only Reference(DkCorePatient)
+* context.sourcePatientInfo only Reference(DkCorePatient)
