@@ -6,8 +6,8 @@
 id: medcom.fhir.dk.xdsdocuments
 canonical: https://medcomfhir.dk/ig/xdsdocuments
 name: MedCom XDS Documents
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: Danish XDS Documents profiles
+description: Danish XDS Documents profiles consists of both the Documents themselves being FHIR Documents or Messages and their corresponding DocumentReferences
 status: draft # draft | active | retired | unknown
 version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
