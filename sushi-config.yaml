@@ -3,13 +3,13 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: medcom.fhir.dk.ihe.xds.metadata
-canonical: https://medcomfhir.dk/ig/ihexdsmetadata
-name: MedCom IHE XDS Metadata
+id: medcom.fhir.dk.xdsdocuments
+canonical: https://medcomfhir.dk/ig/xdsdocuments
+name: MedCom XDS Documents
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 1.0.0
+version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -26,7 +26,7 @@ publisher:
 #
 dependencies:
   hl7.fhir.extensions.r5: 4.0.1 
-  hl7.fhir.dk.core: current
+  hl7.fhir.dk.core: 3.5.0
   medcom.fhir.dk.core: 2.4.0
   medcom.fhir.dk.document: 1.0.1
   medcom.fhir.dk.xdsmetadata: 1.0.1

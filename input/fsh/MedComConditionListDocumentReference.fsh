@@ -12,7 +12,7 @@ Description: "A profile for the MedCom ConditionListDocumentReference resource."
 //* context.event from $PcaEventCode (required)
 //* context.facilityType from $ApdFacilityType (required)
 //* context.practiceSetting from $ApdPracticeSetting (required)
-//* extension[homeCommunityid].valueCoding from http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-ihe-core-homeCommunityId-VS (required)
+//* extension[homeCommunityid].valueCoding from http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-homeCommunityId-VS (required)
 * extension[versionid].valueString = "1.0.0"
 * subject 1..
 
@@ -30,7 +30,7 @@ Description: "DocumentReference instance"
 * identifier[entryUUID].value = "urn:uuid:7c596b9a-112e-4386-ae71-5ecdd3ed7c50"
 * type = $loinc#11450-4 "Problem list - Reported"
 * authenticator = Reference(1fcad31f-8967-4f49-b6af-7e64082e8fec)
-* category = $DanishiheOID#001 "Klinisk rapport"
+* category = $DanishXdsOID#001 "Klinisk rapport"
 * author = Reference(fd3206c6-c265-49f9-82c3-8b4c96280403)
 * subject = Reference(69e475df-20c8-4f54-8cea-9843568205fd)
 * content.attachment.contentType = $IANAMediaOID#application/fhir+json "MimeType-application/fhir+json"

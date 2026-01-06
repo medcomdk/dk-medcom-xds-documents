@@ -39,7 +39,7 @@ Description: "Instance of QRD-DK DocumentReference, containing relevant metadata
 * identifier.value = "urn:uuid:1c22c131-8dbc-40f4-9419-ce89a52e1a29"
 * type = $loinc#74465-6 "Questionnaire Response Document"
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* category = $DanishiheOID#001 "Klinisk rapport"
+* category = $DanishXdsOID#001 "Klinisk rapport"
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
 * content.attachment.contentType = $IANAMediaOID#text/xml "MimeType-text/xml"

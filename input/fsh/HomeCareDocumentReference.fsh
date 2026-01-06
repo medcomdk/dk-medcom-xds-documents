@@ -6,18 +6,18 @@ Description: "A profile stating the rules, when exchanging a document including 
 * content.format from $HcoFormatCode (required)
 * context.event from $HcoEventCode (required)
 * extension.valueCoding from $HcoHomeCommunityID (required)
-* extension.valueString = "1.1.0"
+* extension.valueString = "2.0.0"
 * subject 1..
 
 Invariant: hcom-dk-rule-1
-Description: "Where typeCode is '$MedComOID#HCOM', the content.attachment.contentType (mimeType) must be $IANAMediaOID#application/fhir+xml or $IANAMediaOID#application/fhir+json"
+Description: "Where typeCode is '$MedComXdsOID#HCOM', the content.attachment.contentType (mimeType) must be $IANAMediaOID#application/fhir+xml or $IANAMediaOID#application/fhir+json"
 Severity: #error
-Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-typecode-CS').code = 'HCOM').content.attachment.contentType = $IANAMediaOID#application/fhir+json or where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-typecode-CS').code = 'HCOM').content.attachment.contentType = $IANAMediaOID#application/fhir+xml"
+Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-typecode-CS').code = 'HCOM').content.attachment.contentType = $IANAMediaOID#application/fhir+json or where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-typecode-CS').code = 'HCOM').content.attachment.contentType = $IANAMediaOID#application/fhir+xml"
 
 Invariant: hcom-dk-rule-2
-Description: "Where typeCode is '$MedComOID#HCOM', the content.format must be $MedComFormatOID#urn:ad:dk:medcom:hcom-v1.2:full"
+Description: "Where typeCode is '$MedComXdsOID#HCOM', the content.format must be $MedComFormatOID#urn:ad:dk:medcom:hcom-v1.2:full"
 Severity: #error
-Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-ihe-typecode-CS').code = 'HCOM').content.format = $MedComFormatOID#urn:ad:dk:medcom:hcom-v1.2:full"
+Expression: "where(type.coding.where(system = 'http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-typecode-CS').code = 'HCOM').content.format = $MedComFormatOID#urn:ad:dk:medcom:hcom-v1.2:full"
 
 
 // Metadata instance
@@ -33,9 +33,9 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:5941658d-b927-4641-ac6a-52636497063f"
 * status = #current "Current"
-* type = $MedComOID#HCOM "HomeCareObservation message" // Danish XDS typecode must be updated
+* type = $MedComXdsOID#HCOM "HomeCareObservation message" // Danish XDS typecode must be updated
 * authenticator = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* category = $DanishiheOID#002 "Workflow"
+* category = $DanishXdsOID#006 "Workflow"
 * securityLabel = #N
 * author = Reference(8fa7df76-bec2-4fe2-9a44-750030a0eda0)
 * subject = Reference(37628912-7816-47a3-acd8-396b610be142)
@@ -52,7 +52,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * context.practiceSetting = $sct#658161000005107 "hjemmesygepleje" // Danish XDS typecode must be updated
 * context.sourcePatientInfo.identifier.value = "0201919990"
 * context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
-* extension[+].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
-* extension[=].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* extension[homecommunityid].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
+* extension[homecommunityid].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 * extension[versionid].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
-* extension[versionid].valueString = "1.1.0"
+* extension[versionid].valueString = "2.0.0"
