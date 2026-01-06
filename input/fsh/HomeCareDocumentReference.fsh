@@ -52,7 +52,7 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * context.practiceSetting = $sct#658161000005107 "hjemmesygepleje" // Danish XDS typecode must be updated
 * context.sourcePatientInfo.identifier.value = "0201919990"
 * context.sourcePatientInfo = Reference(37628912-7816-47a3-acd8-396b610be142)
-* extension[homecommunityid].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
-* extension[homecommunityid].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* extension[+].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
+* extension[=].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 * extension[versionid].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
 * extension[versionid].valueString = "2.0.0"
