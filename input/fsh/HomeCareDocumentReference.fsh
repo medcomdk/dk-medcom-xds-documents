@@ -9,7 +9,7 @@ Description: "A profile stating the rules, when exchanging a document including 
 //* extension[=].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
 //* extension[=].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 //* extension[versionid].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
-* extension[versionid].valueString = "2.0.0"
+* extension[versionid].valueString = "2.0"
 * subject 1..
 
 Invariant: hcom-dk-rule-1
@@ -58,4 +58,4 @@ Description: "Instance of HomeCareObservation DocumentReference containing relev
 * extension[+].url = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-homecommunityid-extension"
 * extension[=].valueCoding = $DanishxdsOID#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 * extension[versionid].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
-* extension[versionid].valueString = "2.0.0"
+* extension[versionid].valueString = "2.0"

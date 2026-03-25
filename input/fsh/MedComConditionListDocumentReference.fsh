@@ -57,6 +57,8 @@ Description: "Organization instance - 1st ConditionList - incl. SOR-ID and Ydern
 * name = "MedCom Testcenter"
 * identifier[SOR-ID].value = "325381000016008"
 * identifier[SOR-ID].system = "urn:oid:1.2.208.176.1.1"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MedCom Testcenter, SOR-ID: 325381000016008</div>"
  
 
 Instance: 1fcad31f-8967-4f49-b6af-7e64082e8fec
@@ -68,6 +70,10 @@ Description: "Practitioner instance - 1st ConditionList"
 * name.family = "Vestergaard"
 * name.given[0] = "Bo"
 * name.given[1] = "Test"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:b6c11dab-a9e9-46b8-9bb3-fe06d6587e07"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bo Test Vestergaard</div>"
 
 Instance: 69e475df-20c8-4f54-8cea-9843568205fd
 InstanceOf: MedComDocumentPatient
@@ -81,3 +87,5 @@ Description: "Patient instance - 1st ConditionList - Elmer Test Hansen"
 * name[official].given[1] = "Test"
 * birthDate = "1947-09-25"
 * gender = #male
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name:Elmer Test Hansen, CPR: 2509479989</div>"
