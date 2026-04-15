@@ -12,7 +12,6 @@ HomeCommunityId is not included in the mapping, why the extension MedCom XDS Hom
 More information about ValueSets can be found in the [Terminology for XDS Metadata IG version 2.0.0](https://build.fhir.org/ig/medcomdk/dk-medcom-xds-metadata/branches/2.0/).
 
 
-
 ## Examples
 
 | **Example** | **Purpose** | **Profile**|
