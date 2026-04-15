@@ -35,7 +35,6 @@ Alias: $PhadHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCo
 Alias: $PhadFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-phad-formatcode-VS
 
 Alias: $HcoTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-xds-hco-typecode-VS
-Alias: $HcoEventCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-xds-hco-eventcodelist-VS
 Alias: $HcoHomeCommunityID = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-hco-homeCommunityId-VS
 Alias: $HcoFormatCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-formatcode-VS
 
@@ -72,3 +71,11 @@ Alias: $DanishxdsOID = urn:oid:1.2.208.176.8.1
 Alias: $IANALanguageOID = urn:ietf:bcp:47
 Alias: $IANAMediaOID = http://terminology.hl7.org/CodeSystem/v3-mediaType
 Alias: $v3-ActCode3.0.0 = http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0
+
+Alias: $MedComXDSTypeCodeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-typecode-VS
+Alias: $MedComIHECoreClassCodeVSTemp = http://medcomfhir.dk/ig/document/ValueSet/MedCom-ihe-core-classcode-VS-TEMP
+Alias: $MedComIHEMimeTypeVSTemp = http://medcomfhir.dk/ig/document/ValueSet/MedCom-ihe-core-mimetype-VS-TEMP
+Alias: $MedComLanguageCodeVSTemp = http://medcomfhir.dk/ig/document/ValueSet/MedCom-ihe-core-languagecode-VS-TEMP
+Alias: $MedComHealthcareFacilityTypeCodeVSTemp = http://medcomfhir.dk/ig/document/ValueSet/MedCom-ihe-core-HealthcareFacilityTypeCode-VS-TEMP
+Alias: $MedComPracticeSettingCodeVSTemp = http://medcomfhir.dk/ig/document/ValueSet/MedCom-ihe-core-PracticeSettingCode-VS-TEMP
+Alias: $IHEHomeCommunityIdTEMP =  http://medcomfhir.dk/ig/document/ValueSet/MedCom-ihe-core-homeCommunityId-VS-TEMP
