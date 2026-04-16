@@ -9,7 +9,7 @@ name: MedCom XDS Documents
 title: Danish XDS Documents profiles
 description: Danish XDS Documents profiles consists of both the Documents themselves being FHIR Documents or Messages and their corresponding DocumentReferences
 status: draft # draft | active | retired | unknown
-version: homecareobservation-draft-0.1
+version: 0.1.0-homecareobservation-draft
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use

@@ -1,7 +1,7 @@
 {
     "package-id": "medcom.fhir.dk.xdsdocuments",
-    "version": "homecareobservation-draft-0.1",
-    "path": "http://medcomfhir.dk/ig/xdsdocuments/homecareobservation-draft-0.1",
+    "version": "0.1.0-homecareobservation-draft",
+    "path": "http://medcomfhir.dk/ig/xdsdocuments/0.1.0-homecareobservation-draft",
     "status": "draft",
     "sequence": "Drafts",
     "mode" : "milestone",
