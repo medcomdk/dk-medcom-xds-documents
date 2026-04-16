@@ -1,6 +1,5 @@
 // Below a version of MedComContainedDocumentReference from dk-medcom-document repo has been copy pasted on the 15'th of april
 // this is because it was too strict for a HomeCareObservationDocumentReference.
-// This is all a complete mess and should be redone.
 
 ValueSet: MedComHCOTypeCodeVS
 Id: MedComHCOTypeCodeVS
@@ -46,7 +45,7 @@ Description: "A profile stating the rules, when exchanging a document including 
 * status MS 
 * status ^short = "[DocumentEntry.availabilityStatus] current = active | superseded = deprecated."
 // TypeCode
-* type
+* type 1..1
   * coding from MedComHCOTypeCodeVS (required)
   * coding = $MedComXDSTypeCodeVS#HCOM "HomeCareObservation message"
 
@@ -56,13 +55,12 @@ Description: "A profile stating the rules, when exchanging a document including 
 * authenticator ^type.aggregation = #contained
 // ClassCode
 * category 1..1 MS 
-* category from $MedComIHECoreClassCodeVSTemp (extensible) //Must be changed back to XDS metadata IG when ValueSet is fixed
+* category from $MedComIHECoreClassCodeVSTemp (extensible)
 * category.coding.code 1.. MS
 * category.coding.system 1.. MS
 * category.coding.display 1.. MS
 * category ^short = "[DocumentEntry.classCode] Categorization of document."
 * author ..2 MS
-// Det må være noget med referencen, siden det er til en dependency? Det kan også være fordi vi ikke har de korrekte dependencies?
 * author only Reference(MedComDocumentOrganization or MedComDocumentPractitionerRole or MedComDocumentPractitioner or MedComDocumentPatient or DkCoreRelatedPerson or Device)
 * author ^slicing.discriminator[0].type = #profile
   * ^slicing.discriminator[0].path = "$this.resolve()"
@@ -115,7 +113,7 @@ as an author person."
 * context.event.coding.code 1.. MS
 * context.event.coding.system 1.. MS
 * context.event ^short = "[DocumentEntry.eventCodeList] Main clinical acts documented."
-* context.period MS
+* context.period 1..1 MS
 * context.period.start 1.. MS
 * context.period.end MS
 * context.period ^short = "[DocumentEntry.serviceStartTime, DocumentEntry.serviceStopTime] Time of service that is being documented."
