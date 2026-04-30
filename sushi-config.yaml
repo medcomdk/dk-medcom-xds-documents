@@ -25,7 +25,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.extensions.r5: 4.0.1 
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
   hl7.fhir.dk.core: 3.5.0
   medcom.fhir.dk.core: 4.0.0
   medcom.fhir.dk.document: 2.0.1
@@ -37,6 +37,7 @@ parameters:
   default-version: true
   apply-publisher: false
   default-publisher: true
+  special-url: [urn:oid:1.2.208.184.100.1]
 
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode

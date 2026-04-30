@@ -4,7 +4,7 @@ Alias: $RequestPriority = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-ca
 */
 Alias: $loinc = http://loinc.org
 Alias: $MedComFormatOID = urn:oid:1.2.208.184.100.10
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/554471000005108 // Danish version - append e.g. /version/20240331 to get a more specific version 
+Alias: $sct = http://snomed.info/sct // Use Coding.version for specific editions/versions when needed.
 Alias: $TypeCode =  http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-typecode-VS
 
 Alias: $QrdTypeCode = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-dk-xds-qrd-typecode-VS
