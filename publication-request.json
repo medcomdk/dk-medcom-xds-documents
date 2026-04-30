@@ -1,15 +1,10 @@
 {
     "package-id": "medcom.fhir.dk.xdsdocuments",
-    "version": "0.1.0-homecareobservation-draft",
-    "path": "http://medcomfhir.dk/ig/xdsdocuments/0.1.0-homecareobservation-draft",
+    "version": "0.1.0-homecareobservation-draft-2",
+    "path": "http://medcomfhir.dk/ig/xdsdocuments/0.1.0-homecareobservation-draft-2",
     "status": "draft",
     "sequence": "Drafts",
     "mode" : "milestone",
     "descmd": "@release-notes.md",
-    "desc": "See release notes",
-    "first" : true,
-    "title" : "DK MedCom XDS Documents",
-    "ci-build" : "https://build.fhir.org/ig/medcomdk/dk-medcom-xdsdocuments/",
-    "category" : "Infrastructure",
-    "introduction" : "Danish XDS Documents profiles consists of both the Documents themselves being FHIR Documents or Messages and their corresponding DocumentReferences"
+    "desc": "See release notes"
 }
