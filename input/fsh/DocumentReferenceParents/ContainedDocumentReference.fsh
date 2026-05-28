@@ -30,14 +30,14 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     * system 1.. MS
     * code 1.. MS
     * display 1.. MS
-* type from MedComMessageCodesVS (required) // TODO: Change to XDS metadata IG when it has been released
+* type from $MedComXDSTypeCodeVS (required)
 
 * authenticator 0..1 MS
   * ^short = "[DocumentEntry.legalAuthenticator] Who authenticated the document."
   * ^type.aggregation = #contained
 
 * category 1..1 MS 
-* category from MedComIHE_CoreClassCode_TEMP (extensible) // TODO: Change to XDS metadata IG when it has been released
+* category from $MedComXDSClassCodeVS (extensible) // TODO: Should this be required?
   * coding 1..1 MS
     * code 1.. MS
     * system 1.. MS
@@ -78,10 +78,10 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
       * obeys medcom-datetime-has-time-offset-zulu
     * contentType 1.. MS
       * ^short = "[DocumentEntry.mimeType] Mime type of the content, with charset etc."
-    * contentType from MedComIHE_CoreMimeType_TEMP // TODO: Must be changed back to XDS metadata IG
+    * contentType from $MedComXDSMimeTypeVS // TODO: What should the binding strength be here?
     * language 1.. MS
       * ^short = "[DocumentEntry.languageCode] Human language of the content."
-    * language from MedComIHE_CoreLanguageCode_TEMP (extensible) // TODO: Must be changed back to XDS metadata IG
+    * language from $MedComXDSLanguageCodeVS (extensible) // TODO: Ask what the binding strength should be here, should it be required?
     * hash 0.. MS
       * ^short = "[DocumentEntry.hash] Hash of the data (sha-1)."
     * size 0.. MS
@@ -95,7 +95,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     * system 1.. MS
     * code 1.. MS
     * display 1.. MS
-  * format from MedComFormatCodeVS (required) // TODO: Must be changed back to XDS metadata IG
+  * format from $MedComXDSFormatCodeVS (required)
 
 * context 1.. MS
   * event 0.. MS 
@@ -112,14 +112,14 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
       * code 1.. MS
       * system 1.. MS
       * display 1.. MS
-  * facilityType from MedComIHE_CoreHealthcareFacilityTypeCode_TEMP (required) // TODO: Must be changed back to XDS metadata IG
+  * facilityType from $MedComXDSHealthcareFacilityTypeCodeVS (required)
   * practiceSetting 1.. MS
     * ^short = "[DocumentEntry.practiceSettingCode] Additional details about where the content was created (e.g. clinical specialty)."
     * coding 1..1 MS
       * code 1.. MS
       * system 1.. MS
       * display 1.. MS
-  * practiceSetting from MedComIHE_CorePracticeSettingCode_TEMP (required) // TODO: Must be changed back to XDS metadata IG
+  * practiceSetting from $MedComXDSPracticeSettingCodeVS (required)
   * related 0..* MS
     * ^short = "[DocumentEntry.referenceIdList] Related identifiers or resources."
   * sourcePatientInfo 1..1 MS
@@ -132,7 +132,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 * extension contains 
     medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS
 * extension[homeCommunityid]
-  * valueCoding from MedComIHE_CoreDkHomeCommunityId_TEMP (extensible)
+  * valueCoding from $MedComXDSHomeCommunityIdVS (extensible) // TODO: Shouldn't this be required?
   * ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed."
   * url MS
 

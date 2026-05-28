@@ -2,7 +2,7 @@ Profile: MedComConditionListDocumentReference
 Parent: MedComContainedDocumentReference
 Id: medcom-conditionlist-documentreference
 Description: "A profile for the MedCom ConditionListDocumentReference resource."
-* content.format = MedComFormatCodeCS#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
+* content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
 * extension[versionid].valueString = "1.0"
 * type.coding = $loinc#11450-4 "Problem list - Reported"
 
@@ -15,7 +15,7 @@ Description: "DocumentReference instance"
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>ConditionList DocumentReference resource example</p></div>"
 
 * extension[versionid].valueString = "1.0"
-* extension[homeCommunityid].valueCoding = MedComIHE_HomeCommunityId_TEMP#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 
 * contained[+] = 1fcad31f-8967-4f49-b6af-7e64082e8fec
 * contained[+] = fd3206c6-c265-49f9-82c3-8b4c96280403
@@ -28,7 +28,7 @@ Description: "DocumentReference instance"
 
 * identifier[entryUUID].value = "urn:uuid:7c596b9a-112e-4386-ae71-5ecdd3ed7c50"
 
-* category = MedComIHE_ClassCode_TEMP#001 "Klinisk rapport"
+* category = $MedComXDSClassCode#001 "Klinisk rapport"
 * subject = Reference(69e475df-20c8-4f54-8cea-9843568205fd)
 
 * author[institution] = Reference(fd3206c6-c265-49f9-82c3-8b4c96280403)
@@ -42,7 +42,7 @@ Description: "DocumentReference instance"
     * url = "ConditionListDocument.json"
     * title = "Diagnoseoversigt for 2509479989"
     * creation = "2024-05-01T12:00:00+01:00"
-  * format = MedComFormatCodeCS#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
+  * format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
 
 * authenticator = Reference(1fcad31f-8967-4f49-b6af-7e64082e8fec)
 

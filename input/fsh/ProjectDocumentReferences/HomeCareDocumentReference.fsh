@@ -4,7 +4,7 @@ Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 // TODO: Ask what the versionid is about... Is it the version of the project standard? If so we should set it here in the parent
 * extension[versionid].valueString = "2.0"
-* type.coding = MedComMessageCodesCS#HCOM "HomeCareObservation message"
+* type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
 
 
 Instance: example-homecare-observation-documentreference
@@ -31,7 +31,7 @@ Title: "Example HomeCareObservation DocumentReference"
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:16002002-ac41-45de-ad6b-eb02b098e859"
 
-* category.coding = MedComIHE_ClassCode_TEMP#006 "Workflow"
+* category.coding = $MedComXDSClassCode#006 "Workflow"
 * subject = Reference(hco-contained-patient)
 
 * author[institution] = Reference(hco-contained-organization)
@@ -47,7 +47,7 @@ Title: "Example HomeCareObservation DocumentReference"
     * url = "HCOM-8bc6cf81-47b0-4cdf-bb89-75311909d35b.xml"
     * title = "Kommunale prøvesvar for 0602631234"
     * creation = "2026-04-28T10:15:52+02:00"
-  * format = MedComFormatCodeCS#urn:ad:dk:medcom:msg:hco-v1.2:full "DK HomeCareObservation message v1.2"
+  * format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:msg:hco-v1.2:full "DK HomeCareObservation message v1.2"
 
 * context
   * period.start = "2026-04-28T10:15:52+02:00"
