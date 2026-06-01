@@ -1,2 +1,1 @@
-A draft release of a specific HomeCareObservation DocumentReference.
-This is meant for the production pilot on EHMI.
+A trial use version of the first version of this IG. 

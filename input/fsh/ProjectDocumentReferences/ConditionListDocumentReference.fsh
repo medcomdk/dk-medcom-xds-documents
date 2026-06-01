@@ -2,8 +2,7 @@ Profile: MedComConditionListDocumentReference
 Parent: MedComContainedDocumentReference
 Id: medcom-conditionlist-documentreference
 Description: "A profile for the MedCom ConditionListDocumentReference resource."
-* content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:plr-v1.0:full "DK PLR schema"
-* extension[versionid].valueString = "1.0"
+* extension[versionid].valueString = "1.0-trial-use-1"
 * type.coding = $loinc#11450-4 "Problem list - Reported"
 
 Instance: 4daf727f-f116-4e49-ad31-4018f0cc638a
@@ -14,7 +13,7 @@ Description: "DocumentReference instance"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>ConditionList DocumentReference resource example</p></div>"
 
-* extension[versionid].valueString = "1.0"
+* extension[versionid].valueString = "1.0-trial-use-1"
 * extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 
 * contained[+] = 1fcad31f-8967-4f49-b6af-7e64082e8fec
@@ -48,8 +47,8 @@ Description: "DocumentReference instance"
 
 * context
   * period.start = "2026-05-19T10:10:10+02:00"
-  * facilityType = $DanishSnomed#394761003 "almen lægepraksis"
-  * practiceSetting = $DanishSnomed#408443003 "almen medicin"
+  * facilityType = $SnomedSystem#394761003 "GP (general practitioner) site"
+  * practiceSetting = $SnomedSystem#408443003 "General medical practice"
   * sourcePatientInfo = Reference(69e475df-20c8-4f54-8cea-9843568205fd)
     * identifier.value = "2509479989"
 

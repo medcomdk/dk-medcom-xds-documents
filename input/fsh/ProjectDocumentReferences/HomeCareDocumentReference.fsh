@@ -2,10 +2,8 @@ Profile: HomeCareObservationDocumentReference
 Parent: MedComContainedDocumentReference
 Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
-// TODO: Ask what the versionid is about... Is it the version of the project standard? If so we should set it here in the parent
-* extension[versionid].valueString = "2.0"
+* extension[versionid].valueString = "1.0-trial-use-1"
 * type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
-
 
 Instance: example-homecare-observation-documentreference
 InstanceOf: HomeCareObservationDocumentReference
@@ -15,7 +13,7 @@ Title: "Example HomeCareObservation DocumentReference"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>HCO DocumentReference resource example</p></div>"
 
-* extension[versionid].valueString = "2.0"
+* extension[versionid].valueString = "1.0-trial-use-1"
 
 * contained[+] = hco-contained-patient
 * contained[+] = hco-contained-organization
@@ -47,12 +45,14 @@ Title: "Example HomeCareObservation DocumentReference"
     * url = "HCOM-8bc6cf81-47b0-4cdf-bb89-75311909d35b.xml"
     * title = "Kommunale prøvesvar for 0602631234"
     * creation = "2026-04-28T10:15:52+02:00"
-  * format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:msg:hco-v1.2:full "DK HomeCareObservation message v1.2"
+  * format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:hcom-v1.2:full "DK HomeCareObservation message v1.2"
 
 * context
   * period.start = "2026-04-28T10:15:52+02:00"
-  * facilityType = $DanishSnomed#550621000005101 "hjemmesygeplejeenhed"
-  * practiceSetting = $DanishSnomed#658161000005107 "hjemmesygepleje"
+  * facilityType = $SnomedSystem#550621000005101 "hjemmesygeplejeenhed"
+  * facilityType.coding[0].version = $DanishSnomedVersion
+  * practiceSetting = $SnomedSystem#658161000005107 "Home nursing care services"
+  * practiceSetting.coding[0].version = $DanishSnomedVersion
   * sourcePatientInfo = Reference(hco-contained-patient)
     * identifier.value = "0602631234"
 

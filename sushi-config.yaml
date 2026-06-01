@@ -4,21 +4,20 @@ name: MedCom XDS Documents
 title: Danish XDS Documents profiles
 description: Danish XDS Documents profiles consists of both the Documents themselves being FHIR Documents or Messages and their corresponding DocumentReferences
 status: draft # draft | active | retired | unknown
-version: 0.1.0-draft
+version: 1.0.0-trial-use-1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2023+
-releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+copyrightYear: 2026+
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 publisher:
   name: MedCom
   url: https://medcom.dk/
   email: fhir@medcom.dk
- 
+
 dependencies:
-  hl7.fhir.uv.xver-r5.r4: 0.1.0
   hl7.fhir.dk.core: 3.6.0
   medcom.fhir.dk.core: 4.0.0
-  ihe.iti.mhd: 4.2.3
+  medcom.fhir.dk.xdsmetadata: 2.0.0-trial-use-1
 
 menu:
   Home: index.html

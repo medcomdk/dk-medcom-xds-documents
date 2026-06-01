@@ -1,4 +1,3 @@
-// TODO: Ask Thea if the bindings on all these valuesets are correct, should they all be required? Some don't even have a binding
 Profile: MedComContainedDocumentReference
 Parent: DkCoreMinimalDocumentReference
 Id: medcom-contained-documentreference
@@ -37,7 +36,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * ^type.aggregation = #contained
 
 * category 1..1 MS 
-* category from $MedComXDSClassCodeVS (extensible) // TODO: Should this be required?
+* category from $MedComXDSClassCodeVS (required)
   * coding 1..1 MS
     * code 1.. MS
     * system 1.. MS
@@ -78,10 +77,10 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
       * obeys medcom-datetime-has-time-offset-zulu
     * contentType 1.. MS
       * ^short = "[DocumentEntry.mimeType] Mime type of the content, with charset etc."
-    * contentType from $MedComXDSMimeTypeVS // TODO: What should the binding strength be here?
+    * contentType from $MedComXDSMimeTypeVS (required)
     * language 1.. MS
       * ^short = "[DocumentEntry.languageCode] Human language of the content."
-    * language from $MedComXDSLanguageCodeVS (extensible) // TODO: Ask what the binding strength should be here, should it be required?
+    * language from $MedComXDSLanguageCodeVS (required)
     * hash 0.. MS
       * ^short = "[DocumentEntry.hash] Hash of the data (sha-1)."
     * size 0.. MS
@@ -101,6 +100,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * event 0.. MS 
     * coding.code 1.. MS
     * coding.system 1.. MS
+  * event from $MedComXDSEventCodeVS (required)
     * ^short = "[DocumentEntry.eventCodeList] Main clinical acts documented."
   * period 1..1 MS
     * start 1.. MS
@@ -132,7 +132,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 * extension contains 
     medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS
 * extension[homeCommunityid]
-  * valueCoding from $MedComXDSHomeCommunityIdVS (extensible) // TODO: Shouldn't this be required?
+  * valueCoding from $MedComXDSHomeCommunityIdVS (required)
   * ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed."
   * url MS
 
@@ -180,13 +180,6 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 
 
 Invariant: medcom-datetime-has-time-offset-zulu
-// This invariant allows both zulu and offset time zones.
-//Winter time
-//"2025-11-27T13:34:56+01:00"
-//"2025-11-27T12:34:56.789Z"
-//Summer time
-//"2025-06-27T14:34:56+02:00"
-//"2025-06-27T12:34:56.789Z"
 Description: "dateTime must include date, time, and time zone."
 Severity: #error
 Expression: "$this.toString().matches('^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]([.][0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})$')"
