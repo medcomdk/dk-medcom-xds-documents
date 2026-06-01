@@ -15,8 +15,10 @@ publisher:
   email: fhir@medcom.dk
 
 dependencies:
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
   hl7.fhir.dk.core: 3.6.0
   medcom.fhir.dk.core: 4.0.0
+  ihe.iti.mhd: 4.2.3
   medcom.fhir.dk.xdsmetadata: 2.0.0-trial-use-1
 
 menu:
