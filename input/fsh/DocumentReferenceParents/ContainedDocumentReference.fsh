@@ -4,27 +4,22 @@ Id: medcom-contained-documentreference
 Description: "A profile stating the rules, when exchanging a FHIR document in the Danish Healthcare sector using  IHE MHD and IHE XDS based document sharing."
 * id 1.. MS
 
-* text 1.. MS
-  * ^short = "The narrative text SHALL always be included when exchanging a MedCom FHIR Bundle."
-  * status MS
-  * div MS
-
 * masterIdentifier 1..1 MS
   * system MS
   * value 1..1 MS
-  * ^short = "[DocumentEntry.uniqueId] Master Version Specific Identifier"
+  * ^short = "Globally unique identifier assigned to the document by the source of the document. In a FHIR Document, this corresponds to the Composition.identifier [XDS-metadata element: DocumentEntry.uniqueId] "
 
 * identifier[entryUUID] 1..1 MS
-  * ^short = "[DocumentEntry.entryUUID] Identifier for the document."
+  * ^short = "Globally unique identifier intended for internal document management. In a FHIR Document, this is recommended to be Bundle.id- [XDS-metadata element: DocumentEntry.entryUUID]"
   * value 1..1 MS 
     * obeys medcom-uuid
   * system 1..1 MS
 
 * status MS 
-  * ^short = "[DocumentEntry.availabilityStatus] current = active | superseded = deprecated."
+  * ^short = "Represents the current status of the submitted document. It is always set to 'current' as a result of the successful submission of new documents. It MAY be changed to 'superseded' under the primary responsibility of the creating entity. [XDS-metadata element: DocumentEntry.availabilityStatus]"
 
 * type 1..1 MS
-  * ^short = "[DocumentEntry.typeCode] Kind of document."
+  * ^short = "Specifies a specific type of document. [XDS-metadata element: DocumentEntry.typeCode]"
   * coding 1..1 MS
     * system 1.. MS
     * code 1.. MS
@@ -32,7 +27,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 * type from $MedComXDSTypeCodeVS (required)
 
 * authenticator 0..1 MS
-  * ^short = "[DocumentEntry.legalAuthenticator] Who authenticated the document."
+  * ^short = "Represents a participant within the authorInstitution who has legally authenticated or attested the document. [XDS-metadata element: DocumentEntry.legalAuthenticator]"
   * ^type.aggregation = #contained
 
 * category 1..1 MS 
@@ -41,13 +36,13 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     * code 1.. MS
     * system 1.. MS
     * display 1.. MS
-  * ^short = "[DocumentEntry.classCode] Categorization of document."
+  * ^short = "Specifies the high-level use classification of the document type. [XDS-metadata element: DocumentEntry.classCode]"
 
 * author ..2 MS
-  * ^short = "[DocumentEntry.author] The slice author:institution ensures one mandatory organizational author.
-  Any author element that does not match this slice is interpreted as an author person."
+  * ^short = "Represents the organization or individual who authored the document. The slice author:institution ensures one mandatory organizational author. and the slice author:person allows for an optional individual author.
+  [XDS-metadata element: DocumentEntry.author]"
   * ^type.aggregation = #contained
-* author only Reference(MedComDocumentOrganization or MedComDocumentPractitionerRole or MedComDocumentPractitioner or MedComDocumentPatient or DkCoreRelatedPerson or Device)
+* author only Reference(MedComDocumentOrganization or MedComDocumentPractitioner or MedComDocumentPatient or DkCoreRelatedPerson)
 * author ^slicing.discriminator[0].type = #profile
   * ^slicing.discriminator[0].path = "$this.resolve()"
   * ^slicing.rules = #open
@@ -55,42 +50,42 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     institution 1..1 MS and
     person 0..1 MS
 * author[institution] only Reference(MedComDocumentOrganization)
-  * ^short = "The organization who authored the document."
-* author[person] only Reference(MedComDocumentPractitionerRole or MedComDocumentPractitioner or DkCoreRelatedPerson)
-  * ^short = "A person/role/patient/device author of the document."
+  * ^short = "The organization who authored the document. [XDS-metadata element: DocumentEntry.authorInstitution]"
+* author[person] only Reference(MedComDocumentPractitioner or DkCoreRelatedPerson)
+  * ^short = "The person who authored the document. [XDS-metadata element: DocumentEntry.authorPerson]"
 
 * securityLabel 1..1 MS
   * coding 1..1 MS
     * system 1.. MS
     * code 1.. MS
-  * ^short = "[DocumentEntry.confidentialityCode] Document security-tags."
+  * ^short = " Specifies the level of confidentiality assigned to the document. [XDS-metadata element: DocumentEntry.confidentialityCode]"
 
 * subject 1..1 MS
 * subject only Reference(MedComDocumentPatient)
   * ^type.aggregation = #contained
-  * ^short = "[DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId] Who/what is the subject of the document."
+  * ^short = "Represents the subject, also known as the patient or citizen, of the document.[XDS-metadata element: DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId] "
 
 * content MS
   * attachment MS
     * creation 1.. MS
-      * ^short = "[DocumentEntry.creationTime] Date attachment was first created."
+      * ^short = "Represents the date and time the author created the document. [XDS-metadata element: DocumentEntry.creationTime]"
       * obeys medcom-datetime-has-time-offset-zulu
     * contentType 1.. MS
-      * ^short = "[DocumentEntry.mimeType] Mime type of the content, with charset etc."
+      * ^short = "Describes the format of the document as a mime type. [XDS-metadata element: DocumentEntry.mimeType]"
     * contentType from $MedComXDSMimeTypeVS (required)
     * language 1.. MS
-      * ^short = "[DocumentEntry.languageCode] Human language of the content."
+      * ^short = "Describes the human language of the content in the document. [XDS-metadata element: DocumentEntry.languageCode]"
     * language from $MedComXDSLanguageCodeVS (required)
     * hash 0.. MS
-      * ^short = "[DocumentEntry.hash] Hash of the data (sha-1)."
+      * ^short = "The hash of the contents of the document is filled by the repository. [XDS-metadata element: DocumentEntry.hash]"
     * size 0.. MS
+      * ^short = "The number of bytes of data that make up this attachment (before base64 encoding, if that is done). [XDS-metadata element: DocumentEntry.size]"
     * title 1.. MS
+      * ^short = "A human readable title of the document. [XDS-metadata element: DocumentEntry.title] "
     * url MS
-    * size ^short = "[DocumentEntry.size] Number of bytes of content."
-    * title ^short = "[DocumentEntry.title] The readable title of the document."
-    * url ^short = "[DocumentEntry.URI] URI where the data can be found."
+      * ^short = "A location where the data can be accessed. [XDS-metadata element: DocumentEntry.URI]"
   * format 1.. MS
-    * ^short = "[DocumentEntry.formatCode] Format/content rules for the document."
+    * ^short = "The formatCode specifies the technical format of the document. Along with the typeCode, it SHALL provide sufficient information to allow potential consumer to know if it will be able to process the document. The formatCode allows a receiving system (Document Consumer Actor) to identify the processing to be done and thus the correct representation of the content in the document. [DocumentEntry.formatCode]"
     * system 1.. MS
     * code 1.. MS
     * display 1.. MS
@@ -101,31 +96,31 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     * coding.code 1.. MS
     * coding.system 1.. MS
   * event from $MedComXDSEventCodeVS (required)
-    * ^short = "[DocumentEntry.eventCodeList] Main clinical acts documented."
+    * ^short = "Represents the main clinical event documented for the patient contact. [XDS-metadata element: DocumentEntry.eventCodeList]"
   * period 1..1 MS
     * start 1.. MS
     * end MS
-    * ^short = "[DocumentEntry.serviceStartTime, DocumentEntry.serviceStopTime] Time of service that is being documented."
+    * ^short = "Date and time of the clinical act that is being documented. [XDS-metadata element: DocumentEntry.serviceStartTime, DocumentEntry.serviceStopTime]"
   * facilityType 1.. MS
-    * ^short = "[DocumentEntry.healthcareFacilityTypeCode] Kind of facility where patient was seen."
+    * ^short = "This code represents the type of organizational setting of the clinical encounter during which the documented act occurred. [XDS-metadata element: DocumentEntry.healthcareFacilityTypeCode]"
     * coding 1..1 MS
       * code 1.. MS
       * system 1.. MS
       * display 1.. MS
   * facilityType from $MedComXDSHealthcareFacilityTypeCodeVS (required)
   * practiceSetting 1.. MS
-    * ^short = "[DocumentEntry.practiceSettingCode] Additional details about where the content was created (e.g. clinical specialty)."
+    * ^short = "The type of clinical setting of the clinical encounter during which the documented act occurred. [XDS-metadata element: DocumentEntry.practiceSettingCode]"
     * coding 1..1 MS
       * code 1.. MS
       * system 1.. MS
       * display 1.. MS
   * practiceSetting from $MedComXDSPracticeSettingCodeVS (required)
   * related 0..* MS
-    * ^short = "[DocumentEntry.referenceIdList] Related identifiers or resources."
+    * ^short = "Related identifiers or resources. [XDS-metadata element: DocumentEntry.referenceIdList]"
   * sourcePatientInfo 1..1 MS
     * reference 1.. MS
     * identifier 1.. MS
-    * ^short = "[DocumentEntry.sourcePatientId and DocumentEntry.sourcePatientInfo] Patient demographics from source. Must be the same reference as in DocumentReference.subject."
+    * ^short = "Information about the patient at the submission time. Must be the same reference as in DocumentReference.subject. [XDS-metadata element: DocumentEntry.sourcePatientId and DocumentEntry.sourcePatientInfo]"
   * sourcePatientInfo only Reference(MedComDocumentPatient)
 
 * extension MS
@@ -134,7 +129,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     medcom-document-validfrom-extension named validFrom 1..1 MS
 * extension[homeCommunityid]
   * valueCoding from $MedComXDSHomeCommunityIdVS (required)
-  * ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed."
+  * ^short = "A unique identifier for a community where the document can be accessed. [XDS-metadata element: DocumentEntry.homeCommunityId] "
   * url MS
 * extension[validFrom]
   * ^short = "Represents the date from which a certain document is allowed to exchange on the Danish XDS infrastructure."
