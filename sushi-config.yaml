@@ -24,12 +24,14 @@ dependencies:
 menu:
   Home: index.html
   Profiles: profiles.html
+  Examples: examples.html
   Extensions: extensions.html
   Artifacts: artifacts.html
   More:
     Table of Contents: toc.html
     Downloads: downloads.html
     Dependencies: dependencies.html
+    Profiling FHIR Document standards: profilingclinicalcontent.html
 
 parameters:  
   apply-version: false
