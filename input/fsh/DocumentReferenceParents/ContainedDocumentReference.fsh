@@ -130,10 +130,14 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 
 * extension MS
 * extension contains 
-    medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS
+    medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS and
+    medcom-document-validfrom-extension named validFrom 1..1 MS
 * extension[homeCommunityid]
   * valueCoding from $MedComXDSHomeCommunityIdVS (required)
   * ^short = "[DocumentEntry.homeCommunityId] A unique identifier for a community where the DocumentEntry and document can be accessed."
+  * url MS
+* extension[validFrom]
+  * ^short = "Represents the date from which a certain document is allowed to exchange on the Danish XDS infrastructure."
   * url MS
 
 * insert ProducerShallPutInNarrative(id)
@@ -176,6 +180,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 * insert ProducerShallPutInNarrative(context.sourcePatientInfo.identifier)
 * insert ProducerShallPutInNarrative(extension[homeCommunityid].valueCoding.system)
 * insert ProducerShallPutInNarrative(extension[homeCommunityid].valueCoding.code)
+* insert ProducerShallPutInNarrative(extension[validFrom].valueDate)
 * insert ProducerShallPutInNarrative(extension[versionid])
 
 

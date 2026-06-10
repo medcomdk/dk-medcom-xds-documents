@@ -15,6 +15,7 @@ Description: "DocumentReference instance"
 
 * extension[versionid].valueString = "1.0-trial-use-1"
 * extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+* extension[validFrom].valueDate = "2025-03-01"
 
 * contained[+] = 1fcad31f-8967-4f49-b6af-7e64082e8fec
 * contained[+] = fd3206c6-c265-49f9-82c3-8b4c96280403
