@@ -51,8 +51,8 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     person 0..1 MS
 * author[institution] only Reference(MedComDocumentOrganization)
   * ^short = "The organization who authored the document. [XDS-metadata element: DocumentEntry.authorInstitution]"
-* author[person] only Reference(MedComDocumentPractitioner or DkCoreRelatedPerson)
-  * ^short = "The person who authored the document. [XDS-metadata element: DocumentEntry.authorPerson]"
+* author[person] only Reference(MedComDocumentPractitioner or Device)
+  * ^short = "The person or device who authored the document within the authorInstitution. [XDS-metadata element: DocumentEntry.authorPerson]"
 
 * securityLabel 1..1 MS
   * coding 1..1 MS
@@ -125,8 +125,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 
 * extension MS
 * extension contains 
-    medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS and
-    medcom-document-validfrom-extension named validFrom 1..1 MS
+    medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS
 * extension[homeCommunityid]
   * valueCoding from $MedComXDSHomeCommunityIdVS (required)
   * ^short = "A unique identifier for a community where the document can be accessed. [XDS-metadata element: DocumentEntry.homeCommunityId] "

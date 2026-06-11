@@ -18,7 +18,9 @@ Description: "A profile including requirements for a MedCom Document Patient."
   * family 1..
 
 * birthDate 1.. MS
+* birthDate ^short = "The date of birth of the patient, which is included due to requirements in XDS-metadata standard."
 * gender 1.. MS
+* gender ^short = "The gender of the patient, which is included due to requirements in XDS-metadata standard."
 
 * insert ProducerShallPutInNarrative(birthDate)
 * insert ProducerShallPutInNarrative(gender)
