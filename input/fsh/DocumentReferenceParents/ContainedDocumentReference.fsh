@@ -10,7 +10,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * ^short = "Globally unique identifier assigned to the document by the source of the document. In a FHIR Document, this corresponds to the Composition.identifier [XDS-metadata element: DocumentEntry.uniqueId] "
 
 * identifier[entryUUID] 1..1 MS
-  * ^short = "Globally unique identifier intended for internal document management. In a FHIR Document, this is recommended to be Bundle.id- [XDS-metadata element: DocumentEntry.entryUUID]"
+  * ^short = "Globally unique identifier intended for internal document management. In a FHIR Document, this is recommended to be Bundle.id. [XDS-metadata element: DocumentEntry.entryUUID]"
   * value 1..1 MS 
     * obeys medcom-uuid
   * system 1..1 MS
@@ -131,52 +131,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * valueCoding from $MedComXDSHomeCommunityIdVS (required)
   * ^short = "A unique identifier for a community where the document can be accessed. [XDS-metadata element: DocumentEntry.homeCommunityId] "
   * url MS
-* extension[validFrom]
-  * ^short = "Represents the date from which a certain document is allowed to exchange on the Danish XDS infrastructure."
-  * url MS
 
-* insert ProducerShallPutInNarrative(id)
-* insert ProducerShallPutInNarrative(author[institution])
-* insert ProducerShallPutInNarrative(author)
-* insert ProducerShallPutInNarrative(subject)
-* insert ProducerShallPutInNarrative(status)
-* insert ProducerShallPutInNarrative(type.coding.system)
-* insert ProducerShallPutInNarrative(type.coding.code)
-* insert ProducerShallPutInNarrative(type.coding.display)
-* insert ProducerShallPutInNarrative(authenticator)
-* insert ProducerShallPutInNarrative(category.coding.code)
-* insert ProducerShallPutInNarrative(category.coding.system)
-* insert ProducerShallPutInNarrative(category.coding.display)
-* insert ProducerShallPutInNarrative(identifier[entryUUID].value)
-* insert ProducerShallPutInNarrative(identifier[entryUUID].system)
-* insert ProducerShallPutInNarrative(securityLabel.coding.code)
-* insert ProducerShallPutInNarrative(securityLabel.coding.system)
-* insert ProducerShallPutInNarrative(content.attachment.creation)
-* insert ProducerShallPutInNarrative(content.attachment.contentType)
-* insert ProducerShallPutInNarrative(content.attachment.language)
-* insert ProducerShallPutInNarrative(content.format.system)
-* insert ProducerShallPutInNarrative(content.format.code)
-* insert ProducerShallPutInNarrative(content.format.display)
-* insert ProducerShallPutInNarrative(content.attachment.size)
-* insert ProducerShallPutInNarrative(content.attachment.title)
-* insert ProducerShallPutInNarrative(content.attachment.url)
-* insert ProducerShallPutInNarrative(context.event.coding.code)
-* insert ProducerShallPutInNarrative(context.event.coding.system)
-* insert ProducerShallPutInNarrative(context.period.start)
-* insert ProducerShallPutInNarrative(context.period.end)
-* insert ProducerShallPutInNarrative(context.facilityType.coding.code)
-* insert ProducerShallPutInNarrative(context.facilityType.coding.system)
-* insert ProducerShallPutInNarrative(context.facilityType.coding.display)
-* insert ProducerShallPutInNarrative(context.practiceSetting.coding.code)
-* insert ProducerShallPutInNarrative(context.practiceSetting.coding.system)
-* insert ProducerShallPutInNarrative(context.practiceSetting.coding.display)
-* insert ProducerShallPutInNarrative(context.related)
-* insert ProducerShallPutInNarrative(context.sourcePatientInfo.reference)
-* insert ProducerShallPutInNarrative(context.sourcePatientInfo.identifier)
-* insert ProducerShallPutInNarrative(extension[homeCommunityid].valueCoding.system)
-* insert ProducerShallPutInNarrative(extension[homeCommunityid].valueCoding.code)
-* insert ProducerShallPutInNarrative(extension[validFrom].valueDate)
-* insert ProducerShallPutInNarrative(extension[versionid])
 
 
 Invariant: medcom-datetime-has-time-offset-zulu

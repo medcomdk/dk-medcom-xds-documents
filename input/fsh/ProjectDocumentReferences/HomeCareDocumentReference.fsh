@@ -2,6 +2,7 @@ Profile: HomeCareObservationDocumentReference
 Parent: MedComContainedDocumentReference
 Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
+* ^date = "2026-08-01"
 * extension[versionid].valueString = "1.0-trial-use-1"
 * type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
 
@@ -14,7 +15,6 @@ Title: "Example HomeCareObservation DocumentReference"
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>HCO DocumentReference resource example</p></div>"
 
 * extension[versionid].valueString = "1.0-trial-use-1"
-* extension[validFrom].valueDate = "2026-08-01"
 
 * contained[+] = hco-contained-patient
 * contained[+] = hco-contained-organization
