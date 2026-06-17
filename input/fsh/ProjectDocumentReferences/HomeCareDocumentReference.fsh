@@ -13,7 +13,7 @@ Title: "Example HomeCareObservation DocumentReference"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>HCO DocumentReference resource example</p></div>"
 
-* extension[versionid].valueString = "1.0-trial-use-1"
+* extension[versionid].valueString = "2.0"
 
 * contained[+] = hco-contained-patient
 * contained[+] = hco-contained-organization

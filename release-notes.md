@@ -1,1 +1,2 @@
-A trial use version of the first version of this IG. 
+A trial use version of this IG.
+Updated the DocumentReference.extension:version in the profiles HomeCareObservationDocumentReference and ConditionListDocumentReference.
