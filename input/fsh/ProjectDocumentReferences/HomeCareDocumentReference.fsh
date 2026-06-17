@@ -2,7 +2,7 @@ Profile: HomeCareObservationDocumentReference
 Parent: MedComContainedDocumentReference
 Id: homecare-observation-documentreference
 Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
-* extension[versionid].valueString = "1.0-trial-use-1"
+* extension[versionid].valueString = "2.0"
 * type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
 
 Instance: example-homecare-observation-documentreference

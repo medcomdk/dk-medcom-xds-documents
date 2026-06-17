@@ -2,7 +2,7 @@ Profile: MedComConditionListDocumentReference
 Parent: MedComContainedDocumentReference
 Id: medcom-conditionlist-documentreference
 Description: "A profile for the MedCom ConditionListDocumentReference resource."
-* extension[versionid].valueString = "1.0-trial-use-1"
+* extension[versionid].valueString = "2.0"
 * type.coding = $loinc#11450-4 "Problem list - Reported"
 
 Instance: 4daf727f-f116-4e49-ad31-4018f0cc638a
