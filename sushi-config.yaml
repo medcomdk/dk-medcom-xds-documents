@@ -24,6 +24,10 @@ dependencies:
 menu:
   Home: index.html
   Profiles: profiles.html
+  Project Specific DocumentReferences: documentreferences.html
+  Governance and guidance:
+    Use Cases: usecases.html
+    Governance: governance.html
   Extensions: extensions.html
   Artifacts: artifacts.html
   More:

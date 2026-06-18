@@ -42,7 +42,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * ^short = "Represents the organization or individual who authored the document. The slice author:institution ensures one mandatory organizational author. and the slice author:person allows for an optional individual author.
   [XDS-metadata element: DocumentEntry.author]"
   * ^type.aggregation = #contained
-* author only Reference(MedComDocumentOrganization or MedComDocumentPractitioner or MedComDocumentPatient or DkCoreRelatedPerson)
+* author only Reference(MedComDocumentOrganization or MedComDocumentPractitioner or MedComDocumentPatient or DkCoreRelatedPerson or Device)
 * author ^slicing.discriminator[0].type = #profile
   * ^slicing.discriminator[0].path = "$this.resolve()"
   * ^slicing.rules = #open
