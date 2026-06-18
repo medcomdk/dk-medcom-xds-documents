@@ -17,3 +17,6 @@ Alias: $MedComXDSPracticeSettingCodeVS = http://medcomfhir.dk/ig/xdsdocuments/Va
 Alias: $MedComXDSHomeCommunityId = http://medcomfhir.dk/ig/xdsmetadata/CodeSystem/MedCom-xds-homeCommunityId-CS
 Alias: $MedComXDSHomeCommunityIdVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-homeCommunityId-VS
 Alias: $MedComXDSEventCodeVS = http://medcomfhir.dk/ig/xdsmetadata/ValueSet/MedCom-xds-eventcodelist-VS
+Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status
+Alias: $MedComObsExtValueAttachment = http://medcomfhir.dk/ig/core/StructureDefinition/medcom-observation-value-attachment-extension
+Alias: $PractitionerRole = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ
