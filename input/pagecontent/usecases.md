@@ -25,6 +25,12 @@
       <td>12-09-2024</td>
       <td>Initial publication.</td>
     </tr>
+    <tr>
+      <td>1.0.1</td>
+      <td>RCH/TMS</td>
+      <td>??</td>
+      <td>Moved use cases to here and updated link to the XDS-metadata standard.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -77,31 +83,31 @@ The document targets both IT system vendors and implementation managers in regio
     <tr>
       <td>Introduction to document sharing</td>
       <td>1.0</td>
-      <td>https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf</td>
+      <td>(https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf)[https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf]</td>
       <td>A document containing basic description of document sharing on the national infrastructure in Denmark.</td>
     </tr>
     <tr>
       <td>IHE XDS</td>
       <td>20.0</td>
-      <td>https://profiles.ihe.net/ITI/TF/Volume2/</td>
+      <td>(https://profiles.ihe.net/ITI/TF/Volume2/)[https://profiles.ihe.net/ITI/TF/Volume2/]</td>
       <td>The technical framework describing actors and transactions requirements for the IHE IT Infrastructure (ITI) profiles.</td>
     </tr>
     <tr>
       <td>Metadata standard</td>
-      <td>0.96</td>
-      <td>https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/</td>
+      <td>2.0</td>
+      <td>(https://medcomfhir.dk/ig/xdsmetadata/)[https://medcomfhir.dk/ig/xdsmetadata/]</td>
       <td>The metadata standard defines the metadata that must and may be present when providing and retrieving documents from the NSP.</td>
     </tr>
     <tr>
       <td>NSP</td>
       <td>-</td>
-      <td>https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen</td>
+      <td>(https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen)[https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen]</td>
       <td>An overview of the components in the Danish national service platform (NSP), owned by the Danish Health Data Authority.</td>
     </tr>
     <tr>
       <td>NSP (document sharing)</td>
       <td>-</td>
-      <td>https://www.nspop.dk/pages/releaseview.action?pageId=154772568</td>
+      <td>(https://www.nspop.dk/pages/releaseview.action?pageId=154772568)[https://www.nspop.dk/pages/releaseview.action?pageId=154772568]</td>
       <td>An overview of the document sharing options in NSP.</td>
     </tr>
   </tbody>
@@ -155,15 +161,15 @@ The document targets both IT system vendors and implementation managers in regio
     </tr>
     <tr>
       <td>Document source</td>
-      <td>Is the actor in terms of an application that produces and publishes a document. It is responsible for sending documents to the document repository, and supply metadata to the document repository for subsequent registration of the documents with the document registry Actor. An implementation of the document source shall be able to submit documents. Whether a submission contains a single document, or multiple documents depends on workflows, policies, and other external factors which are outside of the scope of this document. Inspiration taken from: https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1</td>
+      <td>Is the actor in terms of an application that produces and publishes a document. It is responsible for sending documents to the document repository, and supply metadata to the document repository for subsequent registration of the documents with the document registry Actor. An implementation of the document source shall be able to submit documents. Whether a submission contains a single document, or multiple documents depends on workflows, policies, and other external factors which are outside of the scope of this document. Inspiration taken from: (https://profiles.ihe.net/)[https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1]</td>
     </tr>
     <tr>
       <td>Document consumer</td>
-      <td>Is the actor in terms of an application that queries a Document Registry and for documents meeting certain criteria, retrieves selected documents from one or more document repository. Inspiration taken from: https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1</td>
+      <td>Is the actor in terms of an application that queries a Document Registry and for documents meeting certain criteria, retrieves selected documents from one or more document repository. Inspiration taken from: (https://profiles.ihe.net/)[https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1]</td>
     </tr>
     <tr>
       <td>Patient identity source</td>
-      <td>The patient identity source is a provider of unique identifier for each patient and maintains a collection of identity traits. The patient identity source facilitates the validation of patient identifiers by the registry in its interactions with other actors. Inspiration taken from: https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1</td>
+      <td>The patient identity source is a provider of unique identifier for each patient and maintains a collection of identity traits. The patient identity source facilitates the validation of patient identifiers by the registry in its interactions with other actors. Inspiration taken from: (https://profiles.ihe.net/)[https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1].</td>
     </tr>
   </tbody>
 </table>
@@ -178,7 +184,7 @@ Figure 1 illustrates some of the ITI calls described in this document. A documen
 
 <figure>
   <img src="./figure-01.png" alt="Illustration of document flow using the ITI calls" />
-  <figcaption>Figure 1. Illustration of document flow using the ITI calls. Illustration is taken from: https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf</figcaption>
+  <figcaption>Figure 1. Illustration of document flow using the ITI calls. Illustration is taken from: (https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf)[https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf]</figcaption>
 </figure>
 
 ## 1.6 Reading guide
@@ -464,7 +470,7 @@ The use case S1, presented as a sequence diagram, can be found in Figure 2.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Created based on descriptions from IHE: https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4</td>
+      <td>Created based on descriptions from IHE: (https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4]</td>
     </tr>
   </tbody>
 </table>
@@ -623,7 +629,7 @@ The use case S2, presented as a sequence diagram, can be found in Figure 5.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Created based on descriptions from IHE: https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61 Not all metadata provided for stable documents is available for On-Demand documents, e.g. hash and size which cannot be calculated. See all exceptions here: https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2.</td>
+      <td>Created based on descriptions from IHE: (https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61] Not all metadata provided for stable documents is available for On-Demand documents, e.g. hash and size which cannot be calculated. See all exceptions here: (https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2].</td>
     </tr>
   </tbody>
 </table>
@@ -729,7 +735,7 @@ The use case R1, presented as a sequence diagram, can be found in Figure 7.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>The request can be declined if an unknown query ID is used or required parameters are missing. https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3<br><br>Action 1: Relevant search parameters are at least patientId, formatCode and objectType. More search parameters may be included to specify the search.</td>
+      <td>The request can be declined if an unknown query ID is used or required parameters are missing. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3]<br><br>Action 1: Relevant search parameters are at least patientId, formatCode and objectType. More search parameters may be included to specify the search.</td>
     </tr>
     <tr>
       <td>Field</td>
@@ -801,7 +807,7 @@ The use case R2, presented as a sequence diagram, can be found in Figure 8.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Action 1: HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2<br><br>Action 3: The document repository must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3</td>
+      <td>Action 1: HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2]<br><br>Action 3: The document repository must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3]</td>
     </tr>
   </tbody>
 </table>
@@ -861,7 +867,7 @@ The use case R3, presented as a sequence diagram, can be found in Figure 9.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Action 1: HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2<br><br>Action 2: The On-Demand document source must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3</td>
+      <td>Action 1: HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2]<br><br>Action 2: The On-Demand document source must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3]</td>
     </tr>
   </tbody>
 </table>
@@ -921,7 +927,7 @@ The use case S.CORR, presented as a sequence diagram, can be found in Figure 10.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html</td>
+      <td>(https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html]</td>
     </tr>
   </tbody>
 </table>
@@ -1075,7 +1081,7 @@ The use case S.CANC, presented as a sequence diagram, can be found in Figure 13.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html</td>
+      <td>(https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html]</td>
     </tr>
   </tbody>
 </table>
