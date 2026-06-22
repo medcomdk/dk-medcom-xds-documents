@@ -34,6 +34,7 @@ menu:
     Table of Contents: toc.html
     Downloads: downloads.html
     Dependencies: dependencies.html
+    Profiling FHIR Document standards: profilingclinicalcontent.html
 
 parameters:  
   apply-version: false
