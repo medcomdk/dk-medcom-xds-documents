@@ -28,13 +28,13 @@ menu:
   Governance and guidance:
     Use Cases: usecases.html
     Governance: governance.html
+    Profiling FHIR Document standards: profilingclinicalcontent.html
   Extensions: extensions.html
   Artifacts: artifacts.html
   More:
     Table of Contents: toc.html
     Downloads: downloads.html
     Dependencies: dependencies.html
-    Profiling FHIR Document standards: profilingclinicalcontent.html
 
 parameters:  
   apply-version: false

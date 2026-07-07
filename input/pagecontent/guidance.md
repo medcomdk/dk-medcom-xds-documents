@@ -1,3 +1,0 @@
-# Guidance
-
-## Structure of Documents 
