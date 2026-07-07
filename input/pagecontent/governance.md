@@ -1,11 +1,8 @@
-# Governance
-
 This page addresses information about the document exchange that is of a general and is independent of the any specific projects.
 
 ## MedCom FHIR Documents
 
 ### Resource Identifiers in MedCom FHIR Documents
-
 In FHIR, `Resource.identifier` is intended to capture business identifiers that remain constant across system boundaries, which differs from `Resource.id`, the internal technical identifier used within a single FHIR Bundle.
 All resources included in a MedCom FHIR document **MUST** carry an `identifier` element consisting of both a `system` and a `value`. The identifier SHALL be globally unique, persistent, and stable over time. This means that the identifier **MUST NOT** change as long as the resource represents the same underlying real-world entity or dataset. For example, a Patient resource will always carry the same civil registration number (CPR) as its identifier.
 
@@ -25,10 +22,21 @@ Narrative text is a part of a MedCom FHIR Document. The [importance of the narra
 ### Replacement-CPR
 The Danish XDS infrastructure cannot handle replacement-CPR numbers. Therefore, it is only allowed to provide documents with Danish CPR numbers.
 
-### Name- and adressprotection (DA: Navne- og adressebeskyttelse)
+### Name and address protection (DA: Navne- og adressebeskyttelse)
 If the patient and/or citizen is marked with name and address protection (DA: [Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) in the CPR Register, the patient's given name and family name **MUST** be populated with "ADRESSEBESKYTTET". This is the current approach used to ensure that the patient's name is not shared when the person has requested that it not be disclosed.
 
-## Validation
+## Implementation
+
+### Dependencies
+In the [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced MedCom Terminology CodeSystems and Value sets developed by MedCom can be found. CodeSystems and ValueSets from this IG is used in the project specific IGs.
+
+In the [MedCom Terminology for XDS Metadata](https://medcomfhir.dk/ig/xdsmetadata/) all MedCom CodeSystems and ValueSets related to metadata can be found. In addition the IG includes the XDS-metadata specifications.
+
+Besides Terminology and metadata IGs, this IG has a dependency to the [MedComCore IG](http://medcomfhir.dk/ig/core/), [DK-core](https://hl7.dk/fhir/core/), defined by [HL7 Denmark](https://hl7.dk/) and [IHE MHD](https://profiles.ihe.net/ITI/MHD/). When implementing using FHIR tools, these packages should be downloaded in order to ensure correct validation.
+
+**Note:** that the IG versions linked may be newer than the versions used as dependencies in this implementation guide. For the exact dependency versions applied, see the **Dependencies** tab in the top menu under **More**.
+
+### Validation
 Validation of MedCom FHIR Documents is strongly recommended to prevent invalid documents being shared through the XDS infrastructure. Here you can read more about [FHIR Validation](https://medcomdk.github.io/MedComLandingPage/assets/documents/FHIRValidationGovernance.html).
 
 ## Test and certification
