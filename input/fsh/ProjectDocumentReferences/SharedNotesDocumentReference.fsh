@@ -1,0 +1,92 @@
+//Profiling and release will happen when XDS metadata IG 2.0.0 is released.
+Profile: MedComSharedNotesDocumentReference
+Parent: MedComContainedDocumentReference
+Id: medcom-shared-notes-documentreference
+Description: "A DocumentReference profile stating the rules, when exchanging a document for the MedCom SharedNotes standard (DA: Deling af Journalnotater)."
+* extension[versionid].valueString = "2.0"
+* category.coding = $MedComXDSClassCode#001
+* type.coding = $SnomedSystem#866144008	
+* content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:ecn-v1.0:full
+* content.attachment.title ^short = "Journalnotat for 'CPR-nummer', were 'CPR-nummer' is the CPR number of the patient the document concerns, e.g. 'Journalnotat for 2509479989'"
+
+Instance: ExampleSharedNotesDocumentReference
+InstanceOf: MedComSharedNotesDocumentReference
+Usage: #example
+
+* id = "c8b451d3-b0d6-46f8-b331-079c58cc19a5"
+
+* extension[versionid].valueString = "2.0"
+* extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
+
+
+* contained[0] = notes-Organization
+* contained[1] = notes-Patient
+
+* masterIdentifier.system = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
+* masterIdentifier.value = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
+
+* identifier.value = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
+
+* status = #current
+
+* type.coding.code = #866144008
+* type.coding.display = "Encounter note"
+
+* category.coding.code = #001
+* category.coding.display = "Klinisk rapport"
+
+* subject.reference = "#cee69158-0e0b-4c37-b7b3-28e42345383c"
+
+* author.reference = "#d39a8251-db8e-4b92-ae80-c89857fd1af9"
+
+* securityLabel.coding.system = "urn:oid:2.16.840.1.113883.5.25"
+* securityLabel.coding.code = #N
+* securityLabel.coding.display = "Normal"
+
+* content.attachment.contentType = #application/fhir+xml
+* content.attachment.language = #da
+* content.attachment.url = "DOC001.XML"
+* content.attachment.title = "Journalnotat for 0506889996"
+* content.attachment.creation = "2025-08-27T12:00:00+02:00"
+
+* content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:ecn-v1.0:full "DK ECN schema"
+
+* context.facilityType = $SnomedSystem#394761003 "almen lægepraksis"
+
+* context.practiceSetting = $SnomedSystem#408443003 "almen medicin"
+
+* context.period.start = "2025-08-27T12:00:00+02:00"
+
+* context.sourcePatientInfo = Reference(cee69158-0e0b-4c37-b7b3-28e42345383c)
+  * identifier.value = "0506889996"
+
+
+Instance: notes-Organization
+InstanceOf: MedComDocumentOrganization
+Usage: #inline
+
+* id = "d39a8251-db8e-4b92-ae80-c89857fd1af9"
+
+* identifier.system = "urn:oid:1.2.208.176.1.1"
+* identifier.value = "61741000016007"
+
+* name = "Lægerne Hasseris Bymidte"
+
+
+Instance: notes-Patient
+InstanceOf: MedComDocumentPatient
+Usage: #inline
+
+* id = "cee69158-0e0b-4c37-b7b3-28e42345383c"
+
+* identifier.system = "urn:oid:1.2.208.176.1.2"
+* identifier.value = "0506889996"
+
+* name.use = #official
+* name.family = "Mosebryggersen"
+* name.given[0] = "Sille"
+* name.given[1] = "June"
+* name.given[2] = "Test"
+
+* gender = #female
+* birthDate = "1988-06-05"

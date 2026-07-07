@@ -1,19 +1,24 @@
-Profile: HomeCareObservationDocumentReference
+Profile: MedComHomeCareObservationDocumentReference
 Parent: MedComContainedDocumentReference
-Id: homecare-observation-documentreference
-Description: "A profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
+Id: medcom-homecare-observation-documentreference
+Description: "A DocumentReference profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 * extension[versionid].valueString = "2.0"
 * type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
+* content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:hcom-v1.2:full
+* category.coding = $MedComXDSClassCode#006
+* content.attachment.title
+  * ^short = "Must be *Kommunale prøvesvar for 'CPR-nummer'*, were 'CPR-nummer' is the CPR number of the patient the document concerns, e.g. 'Kommunale prøvesvar for 0602631234'"
+
+
 
 Instance: example-homecare-observation-documentreference
-InstanceOf: HomeCareObservationDocumentReference
+InstanceOf: MedComHomeCareObservationDocumentReference
 Title: "Example HomeCareObservation DocumentReference"
 * id = "16002002-ac41-45de-ad6b-eb02b098e859"
 * status = #current
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>HCO DocumentReference resource example</p></div>"
 
 * extension[versionid].valueString = "2.0"
+* extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 
 * contained[+] = hco-contained-patient
 * contained[+] = hco-contained-organization
@@ -37,6 +42,9 @@ Title: "Example HomeCareObservation DocumentReference"
 * author[person] = Reference(hco-contained-practitioner)
 
 * securityLabel.coding = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
+
+* type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
+
 
 * content
   * attachment
