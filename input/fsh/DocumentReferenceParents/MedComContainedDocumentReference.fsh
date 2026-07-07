@@ -10,7 +10,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * ^short = "Globally unique identifier assigned to the document by the source of the document. In a FHIR Document, this corresponds to the Composition.identifier [XDS-metadata element: DocumentEntry.uniqueId] "
 
 * identifier[entryUUID] 1..1 MS
-  * ^short = "Globally unique identifier intended for internal document management. In a FHIR Document, this is recommended to be Bundle.id. [XDS-metadata element: DocumentEntry.entryUUID]"
+  * ^short = "Globally unique identifier intended for internal document management. In a FHIR Document, this is recommended to be Bundle.id. [XDS-metadata element: DocumentEntry.entryUUID]. Be aware that an invariant is bound to this element ensuring the identifier complies with the UUID-format."
   * value 1..1 MS 
     * obeys medcom-uuid
   * system 1..1 MS
