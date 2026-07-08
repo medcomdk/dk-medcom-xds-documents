@@ -25,6 +25,11 @@ The Danish XDS infrastructure cannot handle replacement-CPR numbers. Therefore, 
 ### Name and address protection (DA: Navne- og adressebeskyttelse)
 If the patient and/or citizen is marked with name and address protection (DA: [Navne- og adressebeskyttelse](https://www.retsinformation.dk/eli/lta/2017/646#idee1fb7b6-c7e7-429d-a738-881c5e486fa6)) in the CPR Register, the patient's given name and family name **MUST** be populated with "ADRESSEBESKYTTET". This is the current approach used to ensure that the patient's name is not shared when the person has requested that it not be disclosed.
 
+## XDS-metadata
+The [XDS-metadata standard](https://medcomfhir.dk/ig/xdsmetadata) defines a set of metadata elements associated with health documents, enabling a consistent and structured description of the documents. The purpose is to facilitate the reliable and secure exchange of documents. 
+
+The profiles [MedComContainedDocumentReference](../pagecontent/StructureDefinition-medcom-contained-documentreference.html) is a FHIR representation of the XDS-metadata standard. This profil is not intented to be exchanged until the infrastructure is ready to receive it, but can be used for validation of metadata associated with a document. However, it is a part of the (production pilot on EHMI)[http://www.ehmi.dk]. The profile provides metadata about a document, which can be CDA and FHIR. It holds the required metadata from the XDS-metadata standard, and a [mapping between the two can be found on the profile pages](StructureDefinition-medcom-contained-documentreference-mappings.html#other-mappings). 
+
 ## Implementation
 
 ### Dependencies

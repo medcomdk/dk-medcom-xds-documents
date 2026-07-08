@@ -13,4 +13,4 @@ The author element allows up to two references and must always include exactly o
 **Author person:** An additional author element that does not match the institutional slice is interpreted as an author person. If used, it MUST reference exactly one resource of the allowed types: MedComDocumentPractitioner, MedComDocumentPractitionerRole, MedComDocumentPatient, DkCoreRelatedPerson, or Device.
 
 #### Mapping from IHE-XDS metadata to FHIR Composition
-MedCom has developed a mapping. Find the [mapping from IHE XDS metadata to FHIR Composition here](https://medcomdk.github.io/dk-medcom-document/assets/documents/Mapping_from_IHE-XDS_metadata_to_FHIR.html).
+MedCom has developed a mapping. Find the [mapping from IHE XDS metadata to FHIR Composition here](StructureDefinition-medcom-contained-documentreference-mappings.html#other-mappings).

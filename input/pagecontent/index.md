@@ -16,7 +16,7 @@ You will find a list of all MedCom Document profiles in the "Profiles" tab in th
 
 ### Governance and guidance
 
-The [governance page](/governance.html) provides information that is generic for MedCom FHIR Documents standards. This includes support of narrative test, validation, support xml and json format and more. To understand the document exchange, please go to the [use cases](/usecases.html). It will provide an overview of the communication flow and involved actors on a general level. Furthermore, the 
+The [governance page](governance.html) provides information that is generic for MedCom FHIR Documents standards. This includes support of narrative test, validation, support xml and json format and more. To understand the document exchange, please go to the [use cases](usecases.html). It will provide an overview of the communication flow and involved actors on a general level. Furthermore, the 
 
 ### Contact
 

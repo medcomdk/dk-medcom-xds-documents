@@ -7,6 +7,6 @@ The MedComDocumentPatient is inherited from the [DkCorePatient](https://hl7.dk/f
 
 There are certain requirements to which data **MUST** be present in a FHIR document. These requirements come from the IHE XDS metadata standard (sourcePatientInfo attribute) that requires for a Danish CPR-number (unique identifier), given and family name, birthdate and gender to be present. Therefore, this information has a cardinality of 1.
 
-If the document source lacks data for either the patient's given name or family name, the missing field(s) **MUST** be populated with `ADRESSEBESKYTTET`. This approach ensures that unavailable name components are replaced, as the absence of a given or family name often results from name and address protection (Da: Navne- og adressebeskyttelse).
+Please read the guidance on the [Governance page](governance.html) for information on how to handle name and address protection (DA: navne- og adressebeskyttelse).
 
 It is not allowed to add a replacement-CPR (Danish: erstatningsCPR), as this is not supported in the infrastructure.

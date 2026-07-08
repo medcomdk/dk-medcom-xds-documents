@@ -1,6 +1,6 @@
 ### Scope and usage 
 
-The MedComContainedDocumentReference profile is not intented to be exchanged until the infrastructure is ready to receive it, but can be used for validation of metadata associated with a document. This profile provides metadata about a document, this can be CDA, FHIR or PDF. It holds the required metadata from the IHE XDS metadata standard, and a [mapping between the two can be found on GitHub pages](https://medcomdk.github.io/dk-medcom-document/assets/documents/Mapping_from_IHE-XDS_metadata_to_FHIR.html). 
+The MedComContainedDocumentReference profile is not intented to be exchanged until the infrastructure is ready to receive it, but can be used for validation of metadata associated with a document. This profile provides metadata about a document, this can be CDA, FHIR or PDF. It holds the required metadata from the IHE XDS metadata standard, and a [mapping between the two can be found here](StructureDefinition-medcom-contained-documentreference-mappings.html#other-mappings). 
 
 #### Rationale of the MedComContainedDocumentReference
 
@@ -8,7 +8,7 @@ This mapping has been developed to enable the future use of FHIR within the Dani
 
 In the interim, mapping from IHE XDS to DocumentReference can already be used to support validation and quality assurance. Implementers can map the metadata they populate in the IHE XDS format to the corresponding elements in the relevant MedCom FHIR DocumentReference profile. Using FHIR’s native validation tooling, it is possible to verify that the supplied metadata conforms to the expected structure and constraints defined by the profile. This provides an immediate benefit, allowing organisations to prepare for a gradual migration to FHIR while maintaining compatibility with the existing XDS-based infrastructure.
 
-Find the [mapping from IHE XDS metadata to FHIR DocumentReference here](https://medcomdk.github.io/dk-medcom-document/assets/documents/Mapping_from_IHE-XDS_metadata_to_FHIR.html).
+Find the [mapping between the two in the Mapping-tab](StructureDefinition-medcom-contained-documentreference-mappings.html#other-mappings).
 
 #### Contained resources
 
