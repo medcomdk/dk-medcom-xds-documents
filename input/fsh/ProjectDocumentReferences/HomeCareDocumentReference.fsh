@@ -96,6 +96,6 @@ Usage: #inline
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name: Mia null</div>"
 * identifier.system = "http://cura.systematic.com"
 * identifier.value = "6f7bf020-4417-4f29-a896-4ee70fcb1780"
-* name.family = "null"
-* name.given = "Mia"
+* name[official].family = "null"
+* name[official].given = "Mia"
 

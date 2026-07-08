@@ -101,8 +101,8 @@ InstanceOf: MedComDocumentPractitioner
 Title: "Practitioner"
 Description: "Instance of a practitioner"
 Usage: #example
-* name.given = "Sidsel"
-* name.family = "Andersen"
+* name[official].given = "Sidsel"
+* name[official].family = "Andersen"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a6c11dab-a9e9-46b8-9bb3-fe06d6587e07"
 

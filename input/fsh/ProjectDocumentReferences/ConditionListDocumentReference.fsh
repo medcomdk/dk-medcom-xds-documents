@@ -68,7 +68,7 @@ Usage: #inline
 Instance: 1fcad31f-8967-4f49-b6af-7e64082e8fec
 InstanceOf: MedComDocumentPractitioner
 Usage: #inline
-* name
+* name[official]
   * use = #official
   * family = "Vestergaard"
   * given[0] = "Bo"
