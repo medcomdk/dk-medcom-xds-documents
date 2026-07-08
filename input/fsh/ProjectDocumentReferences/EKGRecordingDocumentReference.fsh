@@ -6,7 +6,7 @@ Description: "A DocumentReference profile stating the rules, when exchanging a d
 //* type from $PlrTypeCode (required) //RCH Hvorfor har den sit eget valuesæt i stedet for at være bundet til en bestemt værdi direkte?
 * extension[versionid].valueString = "2.0"
 * category.coding = $MedComXDSClassCode#001
-* type.coding = $loinc#11450-4 "EKG Study"
+* type.coding = $loinc#11524-6 "EKG Study"
 * content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:ekg-v1.0:full 
 * content.attachment.title ^short = "Elektrokardiogram-12-aflednings"
 
@@ -32,9 +32,10 @@ Title: "Example EKG Recording DocumentReference"
   * system = "urn:ietf:rfc:3986"
   * value = "urn:uuid:0a74554f-ded3-4bc7-bef1-535699565c5b"
 
-* type.coding = $loinc#11450-4 "EKG Study"
+* type.coding = $loinc#11524-6 "EKG Study"
 
-* category.coding = $MedComXDSClassCode#001 "Workflow"
+* category.coding = $MedComXDSClassCode#001 "Klinisk rapport"
+
 * subject = Reference(379ebb53-11e3-42ac-b9db-0bad0ece46d1)
 
 * author[institution] = Reference(f8d0eb07-5336-4005-9081-b065f9a82663)

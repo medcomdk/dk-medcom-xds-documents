@@ -91,4 +91,4 @@ Usage: #inline
 * birthDate = "1947-09-25"
 * gender = #male
 * text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name:Elmer Test Hansen, CPR: 2509479989</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name:Elmer Test Hansen, CPR: 2509479989, Birth Date: 1947-09-25, Gender: male</div>"

@@ -7,7 +7,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
 * masterIdentifier 1..1 MS
   * system MS
   * value 1..1 MS
-  * ^short = "Globally unique identifier assigned to the document by the source of the document. In a FHIR Document, this corresponds to the Composition.identifier [XDS-metadata element: DocumentEntry.uniqueId] "
+  * ^short = "Globally unique identifier assigned to the document by the source of the document. In a FHIR Document, this corresponds to the Composition.identifier [XDS-metadata element: DocumentEntry.uniqueId]"
 
 * identifier[entryUUID] 1..1 MS
   * ^short = "Globally unique identifier intended for internal document management. In a FHIR Document, this is recommended to be Bundle.id. [XDS-metadata element: DocumentEntry.entryUUID]. Be aware that an invariant is bound to this element ensuring the identifier complies with the UUID-format."
@@ -51,19 +51,19 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     person 0..1 MS
 * author[institution] only Reference(MedComDocumentOrganization)
   * ^short = "The organization who authored the document. [XDS-metadata element: DocumentEntry.authorInstitution]"
-* author[person] only Reference(MedComDocumentPractitioner or Device)
+* author[person] only Reference(MedComDocumentPractitioner)
   * ^short = "The person or device who authored the document within the authorInstitution. [XDS-metadata element: DocumentEntry.authorPerson]"
 
 * securityLabel 1..1 MS
   * coding 1..1 MS
     * system 1.. MS
     * code 1.. MS
-  * ^short = " Specifies the level of confidentiality assigned to the document. [XDS-metadata element: DocumentEntry.confidentialityCode]"
+  * ^short = "Specifies the level of confidentiality assigned to the document. [XDS-metadata element: DocumentEntry.confidentialityCode]"
 
 * subject 1..1 MS
 * subject only Reference(MedComDocumentPatient)
   * ^type.aggregation = #contained
-  * ^short = "Represents the subject, also known as the patient or citizen, of the document.[XDS-metadata element: DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId] "
+  * ^short = "Represents the subject, also known as the patient or citizen, of the document.[XDS-metadata element: DocumentEntry.sourcePatientInfo, DocumentEntry.sourcePatientId]"
 
 * content MS
   * attachment MS
@@ -128,8 +128,10 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     medcom-document-homecommunityid-extension named homeCommunityid 0..1 MS
 * extension[homeCommunityid]
   * valueCoding from $MedComXDSHomeCommunityIdVS (required)
-  * ^short = "A unique identifier for a community where the document can be accessed. [XDS-metadata element: DocumentEntry.homeCommunityId] "
+  * ^short = "A unique identifier for a community where the document can be accessed. [XDS-metadata element: DocumentEntry.homeCommunityId]"
   * url MS
 
+* extension[versionid]
+  * valueString MS
 
 

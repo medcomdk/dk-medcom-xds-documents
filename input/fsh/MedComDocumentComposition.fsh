@@ -55,13 +55,17 @@ Description: "The profile of the MedCom Document Composition containing the mini
   * ^slicing.discriminator[0].path = "$this.resolve()"
   * ^slicing.rules = #open
 * author contains
-    institution 1..1 MS
+    institution 1..1 MS and
+    person 0..1 MS
 * author ^short = "[DocumentEntry.author] The slice author:institution ensures one mandatory organizational author.
 Any author element that does not match this slice is interpreted
 as an author person."
+* author ^type.aggregation = #bundled
 * author[institution] only Reference(MedComDocumentOrganization)
 * author[institution] ^short = "The organization who authored the document."
-* author ^type.aggregation = #bundled
+* author[person] only Reference(MedComDocumentPractitioner)
+* author[person] ^short = "The practitioner who authored the document."
+
 * attester 0..1 MS
 * attester.party 0..1 MS
 * attester.mode MS

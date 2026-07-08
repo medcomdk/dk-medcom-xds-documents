@@ -70,10 +70,10 @@ InstanceOf: MedComDocumentPatient
 Usage: #inline
 * id = "769e04f2-6c09-45fe-8037-31ec1d59ce3b"
 * text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">CPR: 0602631234, Name: Grethe KGBTest</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">CPR: 0602631234, Name: Grethe KGBTest, Gender: female, Birth Date: 1963-02-06</div>"
 * identifier[cpr].value = "0602631234"
 * name[official].family = "KGBTest"
-* name[official].given[0] = "Grethe"
+* name[official].given = "Grethe"
 * gender = #female
 * birthDate = "1963-02-06"
 
@@ -94,8 +94,8 @@ Usage: #inline
 * id = "6f7bf020-4417-4f29-a896-4ee70fcb1780"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name: Mia null</div>"
-* identifier[0].system = "http://cura.systematic.com"
-* identifier[0].value = "6f7bf020-4417-4f29-a896-4ee70fcb1780"
-* name[0].family = "null"
-* name[0].given[0] = "Mia"
+* identifier.system = "http://cura.systematic.com"
+* identifier.value = "6f7bf020-4417-4f29-a896-4ee70fcb1780"
+* name.family = "null"
+* name.given = "Mia"
 

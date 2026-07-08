@@ -19,13 +19,16 @@ Usage: #example
 * extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
 
 
-* contained[0] = notes-Organization
-* contained[1] = notes-Patient
+* contained[+] = d39a8251-db8e-4b92-ae80-c89857fd1af9
+* contained[+] = cee69158-0e0b-4c37-b7b3-28e42345383c
 
 * masterIdentifier.system = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
 * masterIdentifier.value = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
 
-* identifier.value = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
+* identifier[entryUUID]
+  * use = #official
+  * system = "urn:ietf:rfc:3986"
+  * value = "urn:uuid:215e7dee-0d01-4fcd-8ebf-02a8d385be4c"
 
 * status = #current
 
@@ -35,9 +38,9 @@ Usage: #example
 * category.coding.code = #001
 * category.coding.display = "Klinisk rapport"
 
-* subject.reference = "#cee69158-0e0b-4c37-b7b3-28e42345383c"
+* subject = Reference(cee69158-0e0b-4c37-b7b3-28e42345383c)
 
-* author.reference = "#d39a8251-db8e-4b92-ae80-c89857fd1af9"
+* author[institution] = Reference(d39a8251-db8e-4b92-ae80-c89857fd1af9)
 
 * securityLabel.coding.system = "urn:oid:2.16.840.1.113883.5.25"
 * securityLabel.coding.code = #N
@@ -61,32 +64,30 @@ Usage: #example
   * identifier.value = "0506889996"
 
 
-Instance: notes-Organization
+Instance: d39a8251-db8e-4b92-ae80-c89857fd1af9
 InstanceOf: MedComDocumentOrganization
 Usage: #inline
-
-* id = "d39a8251-db8e-4b92-ae80-c89857fd1af9"
-
-* identifier.system = "urn:oid:1.2.208.176.1.1"
-* identifier.value = "61741000016007"
+* identifier[SOR-ID].system = "urn:oid:1.2.208.176.1.1"
+* identifier[SOR-ID].value = "61741000016007"
 
 * name = "Lægerne Hasseris Bymidte"
 
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name: Lægerne Hasseris Bymidte, Identifier: 61741000016007</div>"
+* identifier[SOR-ID].value = "61741000016007"
+* name = "Lægerne Hasseris Bymidte"
 
-Instance: notes-Patient
+
+Instance: cee69158-0e0b-4c37-b7b3-28e42345383c
 InstanceOf: MedComDocumentPatient
 Usage: #inline
-
-* id = "cee69158-0e0b-4c37-b7b3-28e42345383c"
-
-* identifier.system = "urn:oid:1.2.208.176.1.2"
-* identifier.value = "0506889996"
-
-* name.use = #official
-* name.family = "Mosebryggersen"
-* name.given[0] = "Sille"
-* name.given[1] = "June"
-* name.given[2] = "Test"
-
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "0506889996"
+* name[official].family = "Mosebryggersen"
+* name[official].given[+] = "Sille"
+* name[official].given[+] = "June"
+* name[official].given[+] = "Test"
 * gender = #female
 * birthDate = "1988-06-05"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name: Sille June Mosebryggersen, CPR: 0506889996, birthDate: 1988-06-05, Gender: female</div>"
