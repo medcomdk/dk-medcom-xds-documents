@@ -1,2 +1,3 @@
 A trial use version of this IG.
-Updated the slicing on `ContainedDocumentReference` to instead of $this.resolve() which leads to multiple paths, it now slices on `#type`
+- Updated the slicing on `ContainedDocumentReference` to instead of $this.resolve() which leads to multiple paths, it now slices on `#type`. This has no effect and is essentially just an internal thing as slicing names are not used in instances.
+- Fixes the reference to some valuesets that were set to xdsdocuments instead of xdsmetadata. HealthcareFactilityType and PracticeSettings
