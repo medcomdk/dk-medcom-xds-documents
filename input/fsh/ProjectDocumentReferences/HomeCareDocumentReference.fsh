@@ -34,7 +34,7 @@ Title: "Example HomeCareObservation DocumentReference"
 
 * author[institution] = Reference(hco-contained-organization)
 
-* author[person] = Reference(hco-contained-practitioner)
+* author[personPractitioner] = Reference(hco-contained-practitioner)
 
 * securityLabel.coding = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
 

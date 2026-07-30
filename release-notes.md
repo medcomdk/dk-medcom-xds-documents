@@ -1,2 +1,2 @@
 A trial use version of this IG.
-Updated the DocumentReference.extension:version in the profiles HomeCareObservationDocumentReference and ConditionListDocumentReference.
+Updated the slicing on `ContainedDocumentReference` to instead of $this.resolve() which leads to multiple paths, it now slices on `#type`
