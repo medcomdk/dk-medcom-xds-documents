@@ -43,20 +43,59 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     * display 1.. MS
   * ^short = "[DocumentEntry.classCode] Categorization of document."
 
-* author ..2 MS
-  * ^short = "[DocumentEntry.author] The slice author:institution ensures one mandatory organizational author.
-  Any author element that does not match this slice is interpreted as an author person."
+* author 1..2 MS
+  * ^short = """
+    [DocumentEntry.author] The author:institution slice ensures one mandatory
+    organizational author. All remaining author slices represent an optional
+    person, role, patient, or device author.
+    """
+  * ^comment = """
+    The conceptual person author is represented by separate technical slices
+    because each type-discriminator slice must resolve to exactly one resource type.
+    """
   * ^type.aggregation = #contained
-* author only Reference(MedComDocumentOrganization or MedComDocumentPractitionerRole or MedComDocumentPractitioner or MedComDocumentPatient or DkCoreRelatedPerson or Device)
-* author ^slicing.discriminator[0].type = #profile
-  * ^slicing.discriminator[0].path = "$this.resolve()"
-  * ^slicing.rules = #open
+
+* author only Reference(
+    MedComDocumentOrganization or
+    MedComDocumentPractitionerRole or
+    MedComDocumentPractitioner or
+    MedComDocumentPatient or
+    DkCoreRelatedPerson or
+    Device
+)
+
+* author ^slicing.discriminator[0].type = #type
+* author ^slicing.discriminator[0].path = "$this.resolve()"
+* author ^slicing.rules = #open
+* author ^slicing.description = """
+  Authors are sliced by the concrete resource type of the contained author resource.
+  The person-prefixed slices collectively represent the conceptual person author.
+  """
+
 * author contains
     institution 1..1 MS and
-    person 0..1 MS
+    personPractitionerRole 0..1 MS and
+    personPractitioner 0..1 MS and
+    personPatient 0..1 MS and
+    personRelatedPerson 0..1 MS and
+    personDevice 0..1 MS
+
 * author[institution] only Reference(MedComDocumentOrganization)
-  * ^short = "The organization who authored the document."
-* author[person] only Reference(MedComDocumentPractitionerRole or MedComDocumentPractitioner or DkCoreRelatedPerson)
+  * ^short = "The organization that authored the document."
+
+* author[personPractitionerRole] only Reference(MedComDocumentPractitionerRole)
+  * ^short = "A person/role/patient/device author of the document."
+
+* author[personPractitioner] only Reference(MedComDocumentPractitioner)
+  * ^short = "A person/role/patient/device author of the document."
+
+* author[personPatient] only Reference(MedComDocumentPatient)
+  * ^short = "A person/role/patient/device author of the document."
+
+* author[personRelatedPerson] only Reference(DkCoreRelatedPerson)
+  * ^short = "A person/role/patient/device author of the document."
+
+* author[personDevice] only Reference(Device)
   * ^short = "A person/role/patient/device author of the document."
 
 * securityLabel 1..1 MS
