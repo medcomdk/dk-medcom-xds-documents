@@ -1,0 +1,16 @@
+{
+  "name": "medcom.fhir.dk.xdsdocuments",
+  "version": "1.0.0-trial-use-3",
+  "description": "Danish XDS Documents profiles consists of both the Documents themselves being FHIR Documents or Messages and their corresponding DocumentReferences",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.uv.xver-r5.r4": "0.1.0",
+    "hl7.fhir.dk.core": "3.6.0",
+    "medcom.fhir.dk.core": "4.0.0",
+    "ihe.iti.mhd": "4.2.3",
+    "medcom.fhir.dk.xdsmetadata": "2.0.0-trial-use-1"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}
