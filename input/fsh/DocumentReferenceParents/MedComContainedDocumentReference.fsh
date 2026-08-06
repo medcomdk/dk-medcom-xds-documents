@@ -77,7 +77,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
       * ^short = "Describes the human language of the content in the document. [XDS-metadata element: DocumentEntry.languageCode]"
     * language from $MedComXDSLanguageCodeVS (required)
     * hash 0.. MS
-      * ^short = "The hash of the contents of the document is filled by the repository. [XDS-metadata element: DocumentEntry.hash]"
+      * ^short = "The hash of the contents of the document. This is filled by the repository. [XDS-metadata element: DocumentEntry.hash]"
     * size 0.. MS
       * ^short = "The number of bytes of data that make up this attachment (before base64 encoding, if that is done). [XDS-metadata element: DocumentEntry.size]"
     * title 1.. MS
