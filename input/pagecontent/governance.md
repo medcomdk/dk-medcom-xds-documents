@@ -1,4 +1,4 @@
-This page addresses information about the document exchange that is of a general and is independent of the any specific projects.
+This page provides general information about document exchange that is independent of any specific project.
 
 ## MedCom FHIR Documents
 
@@ -45,4 +45,4 @@ Besides Terminology and metadata IGs, this IG has a dependency to the [MedComCor
 Validation of MedCom FHIR Documents is strongly recommended to prevent invalid documents being shared through the XDS infrastructure. Here you can read more about [FHIR Validation](https://medcomdk.github.io/MedComLandingPage/assets/documents/FHIRValidationGovernance.html).
 
 ## Test and certification
-General information about [test and certification can be found on MedCom's website](https://medcom.dk/standarder/test-og-certificering/). MedCom FHIR Documents follows MedCom's usual proces for test and certification. For document exchange, vendors will most often be tested for correct support of the standard and communication with the XDS infrastructure. In addition, MedCom uses a [validation tool, called Interoperability Test Bed (ITB)](https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification), to ensure the validity of the documents. This tool may also be used during development.
+General information about [test and certification can be found on MedCom's website](https://medcom.dk/standarder/test-og-certificering/). MedCom FHIR Documents follows MedCom's usual proces for test and certification. For document exchange, vendors will most often be tested for correct support of the standard and communication with the XDS infrastructure.

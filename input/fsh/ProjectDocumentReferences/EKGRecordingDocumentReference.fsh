@@ -1,9 +1,7 @@
-//Profiling and release will happen when XDS metadata IG 2.0.0 is released.
 Profile: MedComEkgRecordingDocumentReference
 Parent: MedComContainedDocumentReference
 Id: medcom-ekg-recording-documentreference
 Description: "A DocumentReference profile stating the rules, when exchanging a document for the MedCom EKG Recording standard."
-//* type from $PlrTypeCode (required) //RCH Hvorfor har den sit eget valuesæt i stedet for at være bundet til en bestemt værdi direkte?
 * extension[versionid].valueString = "2.0"
 * category.coding = $MedComXDSClassCode#001
 * type.coding = $loinc#11524-6 "EKG Study"

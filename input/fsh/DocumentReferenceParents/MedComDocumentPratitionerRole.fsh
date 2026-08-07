@@ -5,7 +5,7 @@ Description: "Document PractitionerRole resource used to describe the role of a 
 * identifier 1..1 MS 
   * value 1..1 MS 
   * system 1..1 MS
-  * ^short = "Globally unique, stable identifier for this in. The same identifier SHALL be used when this resource is recreated from the same source data." 
+  * ^short = "Globally unique, stable identifier for this instance. The same identifier SHALL be used when this resource is recreated from the same source data." 
 * practitioner only Reference(MedComDocumentPractitioner)
 * organization only Reference(MedComDocumentOrganization)
 * code ^short = "Represents the specific role of the practitioner in the context of the document."
