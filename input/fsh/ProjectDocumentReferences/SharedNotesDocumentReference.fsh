@@ -6,7 +6,7 @@ Description: "A DocumentReference profile stating the rules, when exchanging a d
 * extension[versionid].valueString = "2.0"
 * category.coding = $MedComXDSClassCode#001
 * type.coding = $SnomedSystem#866144008	
-* content.format = $MedComXDSFormatCodeCS#urn:ad:dk:medcom:ecn-v1.0:full
+* content.format obeys medcom-ecn-formatcode
 * content.attachment.title ^short = "Journalnotat for 'CPR-nummer', were 'CPR-nummer' is the CPR number of the patient the document concerns, e.g. 'Journalnotat for 2509479989'"
 
 Instance: ExampleSharedNotesDocumentReference
