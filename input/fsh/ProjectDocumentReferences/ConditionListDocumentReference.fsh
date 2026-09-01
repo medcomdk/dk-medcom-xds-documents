@@ -4,7 +4,7 @@ Id: medcom-conditionlist-documentreference
 Description: "A DocumentReference profile stating the rules, when exchanging a document for the MedCom ConditionList standard (DA: Diagnoseoversigt)."
 * extension[versionid].valueString = "2.0"
 * type.coding = $loinc#11450-4 "Problem list - Reported"
-* content.format obeys medcom-plr-formatcode
+* content.format.code obeys medcom-plr-formatcode
 * category.coding = $MedComXDSClassCode#001
 * content.attachment.title
   * ^short = "Diagnoseoversigt for 'CPR-nummer', were 'CPR-nummer' is the CPR number of the patient the document concerns, e.g. 'Diagnoseoversigt for 2509479989'"

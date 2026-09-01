@@ -5,7 +5,7 @@ Description: "A DocumentReference profile stating the rules, when exchanging a d
 * extension[versionid].valueString = "2.0"
 * category.coding = $MedComXDSClassCode#001
 * type.coding = $loinc#11524-6 "EKG Study"
-* content.format obeys medcom-ekg-formatcode
+* content.format.code obeys medcom-ekg-formatcode
 * content.attachment.title ^short = "Elektrokardiogram-12-aflednings"
 
 

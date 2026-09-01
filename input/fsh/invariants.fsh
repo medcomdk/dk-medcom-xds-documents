@@ -37,20 +37,20 @@ Expression: "matches('^.*[|][0-9]+[.][0-9]+([.][0-9]+)?(-[0-9A-Za-z-]+([.][0-9A-
 Invariant: medcom-plr-formatcode
 Description: "The value SHALL follow the format urn:ad:dk:medcom:plr-vx.x:full, where each version component consists of one or two digits."
 Severity: #error
-Expression: "matches('^urn:ad:dk:medcom:plr-v[0-9]{1,2}\\.[0-9]{1,2}:full$')"
+Expression: "matches('^urn:ad:dk:medcom:plr-v[0-9]{1,2}.[0-9]{1,2}:full$')"
 
 
 Invariant: medcom-ekg-formatcode
 Description: "The value SHALL follow the format urn:ad:dk:medcom:ekg-vx.x:full, where each version component consists of one or two digits."
 Severity: #error
-Expression: "matches('^urn:ad:dk:medcom:ekg-v[0-9]{1,2}\\.[0-9]{1,2}:full$')"
+Expression: "matches('^urn:ad:dk:medcom:ekg-v[0-9]{1,2}.[0-9]{1,2}:full$')"
 
 Invariant: medcom-hcom-formatcode
 Description: "The value SHALL follow the format urn:ad:dk:medcom:hcom-vx.x:full, where each version component consists of one or two digits."
 Severity: #error
-Expression: "matches('^urn:ad:dk:medcom:hcom-v[0-9]{1,2}\\.[0-9]{1,2}:full$')"
+Expression: "matches('^urn:ad:dk:medcom:hcom-v[0-9]{1,2}.[0-9]{1,2}:full$')"
 
 Invariant: medcom-ecn-formatcode
 Description: "The value SHALL follow the format urn:ad:dk:medcom:ecn-vx.x:full, where each version component consists of one or two digits."
 Severity: #error
-Expression: "matches('^urn:ad:dk:medcom:ecn-v[0-9]{1,2}\\.[0-9]{1,2}:full$')"
+Expression: "matches('^urn:ad:dk:medcom:ecn-v[0-9]{1,2}.[0-9]{1,2}:full$')"

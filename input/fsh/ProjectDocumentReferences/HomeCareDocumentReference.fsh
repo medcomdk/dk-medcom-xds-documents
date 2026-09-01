@@ -4,7 +4,7 @@ Id: medcom-homecare-observation-documentreference
 Description: "A DocumentReference profile stating the rules, when exchanging a document including homecare observation (DA: Kommunale Prøvesvar)."
 * extension[versionid].valueString = "2.0"
 * type.coding = $MedComXDSTypeCode#HCOM "HomeCareObservation message"
-* content.format obeys medcom-hcom-formatcode
+* content.format.code obeys medcom-hcom-formatcode
 * category.coding = $MedComXDSClassCode#006
 * content.attachment.title
   * ^short = "Must be *Kommunale prøvesvar for 'CPR-nummer'*, were 'CPR-nummer' is the CPR number of the patient the document concerns, e.g. 'Kommunale prøvesvar for 0602631234'"

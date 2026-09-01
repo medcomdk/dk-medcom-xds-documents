@@ -81,7 +81,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
     * size 0.. MS
       * ^short = "The number of bytes of data that make up this attachment (before base64 encoding, if that is done). [XDS-metadata element: DocumentEntry.size]"
     * title 1.. MS
-      * ^short = "A human readable title of the document. [XDS-metadata element: DocumentEntry.title] "
+      * ^short = "A human readable title of the document. [XDS-metadata element: DocumentEntry.title]"
     * url MS
       * ^short = "A location where the data can be accessed. [XDS-metadata element: DocumentEntry.URI]"
   * format 1.. MS
@@ -131,7 +131,7 @@ Description: "A profile stating the rules, when exchanging a FHIR document in th
   * ^short = "A unique identifier for a community where the document can be accessed. [XDS-metadata element: DocumentEntry.homeCommunityId]"
   * url MS
 
-* extension[versionid]
+* extension[versionid] MS
   * valueString MS
 
 
