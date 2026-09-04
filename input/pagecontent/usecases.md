@@ -83,31 +83,31 @@ The document targets both IT system vendors and implementation managers in regio
     <tr>
       <td>Introduction to document sharing</td>
       <td>1.0</td>
-      <td>(https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf)[https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf]</td>
+      <td><a href="https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf">https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf</a></td>
       <td>A document containing basic description of document sharing on the national infrastructure in Denmark.</td>
     </tr>
     <tr>
       <td>IHE XDS</td>
       <td>20.0</td>
-      <td>(https://profiles.ihe.net/ITI/TF/Volume2/)[https://profiles.ihe.net/ITI/TF/Volume2/]</td>
+      <td><a href="https://profiles.ihe.net/ITI/TF/Volume2/">https://profiles.ihe.net/ITI/TF/Volume2/</a></td>
       <td>The technical framework describing actors and transactions requirements for the IHE IT Infrastructure (ITI) profiles.</td>
     </tr>
     <tr>
       <td>Metadata standard</td>
       <td>2.0</td>
-      <td>(https://medcomfhir.dk/ig/xdsmetadata/)[https://medcomfhir.dk/ig/xdsmetadata/]</td>
+      <td><a href="https://medcomfhir.dk/ig/xdsmetadata/">https://medcomfhir.dk/ig/xdsmetadata/</a></td>
       <td>The metadata standard defines the metadata that must and may be present when providing and retrieving documents from the NSP.</td>
     </tr>
     <tr>
       <td>NSP</td>
       <td>-</td>
-      <td>(https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen)[https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen]</td>
+      <td><a href="https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen">https://www.nspop.dk/display/Web3/Introduktion+til+NSP-platformen</a></td>
       <td>An overview of the components in the Danish national service platform (NSP), owned by the Danish Health Data Authority.</td>
     </tr>
     <tr>
       <td>NSP (document sharing)</td>
       <td>-</td>
-      <td>(https://www.nspop.dk/pages/releaseview.action?pageId=154772568)[https://www.nspop.dk/pages/releaseview.action?pageId=154772568]</td>
+      <td><a href="https://www.nspop.dk/pages/releaseview.action?pageId=154772568">https://www.nspop.dk/pages/releaseview.action?pageId=154772568</a></td>
       <td>An overview of the document sharing options in NSP.</td>
     </tr>
   </tbody>
@@ -161,15 +161,15 @@ The document targets both IT system vendors and implementation managers in regio
     </tr>
     <tr>
       <td>Document source</td>
-      <td>Is the actor in terms of an application that produces and publishes a document. It is responsible for sending documents to the document repository, and supply metadata to the document repository for subsequent registration of the documents with the document registry Actor. An implementation of the document source shall be able to submit documents. Whether a submission contains a single document, or multiple documents depends on workflows, policies, and other external factors which are outside of the scope of this document. Inspiration taken from: (https://profiles.ihe.net/)[https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1]</td>
+      <td>Is the actor in terms of an application that produces and publishes a document. It is responsible for sending documents to the document repository, and supply metadata to the document repository for subsequent registration of the documents with the document registry Actor. An implementation of the document source shall be able to submit documents. Whether a submission contains a single document, or multiple documents depends on workflows, policies, and other external factors which are outside of the scope of this document. Inspiration taken from: <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1">https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1</a></td>
     </tr>
     <tr>
       <td>Document consumer</td>
-      <td>Is the actor in terms of an application that queries a Document Registry and for documents meeting certain criteria, retrieves selected documents from one or more document repository. Inspiration taken from: (https://profiles.ihe.net/)[https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1]</td>
+      <td>Is the actor in terms of an application that queries a Document Registry and for documents meeting certain criteria, retrieves selected documents from one or more document repository. Inspiration taken from: <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1">https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1</a></td>
     </tr>
     <tr>
       <td>Patient identity source</td>
-      <td>The patient identity source is a provider of unique identifier for each patient and maintains a collection of identity traits. The patient identity source facilitates the validation of patient identifiers by the registry in its interactions with other actors. Inspiration taken from: (https://profiles.ihe.net/)[https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1].</td>
+      <td>The patient identity source is a provider of unique identifier for each patient and maintains a collection of identity traits. The patient identity source facilitates the validation of patient identifiers by the registry in its interactions with other actors. Inspiration taken from: <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1">https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -184,7 +184,7 @@ Figure 1 illustrates some of the ITI calls described in this document. A documen
 
 <figure>
   <img src="./figure-01.png" alt="Illustration of document flow using the ITI calls" />
-  <figcaption>Figure 1. Illustration of document flow using the ITI calls. Illustration is taken from: (https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf)[https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf]</figcaption>
+  <figcaption>Figure 1. Illustration of document flow using the ITI calls. Illustration is taken from: <a href="https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf">https://medcom.dk/wp-content/uploads/2023/01/Kom-godt-igang-med-dokumentdeling-1.4-interactive-1.pdf</a></figcaption>
 </figure>
 
 ## 1.6 Reading guide
@@ -325,27 +325,27 @@ Alternative use cases will always refer to a use case with a normal course, whic
       <td></td>
     </tr>
     <tr>
-      <td>S1: Provide and Register Document [ITI-41 and ITI-42]</td>
+      <td><a href="#311-s1-provide-and-register-document-iti-41-and-iti-42">S1: Provide and Register Document [ITI-41 and ITI-42]</a></td>
       <td>S1</td>
       <td></td>
     </tr>
     <tr>
-      <td>S1.A1: Request to document repository is flawed</td>
+      <td><a href="#3111-s1a1-request-to-document-repository-is-flawed">S1.A1: Request to document repository is flawed</a></td>
       <td>S1.A1</td>
       <td></td>
     </tr>
     <tr>
-      <td>S1.A2: Request to document registry is flawed</td>
+      <td><a href="#3112-s1a2-request-to-document-registry-is-flawed">S1.A2: Request to document registry is flawed</a></td>
       <td>S1.A2</td>
       <td></td>
     </tr>
     <tr>
-      <td>R1: Retrieve Stored Query (Stable/On-Demand) [ITI-18]</td>
+      <td><a href="#321-r1-retrieve-stored-query-stableon-demand-iti-18">R1: Retrieve Stored Query (Stable/On-Demand) [ITI-18]</a></td>
       <td></td>
       <td>R1</td>
     </tr>
     <tr>
-      <td>R2: Retrieve Document Set (Stable) [ITI-43]</td>
+      <td><a href="#322-r2-retrieve-document-set-stable-iti-43">R2: Retrieve Document Set (Stable) [ITI-43]</a></td>
       <td></td>
       <td>R2</td>
     </tr>
@@ -355,17 +355,17 @@ Alternative use cases will always refer to a use case with a normal course, whic
       <td></td>
     </tr>
     <tr>
-      <td>S2: Register On-Demand Document Entry [ITI-61] – not mandatory to support</td>
+      <td><a href="#312-s2-register-on-demand-document-entry-iti-61---not-mandatory-to-support">S2: Register On-Demand Document Entry [ITI-61] – not mandatory to support</a></td>
       <td>S2</td>
       <td></td>
     </tr>
     <tr>
-      <td>S2.A1: Request to document registry is flawed</td>
+      <td><a href="#3121-s2a1-request-to-document-registry-is-flawed">S2.A1: Request to document registry is flawed</a></td>
       <td>S2.A1</td>
       <td></td>
     </tr>
     <tr>
-      <td>R3: Retrieve Document Set (On-Demand) [ITI-43]</td>
+      <td><a href="#323-r3-retrieve-document-set-on-demand-iti-43">R3: Retrieve Document Set (On-Demand) [ITI-43]</a></td>
       <td></td>
       <td>R3</td>
     </tr>
@@ -384,27 +384,27 @@ Alternative use cases will always refer to a use case with a normal course, whic
   </thead>
   <tbody>
     <tr>
-      <td>S.CORR: Update Document Set Replace (Stable) [ITI-57]</td>
+      <td><a href="#411-scorr-update-document-set-replace-stable-iti-57">S.CORR: Update Document Set Replace (Stable) [ITI-57]</a></td>
       <td>S.CORR</td>
       <td></td>
     </tr>
     <tr>
-      <td>S.CORR.A1: Request to document repository is flawed</td>
+      <td><a href="#4111-scorra1-request-to-document-repository-is-flawed">S.CORR.A1: Request to document repository is flawed</a></td>
       <td>S.CORR.A1</td>
       <td></td>
     </tr>
     <tr>
-      <td>S.CORR.A2: Request to document registry is flawed</td>
+      <td><a href="#4112-scorra2-request-to-document-registry-is-flawed">S.CORR.A2: Request to document registry is flawed</a></td>
       <td>S.CORR.A2</td>
       <td></td>
     </tr>
     <tr>
-      <td>S.CANC: Update Document Set Deprecate (Stable) [ITI-57]</td>
+      <td><a href="#421-scanc-update-document-set-deprecate-stable-iti-57">S.CANC: Update Document Set Deprecate (Stable) [ITI-57]</a></td>
       <td>S.CANC</td>
       <td></td>
     </tr>
     <tr>
-      <td>S.CANC.A1: Request to document registry is flawed</td>
+      <td><a href="#4211-scanca1-request-to-document-registry-is-flawed">S.CANC.A1: Request to document registry is flawed</a></td>
       <td>S.CANC.A1</td>
       <td></td>
     </tr>
@@ -425,16 +425,10 @@ The use case S1, presented as a sequence diagram, can be found in Figure 2.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case S1</td>
-      <td>Provide and Register Document [ITI-41 and ITI-42]</td>
+      <td><strong>Use case S1</strong></td>
+      <td><strong>Provide and Register Document [ITI-41 and ITI-42]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -462,15 +456,15 @@ The use case S1, presented as a sequence diagram, can be found in Figure 2.
     </tr>
     <tr>
       <td>Alternative actions</td>
-      <td>S1.A1: Request to document repository is flawed<br>S1.A2: Request to document registry is flawed</td>
+      <td><a href="#3111-s1a1-request-to-document-repository-is-flawed">S1.A1: Request to document repository is flawed</a><br><a href="#3112-s1a2-request-to-document-registry-is-flawed">S1.A2: Request to document registry is flawed</a></td>
     </tr>
     <tr>
       <td>Corrective actions</td>
-      <td>S.CORR<br>S.CANC</td>
+      <td><a href="#411-scorr-update-document-set-replace-stable-iti-57">S.CORR</a><br><a href="#421-scanc-update-document-set-deprecate-stable-iti-57">S.CANC</a></td>
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Created based on descriptions from IHE: (https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4]</td>
+      <td>Created based on descriptions from IHE: <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4">https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4</a></td>
     </tr>
   </tbody>
 </table>
@@ -485,20 +479,14 @@ The alternative use case S1.A1, presented as a sequence diagram, can be found in
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Alternative use case S1.A1</td>
-      <td>Request to document repository is flawed.</td>
+      <td><strong>Alternative use case S1.A1</strong></td>
+      <td><strong>Request to document repository is flawed.</strong></td>
     </tr>
     <tr>
       <td>Reference to the use case to which this use case is an alternative</td>
-      <td>S1</td>
+      <td><a href="#311-s1-provide-and-register-document-iti-41-and-iti-42">S1</a></td>
     </tr>
     <tr>
       <td>Actions</td>
@@ -512,20 +500,9 @@ The alternative use case S1.A1, presented as a sequence diagram, can be found in
       <td>Corrective actions</td>
       <td></td>
     </tr>
-  </tbody>
-</table>
-
-<table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>Comments</td>
-      <td>Action 3: According the IHE rules, the request is expected to be rejected in the following scenarios (https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4.1.3)<br><br>Submission must be rejected when:<br>- Hash attribute isn’t present in the metadata or if the value differs from the calculated hash of the received document.<br>- Size attribute isn’t present in the metadata or if the value differs from the octet count of the received document.<br>- Patient id is invalid.<br><br>Submission should be rejected when:<br>- DocumentEntry is included, but document content is missing (e.g. no Document element with matching id)<br><br>Submission may be rejected when:<br>- Document is included, but the DocumentEntry is missing.<br><br>Action 4: The response from the document repository should contain an errormessage, clearly describing why the request is invalid.</td>
+      <td><strong>Action 3:</strong><br>According the IHE rules, the request is expected to be rejected in the following scenarios (<a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4.1.3">https://profiles.ihe.net/ITI/TF/Volume2/ITI-41.html#3.41.4.1.3</a>)<br><br>Submission must be rejected when:<br>- Hash attribute isn’t present in the metadata or if the value differs from the calculated hash of the received document.<br>- Size attribute isn’t present in the metadata or if the value differs from the octet count of the received document.<br>- Patient id is invalid.<br><br>Submission should be rejected when:<br>- DocumentEntry is included, but document content is missing (e.g. no Document element with matching id)<br><br>Submission may be rejected when:<br>- Document is included, but the DocumentEntry is missing.<br><br><strong>Action 4:</strong><br>The response from the document repository should contain an error-message, clearly describing why the request is invalid.</td>
     </tr>
   </tbody>
 </table>
@@ -540,20 +517,14 @@ The alternative use case S1.A2, presented as a sequence diagram, can be found in
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Alternative use case S1.A2</td>
-      <td>Request to document registry is flawed.</td>
+      <td><strong>Alternative use case S1.A2</strong></td>
+      <td><strong>Request to document registry is flawed.</strong></td>
     </tr>
     <tr>
       <td>Reference to the use case to which this use case is an alternative</td>
-      <td>S1</td>
+      <td><a href="#311-s1-provide-and-register-document-iti-41-and-iti-42">S1</a></td>
     </tr>
     <tr>
       <td>Actions</td>
@@ -584,16 +555,10 @@ The use case S2, presented as a sequence diagram, can be found in Figure 5.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case S2</td>
-      <td>Register On-Demand Document Entry [ITI-61]</td>
+      <td><strong>Use case S2</strong></td>
+      <td><strong>Register On-Demand Document Entry [ITI-61]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -621,7 +586,7 @@ The use case S2, presented as a sequence diagram, can be found in Figure 5.
     </tr>
     <tr>
       <td>Alternative actions</td>
-      <td>S2.A1: Request to document registry is flawed</td>
+      <td><a href="#3121-s2a1-request-to-document-registry-is-flawed">S2.A1: Request to document registry is flawed</a></td>
     </tr>
     <tr>
       <td>Corrective actions</td>
@@ -629,7 +594,7 @@ The use case S2, presented as a sequence diagram, can be found in Figure 5.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Created based on descriptions from IHE: (https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61] Not all metadata provided for stable documents is available for On-Demand documents, e.g. hash and size which cannot be calculated. See all exceptions here: (https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2].</td>
+      <td>Created based on descriptions from IHE: <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61">https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61</a> Not all metadata provided for stable documents is available for On-Demand documents, e.g. hash and size which cannot be calculated. See all exceptions here: <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2">https://profiles.ihe.net/ITI/TF/Volume2/ITI-61.html#3.61.4.1.2</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -644,20 +609,14 @@ The alternative use case S2.A1, presented as a sequence diagram, can be found in
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Alternative use case S2.A1</td>
-      <td>Request to document registry is flawed.</td>
+      <td><strong>Alternative use case S2.A1</strong></td>
+      <td><strong>Request to document registry is flawed.</strong></td>
     </tr>
     <tr>
       <td>Reference to the use case to which this use case is an alternative</td>
-      <td>S2</td>
+      <td><a href="#312-s2-register-on-demand-document-entry-iti-61---not-mandatory-to-support">S2</a></td>
     </tr>
     <tr>
       <td>Actions</td>
@@ -673,7 +632,7 @@ The alternative use case S2.A1, presented as a sequence diagram, can be found in
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Action 3: After the registry has rejected the metadata, the document registry must roll back any changes made.</td>
+      <td><strong>Action 3:</strong><br>After the registry has rejected the metadata, the document registry must roll back any changes made.</td>
     </tr>
   </tbody>
 </table>
@@ -690,16 +649,10 @@ The use case R1, presented as a sequence diagram, can be found in Figure 7.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case R1</td>
-      <td>Retrieve Stored Query (stable) [ITI-18]</td>
+      <td><strong>Use case R1</strong></td>
+      <td><strong>Retrieve Stored Query (stable) [ITI-18]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -735,19 +688,7 @@ The use case R1, presented as a sequence diagram, can be found in Figure 7.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>The request can be declined if an unknown query ID is used or required parameters are missing. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3]<br><br>Action 1: Relevant search parameters are at least patientId, formatCode and objectType. More search parameters may be included to specify the search.</td>
-    </tr>
-    <tr>
-      <td>Field</td>
-      <td>Description</td>
-    </tr>
-    <tr>
-      <td>---</td>
-      <td>---</td>
-    </tr>
-    <tr>
-      <td>Use case R1</td>
-      <td>Retrieve Stored Query (stable) [ITI-18]<br>Action 4: If no document is available, this information will be returned in the response from the document registry.</td>
+      <td>The request can be declined if an unknown query ID is used or required parameters are missing. <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3">https://profiles.ihe.net/ITI/TF/Volume2/ITI-18.html#3.18.4.1.3</a><br><br><strong>Action 1:</strong><br>Relevant search parameters are at least patientId, formatCode and objectType. More search parameters may be included to specify the search.<br><br><strong>Action 4:</strong><br>If no document is available, this information will be returned in the response from the document registry.</td>
     </tr>
   </tbody>
 </table>
@@ -762,16 +703,10 @@ The use case R2, presented as a sequence diagram, can be found in Figure 8.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case R2</td>
-      <td>Retrieve Document Set (Stable) [ITI-43]</td>
+      <td><strong>Use case R2</strong></td>
+      <td><strong>Retrieve Document Set (Stable) [ITI-43]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -807,7 +742,7 @@ The use case R2, presented as a sequence diagram, can be found in Figure 8.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Action 1: HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2]<br><br>Action 3: The document repository must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3]</td>
+      <td><strong>Action 1:</strong><br>HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2">https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2</a><br><br><strong>Action 3:</strong><br>The document repository must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3">https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3</a></td>
     </tr>
   </tbody>
 </table>
@@ -822,16 +757,10 @@ The use case R3, presented as a sequence diagram, can be found in Figure 9.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case R3</td>
-      <td>Retrieve Document Set (On-Demand) [ITI-43]</td>
+      <td><strong>Use case R3</strong></td>
+      <td><strong>Retrieve Document Set (On-Demand) [ITI-43]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -867,7 +796,7 @@ The use case R3, presented as a sequence diagram, can be found in Figure 9.
     </tr>
     <tr>
       <td>Comments</td>
-      <td>Action 1: HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2]<br><br>Action 2: The On-Demand document source must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. (https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3]</td>
+      <td><strong>Action 1:</strong><br>HomecommunityId, repositoryUniqueId, and documentUniqueId must be included in the request. <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2">https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.2</a><br><br><strong>Action 2:</strong><br>The On-Demand document source must return a response with an error code if the requested documents cannot be retrieved or if the request is invalid. <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3">https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html#3.43.4.1.3</a></td>
     </tr>
   </tbody>
 </table>
@@ -886,16 +815,10 @@ The use case S.CORR, presented as a sequence diagram, can be found in Figure 10.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case S.CORR</td>
-      <td>Update Document Set (stable) [ITI-57]</td>
+      <td><strong>Use case S.CORR</strong></td>
+      <td><strong>Update Document Set (stable) [ITI-57]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -923,11 +846,11 @@ The use case S.CORR, presented as a sequence diagram, can be found in Figure 10.
     </tr>
     <tr>
       <td>Alternative actions</td>
-      <td>S.CORR.A1: Request to document repository is flawed<br>S.CORR.A2: Request to document registry is flawed</td>
+      <td><a href="#4111-scorra1-request-to-document-repository-is-flawed">S.CORR.A1: Request to document repository is flawed</a><br><a href="#4112-scorra2-request-to-document-registry-is-flawed">S.CORR.A2: Request to document registry is flawed</a></td>
     </tr>
     <tr>
       <td>Comments</td>
-      <td>(https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html]</td>
+      <td><a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html">https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html</a></td>
     </tr>
   </tbody>
 </table>
@@ -942,24 +865,14 @@ The alternative use case S.CORR.A1, presented as a sequence diagram, can be foun
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Alternative use case</td>
-      <td>Request to document repository is flawed.</td>
-    </tr>
-    <tr>
-      <td>S.CORR.A1</td>
-      <td></td>
+      <td><strong>Alternative use case S.CORR.A1</strong></td>
+      <td><strong>Request to document repository is flawed.</strong></td>
     </tr>
     <tr>
       <td>Reference to the use case to which this use case is an alternative</td>
-      <td>S.CORR</td>
+      <td><a href="#411-scorr-update-document-set-replace-stable-iti-57">S.CORR</a></td>
     </tr>
     <tr>
       <td>Actions</td>
@@ -990,24 +903,14 @@ The alternative use case S.CORR.A2, presented as a sequence diagram, can be foun
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Alternative use case</td>
-      <td>Request to document registry is flawed.</td>
-    </tr>
-    <tr>
-      <td>S.CORR.A2</td>
-      <td></td>
+      <td><strong>Alternative use case S.CORR.A2</strong></td>
+      <td><strong>Request to document registry is flawed.</strong></td>
     </tr>
     <tr>
       <td>Reference to the use case to which this use case is an alternative</td>
-      <td>S.CORR</td>
+      <td><a href="#411-scorr-update-document-set-replace-stable-iti-57">S.CORR</a></td>
     </tr>
     <tr>
       <td>Actions</td>
@@ -1040,16 +943,10 @@ The use case S.CANC, presented as a sequence diagram, can be found in Figure 13.
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Use case<br>S.CANC</td>
-      <td>Update Document Set Deprecate (stable) [ITI-57]</td>
+      <td><strong>Use case S.CANC</strong></td>
+      <td><strong>Update Document Set Deprecate (stable) [ITI-57]</strong></td>
     </tr>
     <tr>
       <td>Initiating part</td>
@@ -1077,11 +974,11 @@ The use case S.CANC, presented as a sequence diagram, can be found in Figure 13.
     </tr>
     <tr>
       <td>Alternative actions</td>
-      <td>S.CANC.A1: Request to document registry is flawed</td>
+      <td><a href="#4211-scanca1-request-to-document-registry-is-flawed">S.CANC.A1: Request to document registry is flawed</a></td>
     </tr>
     <tr>
       <td>Comments</td>
-      <td>(https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html)[https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html]</td>
+      <td><a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html">https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html</a></td>
     </tr>
   </tbody>
 </table>
@@ -1096,24 +993,14 @@ The alternative use case S.CANC.A1, presented as a sequence diagram, can be foun
 </figure>
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>Alternative use case</td>
-      <td>Request to document registry is flawed.</td>
-    </tr>
-    <tr>
-      <td>S.CANC.A1</td>
-      <td></td>
+      <td><strong>Alternative use case S.CANC.A1</strong></td>
+      <td><strong>Request to document registry is flawed.</strong></td>
     </tr>
     <tr>
       <td>Reference to the use case to which this use case is an alternative</td>
-      <td>S.CANC</td>
+      <td><a href="#421-scanc-update-document-set-deprecate-stable-iti-57">S.CANC</a></td>
     </tr>
     <tr>
       <td>Actions</td>
