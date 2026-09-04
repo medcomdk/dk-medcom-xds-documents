@@ -3,8 +3,8 @@ InstanceOf: MedComDocumentPractitioner
 Title: "Author Person"
 Description: "Instance of an author person"
 Usage: #example
-* name.given = "Sidsel"
-* name.family = "Andersen"
+* name[official].given = "Sidsel"
+* name[official].family = "Andersen"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:ce6f5308-d71b-4ee8-bc41-cc9ddcc15366"
 

@@ -1,17 +1,19 @@
 Profile: MedComConditionListDocumentReference
 Parent: MedComContainedDocumentReference
 Id: medcom-conditionlist-documentreference
-Description: "A profile for the MedCom ConditionListDocumentReference resource."
+Description: "A DocumentReference profile stating the rules, when exchanging a document for the MedCom ConditionList standard (DA: Diagnoseoversigt)."
 * extension[versionid].valueString = "2.0"
 * type.coding = $loinc#11450-4 "Problem list - Reported"
+* content.format.code obeys medcom-plr-formatcode
+* category.coding = $MedComXDSClassCode#001
+* content.attachment.title
+  * ^short = "Diagnoseoversigt for 'CPR-nummer', were 'CPR-nummer' is the CPR number of the patient the document concerns, e.g. 'Diagnoseoversigt for 2509479989'"
 
 Instance: 4daf727f-f116-4e49-ad31-4018f0cc638a
 InstanceOf: MedComConditionListDocumentReference
 Title: "DocumentReference instance"
 Description: "DocumentReference instance"
 * status = #current "Current"
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>ConditionList DocumentReference resource example</p></div>"
 
 * extension[versionid].valueString = "2.0"
 * extension[homeCommunityid].valueCoding = $MedComXDSHomeCommunityId#1.2.208.176.8.1 "Common Danish IHE XDS domain. Integrating the Healthcare Enterprise (IHE) cross[X]-enterprise Document Sharing (XDS) domain"
@@ -19,6 +21,8 @@ Description: "DocumentReference instance"
 * contained[+] = 1fcad31f-8967-4f49-b6af-7e64082e8fec
 * contained[+] = fd3206c6-c265-49f9-82c3-8b4c96280403
 * contained[+] = 69e475df-20c8-4f54-8cea-9843568205fd
+
+* type.coding = $loinc#11450-4 "Problem list - Reported"
 
 * masterIdentifier
   * use = #usual
@@ -64,7 +68,7 @@ Usage: #inline
 Instance: 1fcad31f-8967-4f49-b6af-7e64082e8fec
 InstanceOf: MedComDocumentPractitioner
 Usage: #inline
-* name
+* name[official]
   * use = #official
   * family = "Vestergaard"
   * given[0] = "Bo"
@@ -87,4 +91,4 @@ Usage: #inline
 * birthDate = "1947-09-25"
 * gender = #male
 * text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name:Elmer Test Hansen, CPR: 2509479989</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name:Elmer Test Hansen, CPR: 2509479989, Birth Date: 1947-09-25, Gender: male</div>"

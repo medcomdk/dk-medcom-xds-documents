@@ -37,7 +37,7 @@ Usage: #example
 * category.coding.display = "Klinisk rapport"
 * subject = Reference(379ebb53-11e3-42ac-b9db-0bad0ece46d1)
 * author[institution] = Reference(f8d0eb07-5336-4005-9081-b065f9a82663)
-* author[+] = Reference(bb6fa4e1-f8b1-4bf4-b77e-bb03b2cc9820)
+* author[person] = Reference(48ed6310-3095-44da-9e34-d1cd6bd830c9)
 * title = "Elektrokardiogram-12-aflednings"
 * confidentiality = #N
 * event.period.start = "2025-02-10T10:00:00+01:00"
@@ -45,7 +45,7 @@ Usage: #example
 * section[0].entry[0] = Reference(ef810168-ee8c-4f14-9012-6aff6c1d86e7)
 * date = "2025-02-10T10:15:00+01:00"
 * language = #da "Danish"
-* meta.profile = "http://medcomfhir.dk/ig/document/StructureDefinition/medcom-document-composition|2.0"
+* meta.profile = "http://medcomfhir.dk/ig/xdsdocuments/StructureDefinition/medcom-document-composition|2.0"
 //OBS: attester, event.code, event.detail bruges ikke i EKG - skriv det i profilteksten.
 
 Instance: ef810168-ee8c-4f14-9012-6aff6c1d86e7
@@ -81,7 +81,10 @@ Usage: #example
 * name[official].given[0] = "Else"
 * name[official].given[+] = "Test"
 * gender = #female
-* birthDate = "1991-02-02"
+* birthDate = "1991-01-02"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name: Else Test Lauridsen, CPR: 0201919990, birthDate: 1991-01-02, Gender: female</div>"
+
 
 Instance: bb6fa4e1-f8b1-4bf4-b77e-bb03b2cc9820
 InstanceOf: MedComDocumentPractitionerRole
@@ -98,8 +101,8 @@ InstanceOf: MedComDocumentPractitioner
 Title: "Practitioner"
 Description: "Instance of a practitioner"
 Usage: #example
-* name.given = "Sidsel"
-* name.family = "Andersen"
+* name[official].given = "Sidsel"
+* name[official].family = "Andersen"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:a6c11dab-a9e9-46b8-9bb3-fe06d6587e07"
 
@@ -109,6 +112,7 @@ Title: "Organization"
 Description: "Instance of an author organization"
 Usage: #example
 * identifier[SOR-ID].value = "61741000016007"
-* identifier[SOR-ID].system = "urn:oid:1.2.208.176.1.1"
 * name = "Lægerne Hasseris Bymidte"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Name: Lægerne Hasseris Bymidte, Identifier: 61741000016007</div>"
 

@@ -1,0 +1,1 @@
+HomecommunityID is a unique identifier for a community where the DocumentEntry and document can be accessed. The identifier an OID when exchanging documents over the Danish national XDS infrastructure. This is represented in an extension, since no element in the DocumentReference resource contains this type of information.
