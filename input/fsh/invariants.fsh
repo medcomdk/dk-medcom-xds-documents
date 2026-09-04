@@ -54,3 +54,8 @@ Invariant: medcom-ecn-formatcode
 Description: "The value SHALL follow the format urn:ad:dk:medcom:ecn-vx.x:full, where each version component consists of one or two digits."
 Severity: #error
 Expression: "matches('^urn:ad:dk:medcom:ecn-v[0-9]{1,2}.[0-9]{1,2}:full$')"
+
+Invariant: medcom-patient-gender
+Description: "Gender SHALL be male, female, or other."
+Severity: #error
+Expression: "$this.matches('(?i)^(male|female|other)$')"
